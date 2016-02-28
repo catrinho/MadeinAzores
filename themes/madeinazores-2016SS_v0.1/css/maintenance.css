@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700|PT+Serif:400,400italic,700,700italic|PT+Serif+Caption:400,400italic|PT+Sans+Caption:400,700|PT+Sans+Narrow:400,700|PT+Mono);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/*
+font-family: 'PT Sans', sans-serif;
+
+font-family: 'PT Serif', serif;
+
+font-family: 'PT Serif Caption', serif;
+
+font-family: 'PT Sans Caption', sans-serif;
+
+font-family: 'PT Mono', ;
+*/
+/*********************************************************************
+					Maintenance Page Styles
+**********************************************************************/
+#maintenance {
+  margin: 25% 10% 0 15%; }
+  #maintenance p {
+    font: 16px "PT Sans Caption", sans-serif;
+    color: #ffffff;
+    padding: 0 0 14px;
+    margin: 0 0 19px 0; }
+    #maintenance p span {
+      font: 12px "PT Sans Caption", sans-serif;
+      margin: 50px 0 19px 0; }
+  #maintenance h1 {
+    font: 50px "PT Sans Caption", sans-serif;
+    color: #ffffff;
+    padding: 0 0 14px 0;
+    margin: 0 0 19px 0; }
+  #maintenance h5 {
+    font: 22px "PT Sans Caption", sans-serif;
+    color: #ffffff;
+    padding: 0 0 14px 0;
+    margin: 0 0 19px 0; }
+
+.full-back {
+  background: url(http://www.madeinazores.eu/modules/leocamera/images/7c4d3283c9778b23bad4eaa2526189c7.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/*# sourceMappingURL=maintenance.css.map */

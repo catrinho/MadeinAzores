@@ -1,0 +1,55 @@
+#grid-selector{
+	width:100px;
+	position:absolute;
+    top: 92px;
+    right: 79px;	
+}
+#viewList{
+	//background:#e3e5e9;
+	width:20px;
+	height:20px;
+	float:right;
+	border-radius:1px;
+}
+#viewList:hover{
+	cursor:pointer;
+}
+
+#viewList:hover p, #viewGrid:hover p{
+	cursor:pointer;
+	background:#cacdd1;
+}
+#viewList.active p, #viewGrid.active p{
+	color:#5298fc;
+}
+#viewGrid{
+	width:22px;
+	height:20px;
+	float:right;
+	margin-top:-1px;
+	margin-right:5px;
+}
+
+#viewGrid p{
+	background: #e3e5e9;
+	  width: 9px;
+	  height: 9px;
+	  float: right;
+	  //border-radius: 1px;
+	  margin: 1px;
+
+}
+#viewList p{
+	background: #e3e5e9;
+	  width: 22px;
+	  height: 9px;
+	  float: right;
+	  //border-radius: 1px;
+	  margin: 1px;
+	  	  &:first-child{
+	  	margin-top: 0px;
+	  }
+}
+#viewGrid.active p, #viewList.active p{
+	background:#9fa2a8;
+}

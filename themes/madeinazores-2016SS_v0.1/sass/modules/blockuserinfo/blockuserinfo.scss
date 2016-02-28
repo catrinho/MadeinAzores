@@ -1,0 +1,32 @@
+@import "compass";
+@import "theme_variables";
+/*#header_user_info {
+		a{	
+				&:hover, &:focus,&:active{
+					color: $lightBlue-color;
+					text-decoration: none;
+				}
+			float:left;
+			font: 600 12px $font-custom;
+			text-transform: uppercase;
+			color: $black-color;
+			display: inline-block;
+			padding: 10px 0px;
+			text-decoration: none;
+		} 
+}
+
+
+
+li{
+		@extend .top-menu;
+		a{
+			@extend .a;
+		}
+	}
+	li.selected > span{
+		@extend .active;
+	}						}
+	
+
+	*/

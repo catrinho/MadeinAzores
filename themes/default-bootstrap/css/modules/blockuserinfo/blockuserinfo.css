@@ -1,0 +1,13 @@
+#header_user_info a {
+  float: left;
+  font: 600 12px "PT Sans", sans-serif;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  display: inline-block;
+  padding: 10px 0px;
+  text-decoration: none; }
+  #header_user_info a:hover, #header_user_info a:focus, #header_user_info a:active {
+    color: #1EA3B0;
+    text-decoration: none; }
+
+/*# sourceMappingURL=blockuserinfo.css.map */

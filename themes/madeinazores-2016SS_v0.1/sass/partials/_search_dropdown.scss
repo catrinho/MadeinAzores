@@ -1,0 +1,22 @@
+
+.ac_results {
+	background: $base-background-color !important;
+	border: $base-border !important;
+	width: 271px !important;
+	margin-top: -1px;
+	li {
+		 font-family: $base-font-family !important;
+		  font-size: em(20) !important;
+		  line-height: $base-line-height !important;
+		  font-weight: $font-normal !important;
+		padding: 15px 15px !important;
+		color: $base-font-color !important;
+		&.ac_odd {
+			background: $secondary-background-color !important;
+		}
+		&:hover, &.ac_over {
+			background: $secondary-background-color !important;
+			color:$lightblue !important;
+		}
+	}
+}

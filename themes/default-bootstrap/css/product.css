@@ -1,0 +1,99 @@
+/* primary_block ***************************************************************************** */
+.primary_block {
+  margin-bottom: 40px;
+  /* .pb-left-column ***************************************************************************** */
+  /* pb-left-column ****************************************************************************** */ }
+  .primary_block .pb-left-column img {
+    max-width: 100%;
+    height: auto; }
+  .primary_block .pb-left-column #image-block {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid green;
+    background: #fff;
+    /*
+    	#view_full_size {
+    		.span_link {
+    			position: absolute;
+    			bottom: 20px;
+    			left: 50%;
+    			margin-left: -68px;
+    			display: block;
+    			padding: 10px 0;
+    			text-align: center;
+    			line-height: 22px;
+    			color: #777676;
+    			width: 136px;
+    			text-align: center;
+    			font-weight: 700;
+    			background: rgba(255,255,255,0.5);
+    			@include box-shadow(0 2px 8px rgba(0,0,0,0.16));
+    			&:after{
+    				font-family: $font-icon;
+    				color: #c0c0c0;
+    				font-size: 20px;
+    				line-height: 22px;
+    				content: "\f00e";
+    				font-weight: normal;
+    				margin: 0 0 0 4px;
+    			}
+    			&:hover:after{
+    				color: $base-text-color
+    			}
+    		}
+    	}
+    	a.jqzoom {
+    		div div {
+    			img {
+    				width: auto;
+    				max-width: 10000px;
+    			}
+    			.zoomWrapper {
+    				border: none;
+    			}
+    		}
+    	}
+    	.zoomPad {
+    		z-index : auto!important;
+    	}
+    	.new-box,
+    	.sale-box {
+    		z-index: 5002
+    	}
+    */ }
+    @media (max-width: 767px) {
+      .primary_block .pb-left-column #image-block {
+        width: 280px;
+        margin: 0 auto; } }
+    .primary_block .pb-left-column #image-block img {
+      background: #fbfbfb;
+      width: 100%; }
+  .primary_block .pb-center-column {
+    margin-bottom: 30px; }
+    .primary_block .pb-center-column p {
+      margin-bottom: 10px; }
+    .primary_block .pb-center-column .our_price_display {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 32px;
+      font-family: "PT Sans", sans-serif;
+      color: #3d3d3d; }
+      @media (max-width: 991px) {
+        .primary_block .pb-center-column .our_price_display {
+          font-size: 26px;
+          line-height: 28px; } }
+      .primary_block .pb-center-column .our_price_display .price {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        color: #3d3d3d; }
+        @media (max-width: 991px) {
+          .primary_block .pb-center-column .our_price_display .price {
+            font-size: 22px;
+            line-height: 28px; } }
+    .primary_block .pb-center-column #attributes label {
+      display: none; }
+
+/*# sourceMappingURL=product.css.map */

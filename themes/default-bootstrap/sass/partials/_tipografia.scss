@@ -1,0 +1,156 @@
+//text
+@import "mixins";
+.page-heading {
+	font: 600 33px $font-custom;
+	color: $base-heading-color;
+	margin-top: 20px;
+    margin-bottom: 25px;
+	overflow: hidden;
+	// span.heading-counter {
+	// 	font: bold 13px / 22px $font-family;
+	// 	float: right;
+	// 	color: $base-text-color;
+	// 	text-transform: none;
+	// 	margin-bottom: 10px;
+	// 	@media (max-width: $screen-xs) {
+	// 		float: none;
+	// 		display: block;
+	// 		padding-top: 5px;
+	// 	}
+	// }
+	// span.lighter {
+	// 	color: #9c9c9c;
+	// }
+	// &.bottom-indent {
+	// 	margin-bottom: 16px;
+	// }
+	// &.product-listing {
+	// 	border-bottom: none;
+	// 	margin-bottom: 0;
+	// }
+}
+
+.page-subheading {
+	font-family: $font-custom;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: $base-heading-color;
+	font-size: 18px;
+	padding: 0 0 15px;
+	line-height: normal;
+	margin-bottom: 12px;
+	border-bottom: 1px solid $base-border-color;
+}
+.page-product-box {
+	h5.page-product-heading {
+	color: $base-heading-color;
+	text-transform: uppercase;
+	font-family: $font-custom;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	position: relative;
+	border-bottom: none;
+	background: transparent;
+	}
+
+	p{
+		font-family: $font-custom;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 0.105em;
+    	word-spacing: 0.2em;
+	}
+}	
+
+p.info-title {
+	font-weight: bold;
+	color: $base-text-color;
+	margin-bottom: 25px;
+}
+
+p.info-account {
+	margin: -4px 0 24px 0;
+}
+
+.dark {
+	color: $base-text-color;
+}
+
+.main-page-indent {
+	margin-bottom: $base-page-indent;
+}
+
+.alert {
+	font-weight: bold;
+	&:before {
+		cursor:  pointer;
+	}
+	ul, ol {
+		padding-left: 15px;
+		margin-left: 27px;
+		li {
+			list-style-type: decimal;
+			font-weight: normal;
+		}
+	}
+	&.alert-success {
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+		&:before {
+			font-family: $font-icon;
+			content: "\f058";
+			font-size: 20px;
+			vertical-align: -2px;
+			padding-right: 7px;
+		}
+	}
+	&.alert-danger {
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+		&:before {
+			font-family: $font-icon;
+			content: "\f057";
+			font-size: 20px;
+			vertical-align: -2px;
+			padding-right: 7px;
+			float: left;
+		}
+	}
+}
+
+.label {
+	white-space: normal;
+	display: inline-block;
+	padding: 6px 10px;
+}
+
+label {
+	color: $base-title-color;
+	&.required {
+		&:before {
+			content: "*";
+			color: red;
+			font-size: 14px;
+			position: relative;
+			line-height: 12px;
+		}
+	}
+}
+
+.unvisible {
+	display: none;
+}
+
+.checkbox {
+	line-height: 16px;
+	label {
+		color: #777777;
+	}
+}
+
+.close {
+	opacity: 1;
+	&:hover {
+		opacity: 1;
+	}
+}

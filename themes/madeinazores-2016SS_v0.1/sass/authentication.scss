@@ -1,0 +1,75 @@
+@import "compass";
+@import "compass/reset";
+@import "madeinazores-vars";
+@import "bootstrap";
+@import "font-awesome/font-awesome";
+//@import "icons";
+	
+
+@import "bourbon/bourbon";
+@import "partials/mixins";
+
+@import "partials/atomos";
+@import "partials/typography";
+@import "partials/forms";
+@import "partials/buttons1";
+/**********************************************************
+				Authentication Styles
+**********************************************************/
+// #account-creation_form .id_state,
+// #account-creation_form .dni,
+// #account-creation_form .postcode {
+// 	display: none;
+// }
+
+// #create-account_form {
+// 	min-height: 297px;
+// 	p {
+// 		margin-bottom: 8px;
+// 	}
+// 	.form-group {
+// 		margin: 0 0 20px 0;
+// 	}
+// }
+
+// #login_form {
+// 	min-height: 297px;
+// 	.form-group {
+// 		margin: 0 0 3px 0;
+// 		&.lost_password {
+// 			margin: 14px 0 15px 0;
+// 			a {
+// 				text-decoration: underline;
+// 				&:hover {
+// 					text-decoration: none;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// #login_form, #create-account_form {
+// 	.form-control {
+// 		max-width: 271px;
+// 	}
+// }
+
+#autentication-form{
+	//@include center(xy);
+	.form_content{
+		padding-bottom:15px;
+		@extend .border-black;
+		.submit{
+			padding:15px 0px;
+		}
+	}
+	
+}
+#new-customer-form form{
+	margin:40px 0;
+	.form_content {
+		p{
+			@extend .bold;
+		}
+	}
+}	

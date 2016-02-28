@@ -1,0 +1,188 @@
+//posittions
+.absolute{
+  position:absolute;
+}
+.static{
+  position:static;
+}
+
+.relative{
+  position:relative;
+}
+
+
+
+//OVERFLOWS
+.not-moving{
+	overflow:hidden;
+}
+.not-move-x{
+	overflow-x:hidden;
+}
+.not-move-y{
+	overflow-y:hidden;
+}
+.move-x{
+	overflow-x:hidden;
+}
+.move-y{
+	overflow-y:hidden;
+}
+// DISPLAY OR NOT ELEMENTS
+.unvisible{
+	display:none;
+}
+
+// --- REMOVE PADDING'S
+.unpad{
+	padding:0 !important;
+}
+.unpad-right{
+	padding-right:0 !important;
+}
+.unpad-left{
+	padding-left:0 !important;
+}
+// ALIGN  HELPERS
+.text-center{
+	text-align:center;
+}
+.text-left{
+	text-align:left;
+}
+.align-center{
+	float:none;
+	margin:0 auto;
+}
+.stay-on-bottom{
+	position:absolute;
+	bottom: 0px;
+}
+
+// --- BORDERS 
+
+.border-black{
+ 	border-bottom: 3px solid $black;
+}
+
+.border-blue{
+	border-bottom: 3px solid $lightblue;
+}
+
+
+//--- FORMATAÇÃO DO TEXTO - MENU TOPO
+.top-menu{
+	@extend .bold;
+ 	font-family: $base-font-family;
+  	font-size: em(18);
+  	display: block;
+  	text-transform: uppercase;
+  	//float:left;
+  	letter-spacing: 0.13em;
+  	display: inline-block;
+  	padding: 10px 0px;
+	text-decoration: none;
+}
+
+// --- CSS ICONS
+
+@mixin icon-cross($color:#3d3d3d,$cross-width: 30px,$cross-thick: 2px){
+	.cross{
+	    transform: rotateZ(45deg);
+	}
+
+	.cross,
+	.cross:before,
+	.cross:after {
+	    position: absolute;
+	   // top: 50%;
+	    //left: 50%;
+	    width: $cross_thick;
+	    height: $cross_width;
+	    background: $color;
+	}
+
+	.cross:before,
+	.cross:after {
+	    content: '';
+	    display: inline-block;
+	    position: absolute;
+	    top: ($cross_width - $cross_thick)/ 2;
+	    left: -($cross_width - $cross_thick)/ 2;
+	    width: ($cross_width - $cross_thick)/ 2;
+	    height: $cross_thick;
+	}
+
+	.cross:after {
+	    left: $cross-thick;
+	}
+}
+
+// Create a arrow 
+
+@mixin arrow($direction, $size, $colour) {
+  width: 0;
+  height: 0;
+  
+  $directions: up, down, left, right;
+  $sides: top, bottom, left, right;
+  $inverse: bottom, top, right, left;
+  
+  @each $side in $sides {
+    $border-colour: transparent;
+    
+    @if nth($inverse, index($directions, $direction)) == $side {
+      $border-colour: $colour;
+    }
+    
+    border-#{$side}: $size solid $border-colour;
+  }
+}
+
+@mixin BurgerKing($burger-W:20px,$brick-h:2px,$bg-color:#3d3d3d){
+
+  .burger {
+    width: $burger-W;
+    position: relative;
+    cursor: pointer;
+    float: left;
+  }
+
+  .burger-brick {
+    height: $brick-h;
+ 
+    margin-top: 5px;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    background-color:$bg-color;
+  }
+
+  // .open .burger-brick:first-child {
+  //   -webkit-transform: rotate(135deg);
+  //   -moz-transform: rotate(135deg);
+  //   -ms-transform: rotate(135deg);
+  //   -o-transform: rotate(135deg);
+  //   transform: rotate(135deg);
+  //   margin-top: 10px;
+  // }
+
+  // .open .burger-brick:last-child {
+  //   -webkit-transform: rotate(-135deg);
+  //   -moz-transform: rotate(-135deg);
+  //   -ms-transform: rotate(-135deg);
+  //   -o-transform: rotate(-135deg);
+  //   transform: rotate(-135deg);
+  //   margin-top: -9px;
+  // }
+
+  // .open .middle {
+  //   -webkit-transform: scale(0);
+  //   -moz-transform: scale(0);
+  //   -ms-transform: scale(0);
+  //   -o-transform: scale(0);
+  //   transform: scale(0);
+  // }
+}

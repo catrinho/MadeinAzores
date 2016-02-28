@@ -1,0 +1,56 @@
+// BREADCRUMB
+.breadcrumb {
+	display: inline-block;
+	//font: 600 10px $font-custom;
+	font-family: $base-font-family;
+	font-weight:$font-bold;
+	font-size:10px;
+	line-height: 24px;
+	min-height: 6px;
+	overflow: hidden;
+	//margin-bottom: 16px;
+	position: relative;
+	z-index: 1;
+	color: $lightblue;
+	.navigation-pipe {
+		display: inline-block;
+		color: $black;
+		margin:0 5px;
+	}
+	a {
+		display: inline-block;
+		position: relative;
+		z-index: 2;
+		color: $black;
+		text-decoration: none;
+		//width: 38px;
+			text-align: center;
+		&.home {
+			//font-size: 17px;
+			color:$black;
+			// width: 38px;
+			text-align: center;
+			padding: 0;
+			z-index: 99;
+			line-height: 22px;
+			display: inline-block;
+			height: 25px;
+			&:before {
+				border: none;
+			}
+		}
+		
+	}
+}
+
+.ie8 {
+	.breadcrumb {
+		min-height: 1px;
+		a:after {
+			display: none;
+		}
+		.navigation-pipe {
+			width: 20px;
+		}
+	}
+}

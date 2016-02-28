@@ -1,0 +1,45 @@
+// Mixins
+
+// center vertically and/or horizontally an absolute positioned element
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+
+// Create a arrow 
+
+@mixin arrow($direction, $size, $colour) {
+  width: 0;
+  height: 0;
+  
+  $directions: up, down, left, right;
+  $sides: top, bottom, left, right;
+  $inverse: bottom, top, right, left;
+  
+  @each $side in $sides {
+    $border-colour: transparent;
+    
+    @if nth($inverse, index($directions, $direction)) == $side {
+      $border-colour: $colour;
+    }
+    
+    border-#{$side}: $size solid $border-colour;
+  }
+}

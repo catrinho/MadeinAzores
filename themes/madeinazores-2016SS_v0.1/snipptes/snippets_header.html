@@ -1,0 +1,28 @@
+{*}
+			<div class="header-container">
+				<header id="header">
+					{capture name='displayBanner'}{hook h='displayBanner'}{/capture}
+					{if $smarty.capture.displayBanner}
+						<div class="banner">
+							<div class="container">
+								<div class="row">
+									{$smarty.capture.displayBanner}
+								</div>
+							</div>
+						</div>
+					{/if}
+
+				</header>
+			</div>
+			{*}
+
+
+
+			{*}
+					<div id="slider_row" class="row">
+						{capture name='displayTopColumn'}{hook h='displayTopColumn'}{/capture}
+						{if $smarty.capture.displayTopColumn}
+							<div id="top_column" class="center_column col-xs-12 col-sm-12">{$smarty.capture.displayTopColumn}</div>
+						{/if}
+					</div>
+				{*}	

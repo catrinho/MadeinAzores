@@ -1,0 +1,53 @@
+// BREADCRUMB
+.breadcrumb {
+	display: inline-block;
+	font: 600 10px $font-custom;
+	line-height: 24px;
+	min-height: 6px;
+	overflow: hidden;
+	margin-bottom: 16px;
+	position: relative;
+	z-index: 1;
+	color: $lightBlue-color;
+	.navigation-pipe {
+		display: inline-block;
+		color: $black-color;
+		margin:0 5px;
+	}
+	a {
+		display: inline-block;
+		position: relative;
+		z-index: 2;
+		color: $black-color;
+		text-decoration: none;
+		//width: 38px;
+			text-align: center;
+		&.home {
+			//font-size: 17px;
+			color:$black-color;
+			// width: 38px;
+			text-align: center;
+			padding: 0;
+			z-index: 99;
+			line-height: 22px;
+			display: inline-block;
+			height: 25px;
+			&:before {
+				border: none;
+			}
+		}
+		
+	}
+}
+
+.ie8 {
+	.breadcrumb {
+		min-height: 1px;
+		a:after {
+			display: none;
+		}
+		.navigation-pipe {
+			width: 20px;
+		}
+	}
+}

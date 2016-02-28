@@ -1,0 +1,85 @@
+.nav{
+ 	
+	nav{
+			padding-top:15px;
+			padding-bottom: 30px;
+			@media(min-width: $screen-lg){
+				position: relative;
+			}	
+
+
+			@media (max-width: $screen-xs-max) {
+				padding-bottom: 10px;
+				height: 50px;
+				background-color:$white;
+				width: 100%;
+
+			}	
+						@extend .border-blue;
+
+			// TopMenu - module css
+			#block-top-menu{
+				
+			}
+			
+			#shopping_cart{
+				float:right;
+				position:relative;
+				@extend .top-menu;
+				@extend .a;
+				#cart-trigger{
+					/*.cd-img-replace { //replace text with a background-image 
+						display: inline-block;
+						overflow: hidden;
+						text-indent: 100%;
+						white-space: nowrap;
+					}*/
+				}	
+				@media (max-width: $screen-xs-max) {
+					position: absolute;
+					top: 10px;
+					right: 15px;
+				}		
+			}
+
+			#burgerking{
+				display: block;	
+				@include BurgerKing(20px,2px);
+			}	
+		}
+}		
+
+
+#languages-block-top{
+	position:relative;
+	float:left;	
+	#first-languages{
+		>li{
+			@extend .top-menu;
+			>a{
+				@extend .a;
+			}
+		}	
+		li.selected > span{
+			@extend .active;	
+		}
+		>li+li:before {
+		  padding: 10px 10px;
+		  color: $black;
+	 	  content: "|\00a0";
+		}
+		
+	}		
+
+	@media (max-width: $screen-xs-max) {
+		padding-left:0;
+	}	
+}
+.header_user_info {
+	float:left;
+	position: relative;
+	a{
+		@extend .top-menu;
+		@extend .a;
+	}
+}

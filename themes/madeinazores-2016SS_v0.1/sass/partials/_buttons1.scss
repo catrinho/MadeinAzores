@@ -1,0 +1,105 @@
+@mixin Button($border:3px,$color:#000,$stroke:#000,$bg:transparent,$padding:0){
+  
+  width: auto !important;
+  color: $color;
+  background-color: $bg;
+  padding: $padding !important;
+  border-width: $border !important;
+  border-style:solid;
+  border-color: $stroke;
+  border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  text-decoration:none;
+
+}
+.btn, .btn-default,
+#{$all-buttons} {
+    margin: 40px;
+   @include Button(3px,$black,$black,$white,10px 30px 10px 30px);
+  // appearance: none;
+  // background-color: $action-color;
+  // border: 0;
+  // border-radius: $base-border-radius;
+  // color: #fff;
+   cursor: pointer;
+  // display: inline-block;
+   font-family: $base-font-family;
+   font-size: $base-font-size ;
+   -webkit-font-smoothing: antialiased;
+   font-weight: $font-bold;
+  // line-height: 1;
+  // padding: $small-spacing $base-spacing;
+     text-decoration: none;
+     transition: background-color $base-duration $base-timing;
+     user-select: none;
+     vertical-align: middle;
+     white-space: nowrap;
+     text-transform:uppercase;
+  &:hover,
+  &:focus {
+    background-color: shade($white, 2%);
+    text-decoration: none;
+    //color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: shade($white, 2%);
+    }
+  }
+}
+.button-black{
+   @include Button(3px,$white,$black,$black,10px 30px 10px 30px);
+    &:hover,
+    &:focus {
+    background-color: lighten($black, 5%);
+    color: #fff;
+  }
+}
+
+
+
+.AddCartB-1{
+  position: relative;
+   color: $black;
+   cursor: pointer;
+   white-space: normal;
+   text-transform: uppercase;
+   letter-spacing: 0.115em;
+   font: 700 12px $headings-font-family;
+   @include Button(3px,$black,$black,$white,0px 5px 0px 15px);
+   span{
+    vertical-align: middle;
+   }   
+   i{
+      font-size: 30px;
+    font-weight: 200;
+    margin: 0 10px;
+    vertical-align: middle;
+    font-style: normal;
+   }
+}
+.AddCartB-2{
+  position: relative;
+   color: $black;
+   cursor: pointer;
+   white-space: normal;
+   text-transform: uppercase;
+    letter-spacing: 0.125em;
+   font: 700 11px $heading-font-family;
+   @include Button(3px,$white,$black,$black,0px 5px 0px 15px);
+   span{
+    vertical-align: middle;
+   }   
+   i{
+      font-size: 27px;
+    font-weight: 300;
+    margin: 0 10px;
+    vertical-align: middle;
+    font-style: normal;
+   }
+}

@@ -1,0 +1,90 @@
+//
+// MADE IN AZORES
+//2016 
+//
+// STYLE GUIDE - Variáveis
+
+//Bootstrap Variables
+@import 'bootstrap_lib/_variables';
+
+//------- Importar as Fontes  - Google Fonts;
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700|PT+Serif:400,400italic,700,700italic|PT+Serif+Caption:400,400italic|PT+Sans+Caption:400,700|PT+Sans+Narrow:400,700|PT+Mono);
+/*
+font-family: 'PT Sans', sans-serif;
+
+font-family: 'PT Serif', serif;
+
+font-family: 'PT Serif Caption', serif;
+
+font-family: 'PT Sans Caption', sans-serif;
+
+font-family: 'PT Mono', ;
+*/
+
+// Colors
+$black: #3d3d3d;
+$white: #ffffff;
+$blue:#2A6496;
+$lightblue: #1ea3b0;
+
+//-------------------------------------
+
+// Font Families
+$font-sans-serif-1: 'PT Sans', sans-serif;
+
+$font-sans-serif-2: 'PT Sans Caption', sans-serif;
+
+$font-sans-narrow: 'PT Sans Narrow', sans-serif;
+
+$font-serif-1: 'PT Serif', serif;
+
+$font-serif-2:  'PT Serif Caption', serif;
+
+$font-mono:	'PT Mono',monospace ;
+
+// Type Weights 
+$font-normal: 400; 
+$font-bold: 700;
+
+
+$font-size-base: 1em;// 1// Typography
+$base-font-family: $font-sans-serif-2;
+$heading-font-family: $font-sans-serif-1;
+
+// Font Sizes
+$base-font-size: $font-size-base;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 0;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Font Colors
+$base-font-color: $black;
+$action-color: $lightblue;
+
+
+// Border
+$base-border-color: $black;
+$base-border: 3px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 95%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+//em =16px // or px / em / rem
+
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+

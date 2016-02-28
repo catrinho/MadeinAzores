@@ -1,0 +1,26 @@
+#languages-block-top {
+  position: relative;
+  float: left; }
+  #languages-block-top #first-languages {
+    color: red; }
+    #languages-block-top #first-languages li {
+      float: leftt;
+      font: 600 12px "PT Sans", sans-serif;
+      text-transform: uppercase;
+      color: #3d3d3d;
+      display: inline-block;
+      padding: 10px 0px;
+      text-decoration: none; }
+      #languages-block-top #first-languages li a {
+        color: #3d3d3d; }
+        #languages-block-top #first-languages li a:hover, #languages-block-top #first-languages li a:focus, #languages-block-top #first-languages li a:active {
+          color: #1EA3B0;
+          text-decoration: none; }
+    #languages-block-top #first-languages li.selected > span {
+      color: #1EA3B0; }
+    #languages-block-top #first-languages > li + li:before {
+      padding: 10px 10px;
+      color: #3d3d3d;
+      content: "|\00a0"; }
+
+/*# sourceMappingURL=blocklanguages.css.map */

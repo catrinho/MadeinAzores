@@ -1,0 +1,119 @@
+@import "compass";
+@import "theme_variables";
+
+/* primary_block ***************************************************************************** */
+.primary_block {
+	margin-bottom: 40px;
+
+		/* .pb-left-column ***************************************************************************** */
+	.pb-left-column {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+			
+		#image-block {
+			position: relative;
+			display: block;
+			cursor: pointer;
+			padding: 5px;
+			border: 2px solid green;
+			background: $light-background;
+			@media (max-width: $screen-xs-max) { //max 767px
+				width: 280px;
+				margin: 0 auto;
+			}
+			img {
+				background: $base-box-bg;
+				width: 100%;
+			}
+			/*
+				#view_full_size {
+					.span_link {
+						position: absolute;
+						bottom: 20px;
+						left: 50%;
+						margin-left: -68px;
+						display: block;
+						padding: 10px 0;
+						text-align: center;
+						line-height: 22px;
+						color: #777676;
+						width: 136px;
+						text-align: center;
+						font-weight: 700;
+						background: rgba(255,255,255,0.5);
+						@include box-shadow(0 2px 8px rgba(0,0,0,0.16));
+						&:after{
+							font-family: $font-icon;
+							color: #c0c0c0;
+							font-size: 20px;
+							line-height: 22px;
+							content: "\f00e";
+							font-weight: normal;
+							margin: 0 0 0 4px;
+						}
+						&:hover:after{
+							color: $base-text-color
+						}
+					}
+				}
+				a.jqzoom {
+					div div {
+						img {
+							width: auto;
+							max-width: 10000px;
+						}
+						.zoomWrapper {
+							border: none;
+						}
+					}
+				}
+				.zoomPad {
+					z-index : auto!important;
+				}
+				.new-box,
+				.sale-box {
+					z-index: 5002
+				}
+			*/
+		}
+		
+	}
+	/* pb-left-column ****************************************************************************** */
+	.pb-center-column {
+		margin-bottom: 30px;
+		p {
+			margin-bottom: 10px;
+		}
+		.our_price_display {
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 32px;
+			font-family: $font-custom;
+			color: $product-price-color;
+			@media (max-width: $screen-sm-max) { //max 991px
+				font-size: 26px;
+				line-height: 28px;
+			}
+			.price {
+				font-weight: 400;
+				font-size: 25px;
+				line-height: 30px;
+				color: $product-price-color;
+				@media (max-width: $screen-sm-max) { //max 991px
+					font-size: 22px;
+					line-height: 28px;
+				}
+			}
+		}
+
+		#attributes{
+			label{
+				display: none;
+			}
+		}
+	}	
+
+}
+

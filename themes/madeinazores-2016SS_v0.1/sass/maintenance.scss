@@ -1,0 +1,87 @@
+@import "compass";
+//@import "theme_variables";
+@import "compass/reset";
+@import "madeinazores-vars";
+/*********************************************************************
+					Maintenance Page Styles
+**********************************************************************/
+// #body {
+// 	background-color: #F7F7F7;
+// }
+ #maintenance {
+	margin: 25% 10% 0 15%;
+	//background-color: #fff;
+	//@include box-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+	// @media (min-width: $screen-lg) { // > 1200
+	// 	margin: 126px 0 0 0;
+	// 	padding: 50px;
+	// }
+// 	.logo {
+// 		margin: 0 0 31px 0;
+// 		text-align: center;
+// 	}
+	
+	p{
+		font:16px $base-font-family;
+		color: $white;
+		padding: 0 0 14px;
+		margin: 0 0 19px 0;
+		span{
+			font:12px $base-font-family;
+			margin: 50px 0 19px 0;
+		}
+	}
+	h1 {
+		font: 50px  $base-font-family;
+		color: $white;
+		padding: 0 0 14px 0;
+		margin: 0 0 19px 0;
+	}
+	h5{
+		font: 22px  $base-font-family;
+		color: $white;
+		padding: 0 0 14px 0;
+		margin: 0 0 19px 0;
+	}
+// 	#message {
+// 		font: 14px $font-custom;
+// 		padding: 0 0 0 18px;
+// 		color: #555454;
+// 		text-align: center;
+// 	}
+// }
+// .container {
+// 	padding-right: 15px;
+// 	padding-left: 15px;
+// 	margin-right: auto;
+// 	margin-left: auto;
+// }
+// @media (min-width: 768px) {
+// 	.container {
+// 		width: 500px;
+// 	}
+// }
+// @media (min-width: 992px) {
+// 	.container {
+// 		width: 500px;
+// 	}
+// }
+// @media (min-width: 1200px) {
+// 	.container {
+// 		width: 500px;
+// 	}
+// }
+// @media only screen and (min-width: 1200px) {
+// 	.container {
+// 		padding-left: 0;
+// 		padding-right: 0;
+// 	}
+ }
+.full-back{
+  background: url(http://www.madeinazores.eu/modules/leocamera/images/7c4d3283c9778b23bad4eaa2526189c7.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}

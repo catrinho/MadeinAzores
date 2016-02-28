@@ -1,0 +1,148 @@
+// .table_block{
+// 	.table{
+// 		width: 100%;
+// 		thead th{
+// 			padding: 4px 10px;
+// 			@extend .bold;
+// 		}
+// 		tbody > tr > td {
+// 			padding: 8px 8px;
+// 			vertical-align: middle;
+// 			&.cart_quantity {
+// 				padding: 41px 14px 25px;
+// 				width: 70px;
+// 				.cart_quantity_button {
+// 					margin-top: 3px;
+// 					a {
+// 						float: left;
+// 						margin-right: 3px;
+// 						&+ a {
+// 							margin-right: 0;
+// 						}
+// 					}
+// 				}
+// 			}
+// 			&.cart_delete,
+// 			&.price_discount_del {
+// 				padding: 5px;
+// 			}
+// 		}
+// 		tfoot > tr > td {
+// 			vertical-align: middle;
+// 		}
+// 	}	
+// }
+
+#cart_summary {
+	thead {
+		th {
+			padding: 7px 8px 9px 8px;
+			&.cart_product {
+				@extend .text-center;
+			}
+		}
+	}
+	tbody {
+		td {
+			padding: 7px 8px 9px 8px;
+			@extend .border-black;
+			border-size:2px;
+			&.cart_product {
+				@extend .text-center;
+				padding: 7px;
+				width: 300px;
+				img {
+					//border: 1px solid $table-border-color;
+					width: 80px;
+					height: 80px;
+					float:left
+				}
+				&.cart_description {
+					float: left
+				small {
+					display: block;
+					padding: 5px 0 0 0;
+				}
+			}
+			}
+			&.cart_unit {
+				@extend .text-right;
+				.price {
+					span {
+						display: inline-block;
+						&.price-percent-reduction {
+							margin: 5px auto;
+							display: inline-block;
+						}
+						&.old-price {
+							text-decoration: line-through;
+						}
+					}
+				}
+			}
+			
+			&.cart_avail{
+				@extend .text-center;
+				width: 1%;
+				span {
+					white-space: nowrap;
+				}
+			}
+			&.cart_quantity{
+				.cart_quantity_input {
+					 height: 40px;
+					// line-height: 27px;
+					// padding: 0;
+					text-align: center;
+					 width: 50px;
+					 border-right:none;
+					 float: left;
+					 box-shadow:none;
+				}
+				.cart_quantity_button{
+					height: 40px;
+					width: 50px;
+					float: left;
+					border:$base-border;
+					border-left:none;
+					.cart_quantity_down{
+
+					}
+					.cart_quantity_up{
+
+					}
+				}
+			}
+			&.cart_delete{
+				@extend .text-center;
+				width: 1%;
+			}
+			&.cart_total {
+				@extend .text-right;
+			}
+		}
+	}
+	tfoot {
+		td {
+			&.text-right {
+				font-weight: bold;
+				color: $black;
+			}
+			&.price {
+				text-align: right;
+			}
+			&.total_price_container {
+				span {
+					font: 600 18px / 22px $base-font-family;
+					color: #555454;
+					text-transform: uppercase;
+				}
+			}
+			&#total_price_container {
+				font: 600 21px / 25px $base-font-family;
+				//color: $product-price-color;
+				//background: $light-background;
+			}
+		}
+	}
+}

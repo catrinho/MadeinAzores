@@ -1,0 +1,36 @@
+#categories_block_left {
+  .title_block{
+    display: none;
+  }
+  .block_content > ul {
+    //border-top: 1px solid $base-border-color;
+  }
+  li {
+    position: relative;
+    a {
+      font: 14px $font-custom;
+      font-weight: bold;
+      color: $base-text-color;
+      display: block;
+      line-height: 32px;
+      //border-bottom: 1px solid $base-border-color;
+    }
+    a:hover,
+    a.selected {
+      background: #f6f6f6;
+    }
+  }
+  li.subMenu {
+    >ul.childMenu 
+      display: none;
+
+      li a{
+        font: 14px $font-PTSNarrow;
+        font-weight: bold;
+        color: $base-text-color;
+        display: block;
+        line-height: 32px;
+      }
+    }  
+  }
+}
