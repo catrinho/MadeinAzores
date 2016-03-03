@@ -130,26 +130,26 @@ $(document).ready(function() {
 
 	//---------	
 
-	$('#homefeatured,#blockbestsellers').owlCarousel({
-	    loop:true,
-	    margin:5,
-	    responsiveClass:true,
-	    responsive:{
-	        0:{
-	            items:1,
-	            nav:true
-	        },
-	        600:{
-	            items:2,
-	            nav:false
-	        },
-	        1000:{
-	            items:3,
-	            nav:false,
-	            loop:true
-	        }
-	    }
-	});
+	// $('#homefeatured,#blockbestsellers').owlCarousel({
+	//     loop:true,
+	//     margin:5,
+	//     //responsiveClass:true,
+	//     responsive:{
+	//         0:{
+	//             items:1,
+	//             nav:true
+	//         },
+	//         600:{
+	//             items:2,
+	//             nav:false
+	//         },
+	//         1000:{
+	//             items:3,
+	//             nav:false,
+	//             loop:true
+	//         }
+	//     }
+	// });
 
 });
 
@@ -217,17 +217,17 @@ function responsiveResize()
 	}
 	else if (($(window).width()+scrollCompensate()) >= 768)
 	{
-		accordion('disable');
-		accordionFooter('disable');
+		//accordion('disable');
+		//accordionFooter('disable');
 		responsiveflag = false;
 		$('.nav').removeClass('col-xs-12').detach().prependTo('#center_column');
 		$('.header_user_info,.languages-block').detach().insertAfter('#block_top_menu');
 		if (typeof bindUniform !=='undefined')
 			bindUniform();
 	}
-	blockHover();
+	//blockHover();
 }
-
+/*
 function blockHover(status)
 {
 	var screenLg = $('body').find('.container').width() == 1170;
@@ -256,7 +256,7 @@ function blockHover(status)
 		}
 	});
 }
-/*
+
 function quick_view()
 {
 	$(document).on('click', '.quick-view:visible, .quick-view-mobile:visible', function(e){
@@ -284,8 +284,8 @@ function quick_view()
 				'href':     url + 'content_only=1' + anchor
 			});
 	});
-}*/
-/*
+}
+
 function bindGrid()
 {
 	var storage = false;
@@ -315,8 +315,8 @@ function bindGrid()
 		e.preventDefault();
 		display('list');
 	});
-}*/
-/*
+}
+
 function display(view)
 {
 	if (view == 'list')
@@ -398,7 +398,6 @@ function display(view)
 		$.totalStorage('display', 'grid');
 	}
 }
-*/
 function dropDown()
 {
 	elementClick = '#header .current';
@@ -472,7 +471,7 @@ function accordion(status)
 		$('#left_column, #right_column').removeClass('accordion');
 	}
 }
-
+*/
 function bindUniform()
 {
 	// if (!!$.prototype.uniform){

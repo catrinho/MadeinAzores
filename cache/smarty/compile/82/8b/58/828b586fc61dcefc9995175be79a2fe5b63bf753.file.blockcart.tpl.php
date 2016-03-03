@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-02-28 17:15:55
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-03 19:40:00
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcart/blockcart.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:98853661656d32b4b749844-97660476%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:201522606156d89310a03675-25459252%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '828b586fc61dcefc9995175be79a2fe5b63bf753' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcart/blockcart.tpl',
-      1 => 1456629472,
+      1 => 1457032552,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '98853661656d32b4b749844-97660476',
+  'nocache_hash' => '201522606156d89310a03675-25459252',
   'function' => 
   array (
   ),
@@ -45,9 +45,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56d32b4d31b014_83821364',
+  'unifunc' => 'content_56d89311bb1b41_12217583',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d32b4d31b014_83821364')) {function content_56d32b4d31b014_83821364($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.counter.php';
+<?php if ($_valid && !is_callable('content_56d89311bb1b41_12217583')) {function content_56d89311bb1b41_12217583($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.counter.php';
 if (!is_callable('smarty_modifier_replace')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/modifier.replace.php';
 ?><!--MODULE Block cart -->
 
@@ -238,8 +238,7 @@ if (!is_callable('smarty_modifier_replace')) include '/Users/ruirocha/Sites/PROJ
 		</div>	
 	</div>
 	<div class="cart-box cart_block block exclusive">
-		<?php if ($_smarty_tpl->tpl_vars['products']->value) {?>
-			<div class="cart-subheader">
+		<div class="cart-subheader <?php if ($_smarty_tpl->tpl_vars['products']->value) {?>visible<?php } else { ?>hidden<?php }?> ">
 				<span class="visible-xs"><?php echo smartyTranslate(array('s'=>'Product','mod'=>'blockcart'),$_smarty_tpl);?>
 </span>
 				<span class="hidden-xs"><?php echo smartyTranslate(array('s'=>'Product Description','mod'=>'blockcart'),$_smarty_tpl);?>
@@ -248,7 +247,8 @@ if (!is_callable('smarty_modifier_replace')) include '/Users/ruirocha/Sites/PROJ
 </span>
 				<span><?php echo smartyTranslate(array('s'=>'Price','mod'=>'blockcart'),$_smarty_tpl);?>
 </span>
-			</div>
+		</div>
+		<?php if ($_smarty_tpl->tpl_vars['products']->value) {?>
 			<!-- <div class="products-container"> -->
 				<dl class="products">
 				<?php  $_smarty_tpl->tpl_vars['product'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['product']->_loop = false;
@@ -270,7 +270,9 @@ $_smarty_tpl->tpl_vars['product']->_loop = true;
 					<dt data-id="cart_block_product_<?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product']);?>
 _<?php if ($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']) {?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']);?>
 <?php } else { ?>0<?php }?>_<?php if ($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']) {?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']);?>
-<?php } else { ?>0<?php }?>" class="<?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['first']) {?>first_item<?php } elseif ($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['last']) {?>last_item<?php } else { ?>item<?php }?>">
+<?php } else { ?>0<?php }?>"
+
+					class="<?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['first']) {?>first_item<?php } elseif ($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['last']) {?>last_item<?php } else { ?>item<?php }?>">
 						
 						<div class="cart-info">
 							<a class="cart-images" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getProductLink($_smarty_tpl->tpl_vars['product']->value['id_product'],$_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['product']->value['category']), ENT_QUOTES, 'UTF-8', true);?>
@@ -311,16 +313,21 @@ _<?php if ($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']) {?>
 							</div>
 							
 							<div class="product-remove">
-								<span class="remove_link ajax_cart_block_remove_link">
-								<?php if (!isset($_smarty_tpl->tpl_vars['customizedDatas']->value[$_smarty_tpl->tpl_vars['productId']->value][$_smarty_tpl->tpl_vars['productAttributeId']->value])&&(!isset($_smarty_tpl->tpl_vars['product']->value['is_gift'])||!$_smarty_tpl->tpl_vars['product']->value['is_gift'])) {?>
-									<a class="ajax_cart_block_remove_link" href="<?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product']);?>
+								<span class="remove_link">
+											<?php if (!isset($_smarty_tpl->tpl_vars['customizedDatas']->value[$_smarty_tpl->tpl_vars['productId']->value][$_smarty_tpl->tpl_vars['productAttributeId']->value])&&(!isset($_smarty_tpl->tpl_vars['product']->value['is_gift'])||!$_smarty_tpl->tpl_vars['product']->value['is_gift'])) {?>
+												<a class="ajax_cart_block_remove_link" data-id="cart_block_product_<?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product']);?>
+_<?php if ($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']) {?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']);?>
+<?php } else { ?>0<?php }?>_<?php if ($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']) {?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']);?>
+<?php } else { ?>0<?php }?>"
+					
+					 href="<?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product']);?>
 <?php $_tmp1=ob_get_clean();?><?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']);?>
 <?php $_tmp2=ob_get_clean();?><?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']);?>
 <?php $_tmp3=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('cart',true,null,"delete=1&id_product=".$_tmp1."&ipa=".$_tmp2."&id_address_delivery=".$_tmp3."&token=".((string)$_smarty_tpl->tpl_vars['static_token']->value)), ENT_QUOTES, 'UTF-8', true);?>
 " rel="nofollow" title="<?php echo smartyTranslate(array('s'=>'remove this product from my cart','mod'=>'blockcart'),$_smarty_tpl);?>
 "><span class="cross"></span></a>
-								<?php }?>
-								</span>
+											<?php }?>
+										</span>
 							</div>
 						</div>
 							

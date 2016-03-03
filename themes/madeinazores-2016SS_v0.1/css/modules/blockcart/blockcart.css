@@ -313,90 +313,69 @@
 /************************************************************************
 						Layer Cart Caroucel
 *************************************************************************/
-/*#layer_cart {
-	.crossseling {
-		.crossseling-content {
-			border-top: 1px solid $base-border-color;
-			padding: 26px 30px 40px 30px;
-			position: relative;
-		}
-		h2 {
-			font: 400 23px/26px $font-family;
-			color: $base-text-color;
-			margin-bottom: 25px;
-		}
-		#blockcart_list {
-			max-width: 773px;
-			width: 84%;
-			margin: 0 auto;
-			overflow: hidden;
-			ul {
-				display: block;
-				li {
-					float: left;
-					width: 178px;
-					margin: 0 0px 0 0;
-					.product-image-container {
-						border: 1px solid $base-border-color;
-						text-align: center;
-						padding: 5px;
-						margin-bottom: 15px;
-
-						img {
-							width: 100%;
-						}
-					}
-					.product-name {
-						padding-bottom: 5px;
-
-						a {
-							font-size: 15px;
-							line-height: 20px;
-						}
-					}
-				}
-			}
-			a.bx-prev,
-			a.bx-next {
-				display: block;
-				font-family: $font-icon;
-				font-size: 20px;
-				line-height: 20px;
-				width: 20px;
-				height: 20px;
-				color: $base-text-color;
-				text-indent: -5000px;
-				position: absolute;
-				top: 45%;
-				margin-top: -20px;
-				&:after {
-					display: block;
-					text-indent: 0;
-				}
-				&:hover {
-					color: #c0c0c0;
-				}
-				&.disabled {
-					display: none;
-				}
-			}
-			a.bx-prev {
-				left: 5%;
-				&:after {
-					content: "\f137";
-				}
-			}
-			a.bx-next {
-				right: 5%;
-				&:after {
-					content: "\f138";
-				}
-			}
-			.bx-controls {
-				overflow: hidden;
-			}
-		}
-	}
-}*/
+#layer_cart .crossseling .crossseling-content {
+  border-top: 1px solid #3d3d3d;
+  padding: 26px 30px 40px 30px;
+  position: relative; }
+#layer_cart .crossseling h2 {
+  font: 400 23px/26px Arial, Helvetica, sans-serif;
+  color: #3d3d3d;
+  margin-bottom: 25px; }
+#layer_cart .crossseling #blockcart_list {
+  max-width: 773px;
+  width: 84%;
+  margin: 0 auto;
+  overflow: hidden; }
+  #layer_cart .crossseling #blockcart_list ul {
+    display: block; }
+    #layer_cart .crossseling #blockcart_list ul li {
+      float: left;
+      width: 178px;
+      margin: 0 0px 0 0; }
+      #layer_cart .crossseling #blockcart_list ul li .product-image-container {
+        border: 1px solid #3d3d3d;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 15px; }
+        #layer_cart .crossseling #blockcart_list ul li .product-image-container img {
+          width: 100%; }
+      #layer_cart .crossseling #blockcart_list ul li .product-name {
+        padding-bottom: 5px; }
+        #layer_cart .crossseling #blockcart_list ul li .product-name a {
+          font-size: 15px;
+          line-height: 20px; }
+  #layer_cart .crossseling #blockcart_list a.bx-prev,
+  #layer_cart .crossseling #blockcart_list a.bx-next {
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 20px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    color: #3d3d3d;
+    text-indent: -5000px;
+    position: absolute;
+    top: 45%;
+    margin-top: -20px; }
+    #layer_cart .crossseling #blockcart_list a.bx-prev:after,
+    #layer_cart .crossseling #blockcart_list a.bx-next:after {
+      display: block;
+      text-indent: 0; }
+    #layer_cart .crossseling #blockcart_list a.bx-prev:hover,
+    #layer_cart .crossseling #blockcart_list a.bx-next:hover {
+      color: #c0c0c0; }
+    #layer_cart .crossseling #blockcart_list a.bx-prev.disabled,
+    #layer_cart .crossseling #blockcart_list a.bx-next.disabled {
+      display: none; }
+  #layer_cart .crossseling #blockcart_list a.bx-prev {
+    left: 5%; }
+    #layer_cart .crossseling #blockcart_list a.bx-prev:after {
+      content: "\f137"; }
+  #layer_cart .crossseling #blockcart_list a.bx-next {
+    right: 5%; }
+    #layer_cart .crossseling #blockcart_list a.bx-next:after {
+      content: "\f138"; }
+  #layer_cart .crossseling #blockcart_list .bx-controls {
+    overflow: hidden; }
 
 /*# sourceMappingURL=blockcart.css.map */

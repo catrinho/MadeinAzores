@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-02-28 13:22:43
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-03 19:08:48
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/order-payment-classic.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:37974855756d2f4a3d65976-93721086%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:95913707656d88bc097f778-30002880%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '37974855756d2f4a3d65976-93721086',
+  'nocache_hash' => '95913707656d88bc097f778-30002880',
   'function' => 
   array (
   ),
@@ -67,9 +67,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56d2f4a4c2f1a0_56249249',
+  'unifunc' => 'content_56d88bc1697362_31444540',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d2f4a4c2f1a0_56249249')) {function content_56d2f4a4c2f1a0_56249249($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56d88bc1697362_31444540')) {function content_56d88bc1697362_31444540($_smarty_tpl) {?>
 <div class="paiement_block">
     <div id="HOOK_TOP_PAYMENT"><?php echo $_smarty_tpl->tpl_vars['HOOK_TOP_PAYMENT']->value;?>
 </div>

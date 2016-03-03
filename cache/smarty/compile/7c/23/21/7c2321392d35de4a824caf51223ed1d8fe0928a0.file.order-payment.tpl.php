@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-02-28 13:22:43
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-03 19:08:48
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/order-payment.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:155193273356d2f4a3b77b99-50117023%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:176155842256d88bc08157f0-84908510%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '155193273356d2f4a3b77b99-50117023',
+  'nocache_hash' => '176155842256d88bc08157f0-84908510',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56d2f4a3d52920_34963368',
+  'unifunc' => 'content_56d88bc096e430_03144933',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d2f4a3d52920_34963368')) {function content_56d2f4a3d52920_34963368($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56d88bc096e430_03144933')) {function content_56d88bc096e430_03144933($_smarty_tpl) {?>
 <?php if (!$_smarty_tpl->tpl_vars['opc']->value) {?>
 	<?php $_smarty_tpl->smarty->_tag_stack[] = array('addJsDefL', array('name'=>'txtProduct')); $_block_repeat=true; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'txtProduct'), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
 <?php echo smartyTranslate(array('s'=>'product','js'=>1),$_smarty_tpl);?>

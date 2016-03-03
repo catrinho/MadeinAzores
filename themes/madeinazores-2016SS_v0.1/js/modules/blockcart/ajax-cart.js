@@ -24,7 +24,7 @@
 */
 $(document).ready(function(){
 
-	//ajaxCart.overrideButtonsInThePage();
+	ajaxCart.overrideButtonsInThePage();
 
 	 $(document).on('click', '#cart-close', function(e){
 		e.preventDefault();
@@ -151,7 +151,8 @@ var ajaxCart = {
 		}
 
 		//for 'delete' buttons in the cart block...
-		$(document).off('click', '.cart_block_list .ajax_cart_block_remove_link').on('click', '.cart_block_list .ajax_cart_block_remove_link', function(e){
+		$(document).off('click', '.ajax_cart_block_remove_link').on('click', ' .ajax_cart_block_remove_link', function(e){
+			alert("remoce");
 			e.preventDefault();
 			// Customized product management
 			var customizationId = 0;
@@ -162,6 +163,7 @@ var ajaxCart = {
 
 			if (customizableProductDiv && $(customizableProductDiv).length)
 			{
+				console.log('UPS'+$(this).data('id'));
 				var ids = customizableProductDiv.data('id').split('_');
 				if (typeof(ids[1]) != 'undefined')
 				{
@@ -177,10 +179,15 @@ var ajaxCart = {
 			// Common product management
 			if (!customizationId)
 			{
+				console.log($(this).data('id'));
 				//retrieve idProduct and idCombination from the displayed product in the block cart
-				var firstCut = $(this).parent().parent().data('id').replace('cart_block_product_', '');
-				firstCut = firstCut.replace('deleteCustomizableProduct_', '');
+				//var firstCut = $(this).parent().parent().data('id').replace('cart_block_product_', '');
+				//firstCut = firstCut.replace('deleteCustomizableProduct_', '');
+				var firstCut = $(this).data('id');
+				//var deleterow=firstCut;
+				firstCut = firstCut.replace('cart_block_product_', '');
 				ids = firstCut.split('_');
+				console.log(ids);
 				productId = parseInt(ids[0]);
 
 				if (typeof(ids[1]) != 'undefined')
@@ -189,6 +196,7 @@ var ajaxCart = {
 					idAddressDelivery = parseInt(ids[2]);
 			}
 
+			console.log('sendtoremove - '+productId + productAttributeId + customizationId + idAddressDelivery);
 			// Removing product from the cart
 			ajaxCart.remove(productId, productAttributeId, customizationId, idAddressDelivery);
 		});
@@ -354,21 +362,23 @@ var ajaxCart = {
 					if (jsonData.crossSelling)
 						$('.crossseling').html(jsonData.crossSelling);
 
-					if (idCombination)
+					// if (idCombination)
+					// 	$(jsonData.products).each(function(){
+					// 		// if (this.id != undefined && this.id == parseInt(idProduct) && this.idCombination == parseInt(idCombination))
+					// 		// 	console.log(this.id);
+					// 			// if (contentOnly)
+					// 			// 	window.parent.ajaxCart.updateLayer(this);
+					// 			// else
+					// 			// 	ajaxCart.updateLayer(this);
+					// 	});
+					// else
 						$(jsonData.products).each(function(){
-							if (this.id != undefined && this.id == parseInt(idProduct) && this.idCombination == parseInt(idCombination))
-								if (contentOnly)
-									window.parent.ajaxCart.updateLayer(this);
-								else
-									ajaxCart.updateLayer(this);
-						});
-					else
-						$(jsonData.products).each(function(){
-							if (this.id != undefined && this.id == parseInt(idProduct))
-								if (contentOnly)
-									window.parent.ajaxCart.updateLayer(this);
-								else
-									ajaxCart.updateLayer(this);
+							// if (this.id != undefined && this.id == parseInt(idProduct))
+							// 	// if (contentOnly)
+							// 	// 	window.parent.ajaxCart.updateLayer(this);
+							// 	// else
+							// 	// 	ajaxCart.updateLayer(this);
+								ajaxCart.expand();
 						});
 					if (contentOnly)
 						parent.$.fancybox.close();
@@ -428,6 +438,10 @@ var ajaxCart = {
 				ajaxCart.updateCart(jsonData);
 				if ($('body').attr('id') == 'order' || $('body').attr('id') == 'order-opc')
 					deleteProductFromSummary(idProduct+'_'+idCombination+'_'+customizationId+'_'+idAddressDelivery);
+				//if($().data('delete')==deleterow)
+				console.log($('cart_block_product_'+idCombination+'_'+customizationId+'_'+idAddressDelivery));
+				var rowdelete = 'cart_block_product_'+idCombination+'_'+customizationId+'_'+idAddressDelivery;
+					$(rowdelete).slideUp('slow').remove();
 			},
 			error: function()
 			{
@@ -607,7 +621,8 @@ var ajaxCart = {
 				//create a container for listing the products and hide the 'no product in the cart' message (only if the cart was empty)
 
 				if ($('.cart_block:first dl.products').length == 0)
-				{
+				{	
+					$('.cart-subheader').removeClass('hidden').addClass('visible');
 					$('.cart_block_no_products').before('<dl class="products"></dl>');
 					$('.cart_block_no_products').hide();
 				}
@@ -622,17 +637,19 @@ var ajaxCart = {
 					var content =  '<dt class="unvisible" data-id="cart_block_product_' + domIdProduct + '">';
 					var name = $.trim($('<span />').html(this.name).text());
 					name = (name.length > 12 ? name.substring(0, 10) + '...' : name);
+					content+='<div class="cart-info">';
 					content += '<a class="cart-images" href="' + this.link + '" title="' + name + '"><img  src="' + this.image_cart + '" alt="' + this.name +'"></a>';
-					content += '<div class="cart-info"><div class="product-name">' + '<span class="quantity-formated"><span class="quantity">' + this.quantity + '</span>&nbsp;x&nbsp;</span><a href="' + this.link + '" title="' + this.name + '" class="cart_block_product_name">' + name + '</a></div>';
-					if (this.hasAttributes)
-						  content += '<div class="product-atributes"><a href="' + this.link + '" title="' + this.name + '">' + this.attributes + '</a></div>';
+					content += '<div class="product-name"><a href="' + this.link + '" title="' + this.name + '" class="cart_block_product_name">' + name + '</a></div>';
+					content += '<div class="product-quantity"><span class="quantity-formated"><span class="quantity">' + this.quantity + '</span>&nbsp;x&nbsp;</span></div>';
 					if (typeof(freeProductTranslation) != 'undefined')
-						content += '<span class="price">' + (parseFloat(this.price_float) > 0 ? this.priceByLine : freeProductTranslation) + '</span></div>';
+						content += '<div class="product-price"><span class="price">' + (parseFloat(this.price_float) > 0 ? this.priceByLine : freeProductTranslation) + '</span></div>';
+
+					
 
 					if (typeof(this.is_gift) == 'undefined' || this.is_gift == 0)
-						content += '<span class="remove_link"><a rel="nofollow" class="ajax_cart_block_remove_link" href="' + baseUri + '?controller=cart&amp;delete=1&amp;id_product=' + productId + '&amp;token=' + static_token + (this.hasAttributes ? '&amp;ipa=' + parseInt(this.idCombination) : '') + '"> </a></span>';
+						content += '<div class="product-remove"><span class="remove_link"><a rel="nofollow" class="ajax_cart_block_remove_link" data-id="cart_block_product_'+ domIdProduct + '" href="' + baseUri + '?controller=cart&amp;delete=1&amp;id_product=' + productId + '&amp;token=' + static_token + (this.hasAttributes ? '&amp;ipa=' + parseInt(this.idCombination) : '') + '"><span class="cross"></span></a></span></div>';
 					else
-						content += '<span class="remove_link"></span>';
+						content += '<div class="product-remove"><span class="remove_link"><span class="cross"></span></span></div>';
 					content += '</dt>';
 					if (this.hasAttributes)
 						content += '<dd data-id="cart_block_combination_of_' + domIdProduct + '" class="unvisible">';
@@ -865,6 +882,7 @@ var ajaxCart = {
 			$('.ajax_cart_quantity, .ajax_cart_product_txt_s, .ajax_cart_product_txt, .ajax_cart_total').each(function(){
 				$(this).hide();
 			});
+			$('cart-subheader').removeClass('visible').addClass('hidden');
 			$('.ajax_cart_no_product').show('slow');
 		}
 	}

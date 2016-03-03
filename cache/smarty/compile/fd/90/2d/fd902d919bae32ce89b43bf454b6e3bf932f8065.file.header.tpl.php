@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-02-28 17:15:54
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-03 19:39:59
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:200251726456d32b4ab527b0-23074131%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:154824663156d8930fd542e5-58039582%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '200251726456d32b4ab527b0-23074131',
+  'nocache_hash' => '154824663156d8930fd542e5-58039582',
   'function' => 
   array (
   ),
@@ -51,9 +51,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56d32b4b1ecde2_07637904',
+  'unifunc' => 'content_56d89310438089_51381439',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d32b4b1ecde2_07637904')) {function content_56d32b4b1ecde2_07637904($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_56d89310438089_51381439')) {function content_56d89310438089_51381439($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>

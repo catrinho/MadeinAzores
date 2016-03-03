@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-02-28 13:22:36
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-03 19:10:23
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/order-opc.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:198684522556d2f49ca875d9-93043560%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:5220293256d88c1fdcb0b0-23468896%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '198684522556d2f49ca875d9-93043560',
+  'nocache_hash' => '5220293256d88c1fdcb0b0-23468896',
   'function' => 
   array (
   ),
@@ -39,9 +39,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56d2f49d2cccd7_64335090',
+  'unifunc' => 'content_56d88c204106d3_59399671',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d2f49d2cccd7_64335090')) {function content_56d2f49d2cccd7_64335090($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56d88c204106d3_59399671')) {function content_56d88c204106d3_59399671($_smarty_tpl) {?>
 
 <?php if ($_smarty_tpl->tpl_vars['opc']->value) {?>
 	<?php $_smarty_tpl->tpl_vars["back_order_page"] = new Smarty_variable("order-opc.php", null, 0);?>
