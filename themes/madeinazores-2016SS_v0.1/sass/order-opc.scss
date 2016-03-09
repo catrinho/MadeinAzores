@@ -11,37 +11,40 @@
 		padding-bottom: 20px;
 	}
 	.cart_navigation {
+		top: -110px;
+	    position: relative;
+	    left: -15px;
 		margin-bottom: 53px;
 	}
-	.page-heading.step-num {
-		position: relative;
-		padding-left: 45px;
-		overflow: visible;
-		span {
-			font-weight: bold;
-			font-size: 42px;
-			line-height: 51px;
-			font-style: italic;
-			color: $base-text-color;
-			position: absolute;
-			left: 10px;
-			top: -14px;
-		}
-	}
-	.form-group {
-		margin-bottom: 2px;
-			.form-control {
-				max-width: 271px;
-			}
-	}
-	.lost_password {
-		display: inline-block;
-		text-decoration: underline;
-		margin: 5px 0 14px;
-		&:hover {
-			text-decoration: none;
-		}
-	}
+	// .page-heading {
+	// 	position: relative;
+	// 	padding-left: 45px;
+	// 	overflow: visible;
+	// 	span {
+	// 		font-weight: bold;
+	// 		font-size: px;
+	// 		line-height: 51px;
+	// 		font-style: italic;
+	// 		color: $base-text-color;
+	// 		position: absolute;
+	// 		left: 10px;
+	// 		top: -14px;
+	// 	}
+	// }
+	// .form-group {
+	// 	margin-bottom: 2px;
+	// 		.form-control {
+	// 			max-width: 271px;
+	// 		}
+	// }
+	// .lost_password {
+	// 	display: inline-block;
+	// 	text-decoration: underline;
+	// 	margin: 5px 0 14px;
+	// 	&:hover {
+	// 		text-decoration: none;
+	// 	}
+	// }
 	.title_block {
 		font-weight: bold;
 		color: $base-text-color;
@@ -54,9 +57,9 @@
 		line-height: 22px;
 		margin-bottom: 5px;
 	}
-	.date-select {
-		padding-bottom: 10px;
-	}
+	// .date-select {
+	// 	padding-bottom: 10px;
+	// }
 	.opc-add-save {
 		border-top: 1px solid $base-border-color;
 		margin-top: 20px;

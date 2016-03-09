@@ -6,7 +6,7 @@
 	position: absolute; //fixed;
 	top: 50px;
 	max-height: 70vh;
-	width: 35vw;
+	width: 45vw;
 	min-height: 50vh;
 	/* header height */
 	//padding-top: 50px; 
@@ -53,13 +53,14 @@
 		margin: 0 20px;
 
 		span{
-			&:first-child{
-				margin-left: 100px;
-				width: 150px;
+			&:nth-child(2){
+				margin-left:5vw;
+				width: 15vw;
+				max-width: 200px;
 			}
 			margin:0 5px; 
 			float:left;
-			width: 45px;
+			width: 55px;
 
 			&:last-child{
 				margin-left: 40px;
@@ -206,7 +207,9 @@
 		}
 
 	}
-	.stay-on-bottom{
+	.bottom{
+		position: relative;
+		bottom:0px;
 		width: 100%;
 		background-color:$white;
 	}
@@ -223,6 +226,7 @@
 			max-height:80vh;
 			right: 0;
 			top: 0;
+			height: auto;
 			min-height: 50vh;
 			margin-top: 60px;
 
@@ -255,8 +259,8 @@
 			}	
 
 			.cart-box .products{
-				max-height: 70vh;
-				height: 1000px;
+				max-height: 40vh;
+				height: auto;
 				min-height: 30vh;
 				max-width: 93%;
 				overflow-y: auto;
@@ -319,8 +323,8 @@
 			}	
 
 			.cart-box .products{
-				max-height: 70vh;
-				height: 1000px;
+				max-height: 40vh;
+				height: auto;
 				min-height: 30vh;
 				max-width: 93%;
 				overflow-y: auto;

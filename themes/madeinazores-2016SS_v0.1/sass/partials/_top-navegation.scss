@@ -17,39 +17,53 @@
 			}	
 						@extend .border-blue;
 
-			// TopMenu - module css
-			#block-top-menu{
-				
-			}
-			
-			#shopping_cart{
-				float:right;
-				position:relative;
-				@extend .top-menu;
-				@extend .a;
-				#cart-trigger{
-					/*.cd-img-replace { //replace text with a background-image 
-						display: inline-block;
-						overflow: hidden;
-						text-indent: 100%;
-						white-space: nowrap;
-					}*/
-				}	
-				@media (max-width: $screen-xs-max) {
-					position: absolute;
-					top: 10px;
-					right: 15px;
-				}		
-			}
-
-			#burgerking{
-				display: block;	
-				@include BurgerKing(20px,2px);
-			}	
 		}
-}		
+}	
+.nav-cover{
+	padding-top:15px;
+	height: 50px;
+	position:absolute;
+	z-index:200;
+	nav{
+		position:relative;
+		background-color:transparent !important;
+	}
+}	
 
 
+// TopMenu - module css
+#block-top-menu{
+	
+}
+
+#shopping_cart{
+	float:right;
+	position:relative;
+	@extend .top-menu;
+	@extend .a;
+	#cart-trigger{
+		/*.cd-img-replace { //replace text with a background-image 
+			display: inline-block;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+		}*/
+	}	
+	@media (max-width: $screen-xs-max) {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+	}		
+}
+
+#burgerking,#burgerking-upper{
+	display: block;	
+	@include BurgerKing(20px,2px);
+
+	.white .burger-brick{
+		background-color:$white;
+	}
+}	
 #languages-block-top{
 	position:relative;
 	float:left;	
@@ -81,5 +95,26 @@
 	a{
 		@extend .top-menu;
 		@extend .a;
+	}
+}
+
+
+.myaccount-column{
+	background-color:$white;
+	position:absolute;
+	width:15vw;
+	z-index:60;
+	top:50px;
+	right:-50px;
+	border: 2px #3d3d3d solid;
+
+	ul li{
+		//@extend .top-menu;
+		
+		a{
+			@extend .a;
+			font-size:12px;
+			line-height: 28px;
+		}	
 	}
 }

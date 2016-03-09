@@ -22,6 +22,10 @@
             </li>
             <li><a href="{$link->getPageLink('addresses', true)|escape:'html':'UTF-8'}" title="{l s='Addresses'}"><!-- <i class="icon-building"></i> --><span>{l s='My addresses'}</span></a></li>
             <li><a href="{$link->getPageLink('identity', true)|escape:'html':'UTF-8'}" title="{l s='Information'}"><!-- <i class="icon-user"></i> --><span>{l s='My personal information'}</span></a></li>
+            
+            <li><a class="logout" href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log me out' mod='blockuserinfo'}"<!-- <i class="icon-user"></i><span>{l s='Sign out' mod='blockuserinfo'}</span></a></li>
+            
+        </a>
         </ul>
 	</div>
 {if $voucherAllowed || isset($HOOK_CUSTOMER_ACCOUNT) && $HOOK_CUSTOMER_ACCOUNT !=''}

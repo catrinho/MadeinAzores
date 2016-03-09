@@ -1,7 +1,7 @@
 <div id="opc_new_account" class="opc-main-block">
 	<div id="opc_new_account-overlay" class="opc-overlay" style="display: none;"></div>
-	<h1 class="page-heading step-num"><span>1</span> {l s='Account'}</h1>
-	<form action="{$link->getPageLink('authentication', true, NULL, "back=order-opc")|escape:'html':'UTF-8'}" method="post" id="login_form" class="box">
+	<h1 class="page-heading">{l s='Account'}</h1>
+		<form action="{$link->getPageLink('authentication', true, NULL, "back=order-opc")|escape:'html':'UTF-8'}" method="post" id="login_form" class="box">
 		<fieldset>
 			<h3 class="page-subheading">{l s='Already registered?'}</h3>
 			<p><a href="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" id="openLoginFormBlock">&raquo; {l s='Click here'}</a></p>
@@ -25,6 +25,9 @@
 			</div>
 		</fieldset>
 	</form>
+
+
+
 	<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="new_account_form" class="std" autocomplete="on" autofill="on">
 		<fieldset>
 			<div class="box">
@@ -397,6 +400,7 @@
 			</div>
 		</fieldset>
 	</form>
+
 </div>
 {strip}
 {if isset($guestInformations) && isset($guestInformations.id_state) && $guestInformations.id_state}

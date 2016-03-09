@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-02-28 16:40:12
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-08 15:54:57
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/productcomments//productcomments.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:191358670956d322eccc7268-15999637%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:140234788356def5d1c5dce2-50054987%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '191358670956d322eccc7268-15999637',
+  'nocache_hash' => '140234788356def5d1c5dce2-50054987',
   'function' => 
   array (
   ),
@@ -35,9 +35,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56d322ed46e0c3_88784130',
+  'unifunc' => 'content_56def5d23faf52_92675231',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d322ed46e0c3_88784130')) {function content_56d322ed46e0c3_88784130($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56def5d23faf52_92675231')) {function content_56def5d23faf52_92675231($_smarty_tpl) {?>
 <div id="idTab5">
 	<div id="product_comments_block_tab">
 		<?php if ($_smarty_tpl->tpl_vars['comments']->value) {?>

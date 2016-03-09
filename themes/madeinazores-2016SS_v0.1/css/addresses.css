@@ -61,14 +61,14 @@ font-family: 'PT Mono', ;
   bottom: 0px; }
 
 .border-black {
-  border-bottom: 3px solid #3d3d3d; }
+  border-bottom: 2px solid #3d3d3d; }
 
 .border-blue {
   border-bottom: 3px solid #1ea3b0; }
 
 .top-menu {
   font-family: "PT Sans Caption", sans-serif;
-  font-size: 1.125em;
+  font-size: 11px;
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.13em;
@@ -178,7 +178,7 @@ a {
   color: #1ea3b0; }
 
 hr {
-  border-bottom: 3px solid #3d3d3d;
+  border-bottom: 2px solid #3d3d3d;
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -222,7 +222,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #3d3d3d;
   background-color: #ffffff;
   padding: 10px 30px 10px 30px !important;
-  border-width: 3px !important;
+  border-width: 2px !important;
   border-style: solid;
   border-color: #3d3d3d;
   border-radius: 0px !important;
@@ -258,7 +258,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #ffffff;
   background-color: #3d3d3d;
   padding: 10px 30px 10px 30px !important;
-  border-width: 3px !important;
+  border-width: 2px !important;
   border-style: solid;
   border-color: #3d3d3d;
   border-radius: 0px !important;
@@ -281,7 +281,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #3d3d3d;
   background-color: #ffffff;
   padding: 0px 5px 0px 15px !important;
-  border-width: 3px !important;
+  border-width: 2px !important;
   border-style: solid;
   border-color: #3d3d3d;
   border-radius: 0px !important;
@@ -309,7 +309,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #ffffff;
   background-color: #3d3d3d;
   padding: 0px 5px 0px 15px !important;
-  border-width: 3px !important;
+  border-width: 2px !important;
   border-style: solid;
   border-color: #3d3d3d;
   border-radius: 0px !important;

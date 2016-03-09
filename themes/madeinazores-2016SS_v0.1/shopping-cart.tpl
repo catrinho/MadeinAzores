@@ -2,7 +2,7 @@
 
 {capture name=path}{l s='Your shopping cart'}{/capture}
 
-<h1 id="cart_title" class="page-heading">{l s='Checkout'}
+<h1 id="cart_title" class="page-heading">{l s='Shopping Cart'}
 	{*}{if !isset($empty) && !$PS_CATALOG_MODE}{*}
 		<!-- <span class="heading-counter">{l s='Your shopping cart contains:'}
 			<span id="summary_products_quantity">{$productNumber} {if $productNumber == 1}{l s='product'}{else}{l s='products'}{/if}</span>
@@ -10,21 +10,21 @@
 	{*}{/if}{*}
 </h1>
 
-{*}{if isset($account_created)}{*}
+{if isset($account_created)}
 	<p class="alert alert-success">
 		{l s='Your account has been created.'}
 	</p>
-{*}{/if}{*}
+{/if}
 
 {assign var='current_step' value='summary'}
 {include file="$tpl_dir./order-steps.tpl"}
 {include file="$tpl_dir./errors.tpl"}
 
-{*}{if isset($empty)}{*}
+{if isset($empty)}
 	<p class="alert alert-warning">{l s='Your shopping cart is empty.'}</p>
-{*}{elseif $PS_CATALOG_MODE}{*}
+{elseif $PS_CATALOG_MODE}
 	<p class="alert alert-warning">{l s='This store has not accepted your new order.'}</p>
-{*}{else}{*}
+{else}
 	<p id="emptyCartWarning" class="alert alert-warning unvisible">{l s='Your shopping cart is empty.'}</p>
 
 	{*}{if isset($lastProductAdded) AND $lastProductAdded}
@@ -70,9 +70,9 @@
 					{else}
 						{assign var='col_span_subtotal' value='2'}
 					{/if}
-					<th class="cart_unit item text-right">{l s='Unit price'}</th>
+					<th class="cart_unit item text-center hidden-xs hidden-sm">{l s='Unit price'}</th>
 					<th class="cart_quantity item text-center">{l s='Qty'}</th>
-					<th class="cart_total item text-right">{l s='Total'}</th>
+					<th class="cart_total item text-center">{l s='Total'}</th>
 					<th class="cart_delete last_item">&nbsp;</th>
 				</tr>
 			</thead>
@@ -103,7 +103,7 @@
 
 				{if $use_taxes}
 					{if $priceDisplay}
-						<tr class="cart_total_price">
+						<tr class="cart_total_price 1">
 							<td rowspan="{$rowspan_total}" colspan="3" id="cart_voucher" class="cart_voucher">
 								{if $voucherAllowed}
 									<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
@@ -128,7 +128,7 @@
 							<td colspan="2" class="price" id="total_product">{displayPrice price=$total_products}</td>
 						</tr>
 					{else}
-						<tr class="cart_total_price">
+						<tr class="cart_total_price 2">
 							<td rowspan="{$rowspan_total}" colspan="2" id="cart_voucher" class="cart_voucher">
 								{if $voucherAllowed}
 									<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
@@ -154,7 +154,7 @@
 						</tr>
 					{/if}
 				{else}
-					<tr class="cart_total_price">
+					<tr class="cart_total_price 3">
 						<td rowspan="{$rowspan_total}" colspan="2" id="cart_voucher" class="cart_voucher">
 							{if $voucherAllowed}
 								<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
@@ -307,7 +307,7 @@
 				{/foreach}
 			</tbody>
 
-			{*}{if sizeof($discounts)}
+			{if sizeof($discounts)}
 				<tbody>
 					{foreach $discounts as $discount}
 					{if ((float)$discount.value_real == 0 && $discount.free_shipping != 1) || ((float)$discount.value_real == 0 && $discount.code == '')}
@@ -337,7 +337,7 @@
 						</tr>
 					{/foreach}
 				</tbody>
-			{/if}{*}
+			{/if}
 		</table>
 	</div> <!-- end order-detail-content -->
 
@@ -432,18 +432,21 @@
 				{/foreach}
 			{/if}
 		</div>
-	{*}{/if}{*}
-	<div id="HOOK_SHOPPING_CART">{$HOOK_SHOPPING_CART}</div>
-	<p class="cart_navigation clearfix">
-		{if !$opc}
-			<a  href="{if $back}{$link->getPageLink('order', true, NULL, 'step=1&amp;back={$back}')|escape:'html':'UTF-8'}{else}{$link->getPageLink('order', true, NULL, 'step=1')|escape:'html':'UTF-8'}{/if}" class="button btn btn-default standard-checkout button-medium" title="{l s='Proceed to checkout'}">
-				<span>{l s='Proceed to checkout'}<i class="icon-chevron-right right"></i></span>
-			</a>
-		{/if}
+	{/if}
+	<div class="col-lg-12">
+		<p class="cart_navigation clearfix">
 		<a href="{if (isset($smarty.server.HTTP_REFERER) && ($smarty.server.HTTP_REFERER == $link->getPageLink('order', true) || $smarty.server.HTTP_REFERER == $link->getPageLink('order-opc', true) || strstr($smarty.server.HTTP_REFERER, 'step='))) || !isset($smarty.server.HTTP_REFERER)}{$link->getPageLink('index')}{else}{$smarty.server.HTTP_REFERER|escape:'html':'UTF-8'|secureReferrer}{/if}" class="button-exclusive btn btn-default" title="{l s='Continue shopping'}">
-			<i class="icon-chevron-left"></i>{l s='Continue shopping'}
+			{l s='Continue shopping'}
 		</a>
+		{*if !$opc*}
+			<a href="{if $back}{$link->getPageLink('authentication', true, NULL, 'back={$back}')|escape:'html':'UTF-8'}{else}{$link->getPageLink('order', true, NULL, 'step=1')|escape:'html':'UTF-8'}{/if}" class="button btn btn-default standard-checkout button-medium" title="{l s='Proceed to checkout'}">
+				<span>{l s='Proceed to checkout'}</span>
+			</a>
+		{*/if*}
 	</p>
+	</div>
+	<div id="HOOK_SHOPPING_CART">{$HOOK_SHOPPING_CART}</div>
+	
 	<div class="clear"></div>
 	<div class="cart_navigation_extra">
 		<div id="HOOK_SHOPPING_CART_EXTRA">{if isset($HOOK_SHOPPING_CART_EXTRA)}{$HOOK_SHOPPING_CART_EXTRA}{/if}</div>

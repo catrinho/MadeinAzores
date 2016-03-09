@@ -16,7 +16,7 @@
 .btn, .btn-default,
 #{$all-buttons} {
     margin: 40px;
-   @include Button(3px,$black,$black,$white,10px 30px 10px 30px);
+   @include Button(2px,$black,$black,$white,10px 30px 10px 30px);
   // appearance: none;
   // background-color: $action-color;
   // border: 0;
@@ -53,7 +53,7 @@
   }
 }
 .button-black{
-   @include Button(3px,$white,$black,$black,10px 30px 10px 30px);
+   @include Button(2px,$white,$black,$black,10px 30px 10px 30px);
     &:hover,
     &:focus {
     background-color: lighten($black, 5%);
@@ -71,7 +71,7 @@
    text-transform: uppercase;
    letter-spacing: 0.115em;
    font: 700 12px $headings-font-family;
-   @include Button(3px,$black,$black,$white,0px 5px 0px 15px);
+   @include Button(2px,$black,$black,$white,0px 5px 0px 15px);
    span{
     vertical-align: middle;
    }   
@@ -91,7 +91,7 @@
    text-transform: uppercase;
     letter-spacing: 0.125em;
    font: 700 11px $heading-font-family;
-   @include Button(3px,$white,$black,$black,0px 5px 0px 15px);
+   @include Button(2px,$white,$black,$black,0px 5px 0px 15px);
    span{
     vertical-align: middle;
    }   

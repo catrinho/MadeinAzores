@@ -25,8 +25,8 @@
 {if isset($products) && $products}
 	<h1 class="h2">{l s='Feature Products' mod='homefeatured'}</h1>
 	{include file="$tpl_dir./product-list.tpl" class='homefeatured tab-pane' id='homefeatured'}
-{else}
-{*}<ul id="homefeatured" class="homefeatured tab-pane">
+{*}{else}
+<ul id="homefeatured" class="homefeatured tab-pane">
 	<li class="alert alert-info">{l s='No featured products at this time.' mod='homefeatured'}</li>
 </ul>{*}
 {/if}

@@ -64,7 +64,7 @@
 	}*/
 
 	> a {
-		font: 600 12px $font-custom;
+		font: 600 11px $font-custom;
 		text-transform: uppercase;
 		color: #484848;
 		display: inline-block;
@@ -109,7 +109,7 @@
 }
 .sf-menu li ul {
 	//display: none;
-	border:3px solid #3d3d3d;
+	border:2px solid #3d3d3d;
 	border-top:none;
 	left: 0;
 	top: 36px; /* match top ul list item height */

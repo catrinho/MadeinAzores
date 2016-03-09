@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-02-28 16:40:13
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-08 15:54:58
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/product.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:101061194656d322ed625790-96346461%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:130048796156def5d254f386-92473499%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '101061194656d322ed625790-96346461',
+  'nocache_hash' => '130048796156def5d254f386-92473499',
   'function' => 
   array (
   ),
@@ -76,9 +76,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56d322f10f48c8_26572620',
+  'unifunc' => 'content_56def5d58787d8_45221478',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d322f10f48c8_26572620')) {function content_56d322f10f48c8_26572620($_smarty_tpl) {?><?php if (!is_callable('smarty_function_math')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.math.php';
+<?php if ($_valid && !is_callable('content_56def5d58787d8_45221478')) {function content_56def5d58787d8_45221478($_smarty_tpl) {?><?php if (!is_callable('smarty_function_math')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.math.php';
 if (!is_callable('smarty_modifier_date_format')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/modifier.date_format.php';
 ?>
 <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./errors.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>

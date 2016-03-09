@@ -32,7 +32,7 @@
 		<form id="form" action="{$link->getPageLink('order', true, NULL, "{if $multi_shipping}multi-shipping={$multi_shipping}{/if}")|escape:'html':'UTF-8'}" method="post" name="carrier_area">
 {else}
 	<div id="carrier_area" class="opc-main-block">
-		<h1 class="page-heading step-num"><span>2</span> {l s='Delivery methods'}</h1>
+		<h1 class="page-heading"> {l s='Delivery methods'}</h1>
 			<div id="opc_delivery_methods" class="opc-main-block">
 				<div id="opc_delivery_methods-overlay" class="opc-overlay" style="display: none;"></div>
 {/if}
@@ -296,7 +296,7 @@
 					{/if}
 				</div> <!-- end delivery_options_address -->
 				<div id="extra_carrier" style="display: none;"></div>
-				{if $opc}
+				{*if $opc}
 					<p class="carrier_title">{l s='Leave a message'}</p>
 					<div>
 						<p>{l s='If you would like to add a comment about your order, please write it in the field below.'}</p>
@@ -304,7 +304,7 @@
 							{if isset($oldMessage)}{$oldMessage|escape:'html':'UTF-8'}{/if}
 						{/strip}</textarea>
 					</div>
-				{/if}
+				{/if*}
 				{if $recyclablePackAllowed}
 					<p class="carrier_title">{l s='Recyclable Packaging'}</p>
 					<div class="checkbox recyclable">

@@ -1,27 +1,4 @@
-{*
-* 2007-2015 PrestaShop
-*
-* NOTICE OF LICENSE
-*
-* This source file is subject to the Academic Free License (AFL 3.0)
-* that is bundled with this package in the file LICENSE.txt.
-* It is also available through the world-wide-web at this URL:
-* http://opensource.org/licenses/afl-3.0.php
-* If you did not receive a copy of the license and are unable to
-* obtain it through the world-wide-web, please send an email
-* to license@prestashop.com so we can send you a copy immediately.
-*
-* DISCLAIMER
-*
-* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
-* versions in the future. If you wish to customize PrestaShop for your
-* needs please refer to http://www.prestashop.com for more information.
-*
-*  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2015 PrestaShop SA
-*  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
-*  International Registered Trademark & Property of PrestaShop SA
-*}
+
 {if !$opc}
 	{assign var='current_step' value='address'}
 	{capture name=path}{l s='Addresses'}{/capture}
@@ -32,13 +9,13 @@
 		<form action="{$link->getPageLink($back_order_page, true)|escape:'html':'UTF-8'}" method="post">
 {else}
 	{assign var="back_order_page" value="order-opc.php"}
-	<h1 class="page-heading step-num"><span>1</span> {l s='Addresses'}</h1>
+	<h1 class="page-heading"> {l s='Addresses'}</h1>
 	<div id="opc_account" class="opc-main-block">
 		<div id="opc_account-overlay" class="opc-overlay" style="display: none;"></div>
 {/if}
 <div class="addresses clearfix">
 	<div class="row">
-		<div class="col-xs-12 col-sm-6">
+		<div class="col-xs-12 col-sm-6 col-lg-6">
 			<div class="address_delivery select form-group selector1">
 				<label for="id_address_delivery">{if $cart->isVirtualCart()}{l s='Choose a billing address:'}{else}{l s='Choose a delivery address:'}{/if}</label>
 				<select name="id_address_delivery" id="id_address_delivery" class="address_select form-control">
@@ -54,7 +31,7 @@
 				<label for="addressesAreEquals">{l s='Use the delivery address as the billing address.'}</label>
 			</p>
 		</div>
-		<div class="col-xs-12 col-sm-6">
+		<div class="col-xs-12 col-sm-6 col-lg-6">
 			<div id="address_invoice_form" class="select form-group selector1"{if $cart->id_address_invoice == $cart->id_address_delivery} style="display: none;"{/if}>
 				{if $addresses|@count > 1}
 					<label for="id_address_invoice" class="strong">{l s='Choose a billing address:'}</label>
@@ -86,6 +63,9 @@
 			</ul>
 		</div>
 	</div> <!-- end row -->
+	</br>
+	</br>
+	</br>
 	<p class="address_add submit">
 		<a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1{if $back}&mod={$back}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="button button-small btn btn-default">
 			<span>{l s='Add a new address'}<i class="icon-chevron-right right"></i></span>

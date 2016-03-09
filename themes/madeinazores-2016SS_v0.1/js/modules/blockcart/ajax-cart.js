@@ -29,10 +29,12 @@ $(document).ready(function(){
 	 $(document).on('click', '#cart-close', function(e){
 		e.preventDefault();
 		ajaxCart.collapse();
+		$('body').removeAttr("style");
 	});
 	$(document).on('click', '#cart-trigger', function(e){
 		e.preventDefault();
 		ajaxCart.expand();
+		$('body').css('overflow','hidden');
 	});
 
 	var current_timestamp = parseInt(new Date().getTime() / 1000);
@@ -206,6 +208,18 @@ var ajaxCart = {
 		if ($('#drop-cart').hasClass('collapsed'))
 		{
 
+			compensante = scrollCompensate();
+			// if (($(window).width()+scrollCompensate()) <= 767 && responsiveflag == false)
+			// {
+			// 		$('html,body').animate({
+			//         scrollTop: $("#top_row").offset().top
+			//     }, 700);
+			// }else if (($(window).width()+scrollCompensate()) >= 768){
+			// 	$('html,body').animate({
+			//         scrollTop: $("#center_column").offset().top
+			//     }, 700);
+			// }
+
 			//$('.cart_block_list.collapsed').slideDown({
 			$('#drop-cart').slideDown({
 				duration: 250,
@@ -218,7 +232,7 @@ var ajaxCart = {
 					$(this).addClass('expanded');//.removeClass('collapsed');
 					
 				}
-			});
+			});		
 
 			// save the expand statut in the user cookie
 			$.ajax({
@@ -656,6 +670,7 @@ var ajaxCart = {
 					if (this.hasCustomizedDatas)
 						content += ajaxCart.displayNewCustomizedDatas(this);
 					if (this.hasAttributes) content += '</dd>';
+					
 
 					$('.cart_block dl.products').append(content);
 				}

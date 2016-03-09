@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAWQ,mNAA2M;AACnN;;;;;;;;;;EAUE;ACpBF;;gFAEgF;AAChF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;iFA0EiF;AACjF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAoFE",
+"sources": ["../../../sass/_madeinazores-vars.scss","../../../sass/modules/headerslider/headerslider.scss"],
+"names": [],
+"file": "headerslider.css"
+}

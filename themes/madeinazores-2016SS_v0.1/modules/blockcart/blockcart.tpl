@@ -239,7 +239,7 @@
 			{l s='No products' mod='blockcart'}
 		</h3>
 	</div>
-	<div class="stay-on-bottom">
+	<div class="bottom">
 		<div class="cart-total">
 			<p class="price cart_block_total ajax_block_cart_total">{l s='Total' mod='blockcart'}: <span>{$total}</span></p>
 		</div> <!-- cd-cart-total -->

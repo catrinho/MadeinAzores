@@ -1,20 +1,22 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-03 19:39:59
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-08 23:42:48
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:154824663156d8930fd542e5-58039582%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:132349750056dde600c55735-35580190%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fd902d919bae32ce89b43bf454b6e3bf932f8065' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/header.tpl',
-      1 => 1456677079,
+      1 => 1457480560,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '154824663156d8930fd542e5-58039582',
+  'nocache_hash' => '132349750056dde600c55735-35580190',
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_56dde6018eff06_31101475',
   'variables' => 
   array (
     'language_code' => 0,
@@ -50,10 +52,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'HOOK_TOP' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56d89310438089_51381439',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d89310438089_51381439')) {function content_56d89310438089_51381439($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_56dde6018eff06_31101475')) {function content_56dde6018eff06_31101475($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
@@ -134,10 +134,49 @@ $_smarty_tpl->tpl_vars['js_uri']->_loop = true;
 </span><?php }?></p>
 			</div>
 		<?php }?>
+
+		<?php $_smarty_tpl->_capture_stack[0][] = array('displayBanner', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayBanner'),$_smarty_tpl);?>
+<?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
+if (!empty($_capture_buffer)) {
+ if (isset($_capture_assign)) $_smarty_tpl->assign($_capture_assign, ob_get_contents());
+ if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
+ Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
+} else $_smarty_tpl->capture_error();?>
+
+		<?php if (Smarty::$_smarty_vars['capture']['displayBanner']) {?>
 		<header id="header">
+		<!-- banner -->	
+			<?php $_smarty_tpl->_capture_stack[0][] = array('displayNav', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayNav'),$_smarty_tpl);?>
+<?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
+if (!empty($_capture_buffer)) {
+ if (isset($_capture_assign)) $_smarty_tpl->assign($_capture_assign, ob_get_contents());
+ if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
+ Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
+} else $_smarty_tpl->capture_error();?>
+						<?php if (Smarty::$_smarty_vars['capture']['displayNav']) {?>
+							 <div class="nav-cover " >
+								<div class="container">
+									<div class="row">
+										<nav class="col-xs-12">
+											<div id="burgerking">
+												<div class="burger white">
+										          <div class="burger-brick"></div>
+										          <div class="burger-brick middle"></div>
+										          <div class="burger-brick"></div>
+										        </div>
+										    </div>  
+										</nav>
+
+									</div>
+								</div>
+							</div> 
+						<?php }?>
+							<?php echo Smarty::$_smarty_vars['capture']['displayBanner'];?>
+
 				
-					
-		</header>			
+				<span class="arrow"></span>
+		</header>				
+		<?php }?>						
 		<div id="page">
 			<div class="columns-container">
 				<div id="columns" class="container">
@@ -181,7 +220,7 @@ if (!empty($_capture_buffer)) {
 										</div>
 									</div>
 								<?php }?>
-									<div id="top_row" class="menu-top">
+									<div id="top-hook" class="menu-top">
 										<div class="container">
 											<div class="row">
 												

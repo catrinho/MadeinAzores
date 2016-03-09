@@ -33,7 +33,7 @@ $(document).ready(function(){
 	if (typeof(homeslider_loop) == 'undefined')
 		homeslider_loop = true;
 	if (typeof(homeslider_width) == 'undefined')
-		homeslider_width = 1200;
+		homeslider_width = 779;
 
 
 	$('.homeslider-description').click(function () {
@@ -59,13 +59,4 @@ $(document).ready(function(){
 			pause: homeslider_pause,
 			controls: true
 		});
-
-
- // $("#homeslider").owlCarousel({
- //      navigation : true, // Show next and prev buttons
- //      slideSpeed : 300,
- //      paginationSpeed : 400,
- //      singleItem:true
- // });
-
-});	 
+});

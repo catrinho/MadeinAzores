@@ -3838,14 +3838,14 @@ td.visible-print {
   bottom: 0px; }
 
 .border-black {
-  border-bottom: 3px solid #3d3d3d; }
+  border-bottom: 2px solid #3d3d3d; }
 
 .border-blue {
   border-bottom: 3px solid #1ea3b0; }
 
 .top-menu {
   font-family: "PT Sans Caption", sans-serif;
-  font-size: 1.125em;
+  font-size: 11px;
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.13em;
@@ -3964,7 +3964,7 @@ ul.product_list.grid li.item .product-container .button-container .lnk_view {
   color: #1ea3b0; }
 
 hr {
-  border-bottom: 3px solid #3d3d3d;
+  border-bottom: 2px solid #3d3d3d;
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -4032,7 +4032,7 @@ select {
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea, textarea,
 select[multiple] {
   background-color: #fff;
-  border: 3px solid #3d3d3d;
+  border: 2px solid #3d3d3d;
   border-radius: 0;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
@@ -4056,10 +4056,10 @@ select[multiple] {
     cursor: not-allowed; }
     input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover, textarea:disabled:hover,
     select[multiple]:disabled:hover {
-      border: 3px solid #3d3d3d; }
+      border: 2px solid #3d3d3d; }
 
 textarea {
-  border: 3px solid #3d3d3d;
+  border: 2px solid #3d3d3d;
   resize: vertical; }
 
 [type="search"] {
@@ -4086,7 +4086,7 @@ textarea {
   top: 2px;
   width: 15px;
   height: 15px;
-  border: 3px solid #3d3d3d;
+  border: 2px solid #3d3d3d;
   background: #fff;
   border-radius: 0px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3); }
@@ -4130,14 +4130,14 @@ textarea {
   width: 100%; }
 
 .form-control {
-  border: 3px solid #3d3d3d;
+  border: 2px solid #3d3d3d;
   height: 40px; }
   .form-control .select-hidden {
     display: none;
     visibility: hidden;
     padding-right: 10px; }
   .form-control .select {
-    border: 3px solid #3d3d3d;
+    border: 2px solid #3d3d3d;
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -4233,7 +4233,7 @@ textarea {
     visibility: hidden;
     padding-right: 10px; }
   .form-group .select {
-    border: 3px solid #3d3d3d;
+    border: 2px solid #3d3d3d;
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -4334,7 +4334,7 @@ textarea {
   visibility: hidden;
   padding-right: 10px; }
 .attribute_list .select {
-  border: 3px solid #3d3d3d;
+  border: 2px solid #3d3d3d;
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -4450,7 +4450,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #3d3d3d;
   background-color: #ffffff;
   padding: 10px 30px 10px 30px !important;
-  border-width: 3px !important;
+  border-width: 2px !important;
   border-style: solid;
   border-color: #3d3d3d;
   border-radius: 0px !important;
@@ -4486,7 +4486,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #ffffff;
   background-color: #3d3d3d;
   padding: 10px 30px 10px 30px !important;
-  border-width: 3px !important;
+  border-width: 2px !important;
   border-style: solid;
   border-color: #3d3d3d;
   border-radius: 0px !important;
@@ -4509,7 +4509,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #3d3d3d;
   background-color: #ffffff;
   padding: 0px 5px 0px 15px !important;
-  border-width: 3px !important;
+  border-width: 2px !important;
   border-style: solid;
   border-color: #3d3d3d;
   border-radius: 0px !important;
@@ -4537,7 +4537,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #ffffff;
   background-color: #3d3d3d;
   padding: 0px 5px 0px 15px !important;
-  border-width: 3px !important;
+  border-width: 2px !important;
   border-style: solid;
   border-color: #3d3d3d;
   border-radius: 0px !important;
@@ -4747,11 +4747,8 @@ ul.product_list.grid li.item {
         height: 345px;
         margin: 20px; } }
     ul.product_list.grid li.item .product-container .product-image-container {
-      border: 1px solid green;
       margin-bottom: 13px;
       position: relative; }
-      ul.product_list.grid li.item .product-container .product-image-container img {
-        border: 1px solid blue; }
       @media (max-width: 767px) {
         ul.product_list.grid li.item .product-container .product-image-container {
           margin-left: auto;

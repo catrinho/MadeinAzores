@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-03 19:40:00
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-07 20:35:14
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcart/blockcart.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:201522606156d89310a03675-25459252%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:23886214756dde602124d33-71148168%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '828b586fc61dcefc9995175be79a2fe5b63bf753' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcart/blockcart.tpl',
-      1 => 1457032552,
+      1 => 1457050560,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '201522606156d89310a03675-25459252',
+  'nocache_hash' => '23886214756dde602124d33-71148168',
   'function' => 
   array (
   ),
@@ -45,9 +45,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56d89311bb1b41_12217583',
+  'unifunc' => 'content_56dde60388c3b8_97726286',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56d89311bb1b41_12217583')) {function content_56d89311bb1b41_12217583($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.counter.php';
+<?php if ($_valid && !is_callable('content_56dde60388c3b8_97726286')) {function content_56dde60388c3b8_97726286($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.counter.php';
 if (!is_callable('smarty_modifier_replace')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/modifier.replace.php';
 ?><!--MODULE Block cart -->
 
@@ -391,7 +391,7 @@ _<?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_address_delivery
 
 		</h3>
 	</div>
-	<div class="stay-on-bottom">
+	<div class="bottom">
 		<div class="cart-total">
 			<p class="price cart_block_total ajax_block_cart_total"><?php echo smartyTranslate(array('s'=>'Total','mod'=>'blockcart'),$_smarty_tpl);?>
 : <span><?php echo $_smarty_tpl->tpl_vars['total']->value;?>

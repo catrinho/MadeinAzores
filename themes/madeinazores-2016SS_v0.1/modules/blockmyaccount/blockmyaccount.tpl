@@ -2,11 +2,11 @@
 
 <!-- Block myaccount module -->
 <div class="block myaccount-column">
-	<p class="title_block">
+	{*}<p class="title_block">
 		<a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='My account' mod='blockmyaccount'}">
 			{l s='My account' mod='blockmyaccount'}
 		</a>
-	</p>
+	</p>{*}
 	<div class="block_content list-block">
 		<ul>
 			<li>
@@ -42,16 +42,15 @@
 					</a>
 				</li>
 			{/if}
-			{$HOOK_BLOCK_MY_ACCOUNT}
-		</ul>
-		<div class="logout">
-			<a 
-			class="btn btn-default button button-small" 
+			<li>
+				<a 
 			href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html':'UTF-8'}" 
 			title="{l s='Sign out' mod='blockmyaccount'}">
-				<span>{l s='Sign out' mod='blockmyaccount'}<i class="icon-chevron-right right"></i></span>
+				<span>{l s='Sign out' mod='blockmyaccount'}</span>
 			</a>
-		</div>
+			</li>
+			{$HOOK_BLOCK_MY_ACCOUNT}
+		</ul>
 	</div>
 </div>
 <!-- /Block myaccount module -->

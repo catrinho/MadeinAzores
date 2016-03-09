@@ -45,28 +45,36 @@
 				<p>{l s='You cannot place a new order from your country.'}{if isset($geolocation_country) && $geolocation_country} <span class="bold">{$geolocation_country|escape:'html':'UTF-8'}</span>{/if}</p>
 			</div>
 		{/if}
+
+		{capture name='displayBanner'}{hook h='displayBanner'}{/capture}
+
+		{if $smarty.capture.displayBanner}
 		<header id="header">
-				{*}	{capture name='displayBanner'}{hook h='displayBanner'}{/capture}
-					{if $smarty.capture.displayBanner}
-						<div class="banner">
-							<div class="container">
-								<div class="row">
-									{$smarty.capture.displayBanner}
-								</div>
-							</div>
-						</div>
-					{/if}{*}
-					{*}{capture name='displayNav'}{hook h='displayNav'}{/capture}
-								{if $smarty.capture.displayNav}
-									<div class="nav" >
-										<div class="container">
-											<div class="row">
-												<nav>{$smarty.capture.displayNav}</nav>
-											</div>
-										</div>
+		<!-- banner -->	
+			{capture name='displayNav'}{hook h='displayNav'}{/capture}
+						{if $smarty.capture.displayNav}
+							 <div class="nav-cover " >
+								<div class="container">
+									<div class="row">
+										<nav class="col-xs-12">
+											<div id="burgerking">
+												<div class="burger white">
+										          <div class="burger-brick"></div>
+										          <div class="burger-brick middle"></div>
+										          <div class="burger-brick"></div>
+										        </div>
+										    </div>  
+										</nav>
+
 									</div>
-								{/if}{*}
-		</header>			
+								</div>
+							</div> 
+						{/if}
+							{$smarty.capture.displayBanner}
+				
+				<span class="arrow"></span>
+		</header>				
+		{/if}						
 		<div id="page">
 			<div class="columns-container">
 				<div id="columns" class="container">
@@ -97,7 +105,7 @@
 										</div>
 									</div>
 								{/if}
-									<div id="top_row" class="menu-top">
+									<div id="top-hook" class="menu-top">
 										<div class="container">
 											<div class="row">
 												
