@@ -1,0 +1,11 @@
+Temos sentido a sua falta em {shop_name}
+
+Olá {firstname} {lastname},
+ 
+É um dos nossos melhores clientes, no entanto verificámos que não efetua nenhuma encomenda à {days_threshold} dias.
+
+Queremos agradecer-lhe pela confiança que tem depositado  em nós, e dar-lhe um desconto de {amount}% válido na sua próxima encomenda! Esta oferta é válida por {days} dias, por isso não perca mais tempo!
+ 
+Aqui tem o seu vale de desconto: {voucher_num}
+
+Introduza este código no seu carrinho de compras para ter o seu desconto.

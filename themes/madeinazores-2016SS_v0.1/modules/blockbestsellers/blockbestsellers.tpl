@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<!-- MODULE Block best sellers -->
+<!-- MODULE Block bes   t sellers -->
 
 <div id="best-sellers_block_right" class="block products_block">
 	<h4 class="title_block">

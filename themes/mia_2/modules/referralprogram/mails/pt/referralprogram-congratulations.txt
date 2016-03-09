@@ -1,0 +1,9 @@
+Parabéns!
+
+O amigo que indicou, {sponsored_firstname} {sponsored_lastname} fez a sua primeira encomenda em {shop_url} !
+
+Temos o prazer de oferecer um vale de desconto {discount_display} (voucher # {discount_name}) que pode usar na sua próxima encomenda.
+
+
+
+{shop_url} Powered by PrestaShop™

@@ -1,0 +1,31 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{blockcategories}mia_2>blockcategories_footer_af1b98adf7f686b84cd0b443e022b7a0'] = 'Categorias';
+$_MODULE['<{blockcategories}mia_2>blockcategories_8f0ed7c57fca428f7e3f8e64d2f00918'] = 'Bloco de Categorias';
+$_MODULE['<{blockcategories}mia_2>blockcategories_15a6f5841d9e4d7e62bec3319b4b7036'] = 'Adiciona um Bloco com Categorias de Produtos';
+$_MODULE['<{blockcategories}mia_2>blockcategories_b15e7271053fe9dd22d80db100179085'] = 'Este módulo precisa de ser anexado a uma coluna e o seu tema não tem uma implementada';
+$_MODULE['<{blockcategories}mia_2>blockcategories_23e0d4ecc25de9b2777fdaca3e2f3193'] = 'Máxima profundidade: número inválido';
+$_MODULE['<{blockcategories}mia_2>blockcategories_0cf328636f0d607ac24a5c435866b94b'] = 'HTML Dinâmico: escolha inválida.';
+$_MODULE['<{blockcategories}mia_2>blockcategories_f4f70727dc34561dfde1a3c529b6205c'] = 'Configurações.';
+$_MODULE['<{blockcategories}mia_2>blockcategories_1379a6b19242372c1f23cc9adedfcdd6'] = 'Raíz das Categorias';
+$_MODULE['<{blockcategories}mia_2>blockcategories_8cf04a9734132302f96da8e113e80ce5'] = 'Início';
+$_MODULE['<{blockcategories}mia_2>blockcategories_222a267cc5778206b253be35ee3ddab5'] = 'Actual';
+$_MODULE['<{blockcategories}mia_2>blockcategories_19561e33450d1d3dfe6af08df5710dd0'] = 'Máxima profundidade';
+$_MODULE['<{blockcategories}mia_2>blockcategories_4a99c9eebe78078e29e6193e05eac626'] = 'Configure a profundidade máxima dos subníveis apresentados neste bloco (0= infinito).';
+$_MODULE['<{blockcategories}mia_2>blockcategories_971fd8cc345d8bd9f92e9f7d88fdf20c'] = 'Dinâmico';
+$_MODULE['<{blockcategories}mia_2>blockcategories_e16f248b047fb7d0c97dcc19b17296a3'] = 'Activar modo Dinâmico (animado) para subníveis. ';
+$_MODULE['<{blockcategories}mia_2>blockcategories_00d23a76e43b46dae9ec7aa9dcbebb32'] = 'Activado';
+$_MODULE['<{blockcategories}mia_2>blockcategories_b9f5c797ebbf55adccdd8539a65a0241'] = 'Desactivado';
+$_MODULE['<{blockcategories}mia_2>blockcategories_6b46ae48421828d9973deec5fa9aa0c3'] = 'Ordenar';
+$_MODULE['<{blockcategories}mia_2>blockcategories_54e4f98fb34254a6678f0795476811ed'] = 'Por nome';
+$_MODULE['<{blockcategories}mia_2>blockcategories_883f0bd41a4fcee55680446ce7bec0d9'] = 'Por posição ';
+$_MODULE['<{blockcategories}mia_2>blockcategories_06f1ac65b0a6a548339a38b348e64d79'] = 'Ordenar ordem';
+$_MODULE['<{blockcategories}mia_2>blockcategories_e3cf5ac19407b1a62c6fccaff675a53b'] = 'Descendente';
+$_MODULE['<{blockcategories}mia_2>blockcategories_cf3fb1ff52ea1eed3347ac5401ee7f0c'] = 'Ascendente';
+$_MODULE['<{blockcategories}mia_2>blockcategories_5f73e737cedf8f4ccf880473a7823005'] = 'Quantas colunas de rodapé pretende?';
+$_MODULE['<{blockcategories}mia_2>blockcategories_c9cc8cce247e49bae79f15173ce97354'] = 'Guardar';
+$_MODULE['<{blockcategories}mia_2>blockcategories_af1b98adf7f686b84cd0b443e022b7a0'] = 'Categorias';
+$_MODULE['<{blockcategories}mia_2>blockcategories_admin_c69d9eead832257f587f7c9ec0026fe2'] = 'Pode fazer o upload até um máximo de 3 imagens.';
+$_MODULE['<{blockcategories}mia_2>blockcategories_admin_acc66e14d297c1bfc20986bf593cb054'] = 'Miniaturas';

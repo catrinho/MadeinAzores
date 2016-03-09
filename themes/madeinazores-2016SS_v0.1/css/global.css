@@ -2051,7 +2051,7 @@ td.visible-print {
 .border-blue, .nav nav {
   border-bottom: 3px solid #1ea3b0; }
 
-.top-menu, #shopping_cart, #languages-block-top #first-languages > li, .header_user_info a {
+.top-menu, .footer-container .footer-block .toggle-footer li, #shopping_cart, #languages-block-top #first-languages > li, .header_user_info a {
   font-family: "PT Sans Caption", sans-serif;
   font-size: 11px;
   display: block;
@@ -2136,7 +2136,7 @@ p {
 i, cite, em {
   font-style: italic; }
 
-strong, b, .bold, .top-menu, #shopping_cart, #languages-block-top #first-languages > li, .header_user_info a, h1,
+strong, b, .bold, .top-menu, .footer-container .footer-block .toggle-footer li, #shopping_cart, #languages-block-top #first-languages > li, .header_user_info a, h1,
 h2,
 h3,
 h4,
@@ -2152,11 +2152,11 @@ a {
   a:active, a:focus, a:hover {
     color: #1a8b96; }
 
-.a, #page #left_column aside #categories_block_left .block_content ul li > a, #page #left_column aside #categories_block_left .block_content ul li > ul.childMenu li > a, #center_column #page-content #cart_summary tbody td.cart_product .cart_description p a, #center_column #page-content #cart_summary tbody td.cart_product .cart_description small a, #shopping_cart, #languages-block-top #first-languages > li > a, .header_user_info a, .myaccount-column ul li a, #drop-cart .cart-box .products .cart-info .product-name a {
+.a, #page #left_column aside #categories_block_left .block_content ul li > a, #page #left_column aside #categories_block_left .block_content ul li > ul.childMenu li > a, #center_column #page-content #cart_summary tbody td.cart_product .cart_description p a, #center_column #page-content #cart_summary tbody td.cart_product .cart_description small a, .footer-container .footer-block .toggle-footer li a, #shopping_cart, #languages-block-top #first-languages > li > a, .header_user_info a, .myaccount-column ul li a, #drop-cart .cart-box .products .cart-info .product-name a {
   color: #3d3d3d;
   text-decoration: none;
   transition: color 150ms ease; }
-  .a:active, #page #left_column aside #categories_block_left .block_content ul li > a:active, #page #left_column aside #categories_block_left .block_content ul li > ul.childMenu li > a:active, #center_column #page-content #cart_summary tbody td.cart_product .cart_description p a:active, #center_column #page-content #cart_summary tbody td.cart_product .cart_description small a:active, #shopping_cart:active, #languages-block-top #first-languages > li > a:active, .header_user_info a:active, .myaccount-column ul li a:active, #drop-cart .cart-box .products .cart-info .product-name a:active, .a:focus, #page #left_column aside #categories_block_left .block_content ul li > a:focus, #page #left_column aside #categories_block_left .block_content ul li > ul.childMenu li > a:focus, #center_column #page-content #cart_summary tbody td.cart_product .cart_description p a:focus, #center_column #page-content #cart_summary tbody td.cart_product .cart_description small a:focus, #shopping_cart:focus, #languages-block-top #first-languages > li > a:focus, .header_user_info a:focus, .myaccount-column ul li a:focus, #drop-cart .cart-box .products .cart-info .product-name a:focus, .a:hover, #page #left_column aside #categories_block_left .block_content ul li > a:hover, #page #left_column aside #categories_block_left .block_content ul li > ul.childMenu li > a:hover, #center_column #page-content #cart_summary tbody td.cart_product .cart_description p a:hover, #center_column #page-content #cart_summary tbody td.cart_product .cart_description small a:hover, #shopping_cart:hover, #languages-block-top #first-languages > li > a:hover, .header_user_info a:hover, .myaccount-column ul li a:hover, #drop-cart .cart-box .products .cart-info .product-name a:hover {
+  .a:active, #page #left_column aside #categories_block_left .block_content ul li > a:active, #page #left_column aside #categories_block_left .block_content ul li > ul.childMenu li > a:active, #center_column #page-content #cart_summary tbody td.cart_product .cart_description p a:active, #center_column #page-content #cart_summary tbody td.cart_product .cart_description small a:active, .footer-container .footer-block .toggle-footer li a:active, #shopping_cart:active, #languages-block-top #first-languages > li > a:active, .header_user_info a:active, .myaccount-column ul li a:active, #drop-cart .cart-box .products .cart-info .product-name a:active, .a:focus, #page #left_column aside #categories_block_left .block_content ul li > a:focus, #page #left_column aside #categories_block_left .block_content ul li > ul.childMenu li > a:focus, #center_column #page-content #cart_summary tbody td.cart_product .cart_description p a:focus, #center_column #page-content #cart_summary tbody td.cart_product .cart_description small a:focus, .footer-container .footer-block .toggle-footer li a:focus, #shopping_cart:focus, #languages-block-top #first-languages > li > a:focus, .header_user_info a:focus, .myaccount-column ul li a:focus, #drop-cart .cart-box .products .cart-info .product-name a:focus, .a:hover, #page #left_column aside #categories_block_left .block_content ul li > a:hover, #page #left_column aside #categories_block_left .block_content ul li > ul.childMenu li > a:hover, #center_column #page-content #cart_summary tbody td.cart_product .cart_description p a:hover, #center_column #page-content #cart_summary tbody td.cart_product .cart_description small a:hover, .footer-container .footer-block .toggle-footer li a:hover, #shopping_cart:hover, #languages-block-top #first-languages > li > a:hover, .header_user_info a:hover, .myaccount-column ul li a:hover, #drop-cart .cart-box .products .cart-info .product-name a:hover {
     color: #1ea3b0;
     text-decoration: none; }
 
@@ -2345,7 +2345,7 @@ textarea {
     font-weight: 700;
     width: auto;
     color: #3d3d3d;
-    min-width: 170px;
+    min-width: 140px;
     height: 40px; }
     @media (max-width: 767px) {
       .form-control .select {
@@ -2396,6 +2396,7 @@ textarea {
     max-height: 45vh;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+    border: 2px solid #3d3d3d;
     display: none;
     position: absolute;
     text-align: right;
@@ -2441,7 +2442,7 @@ textarea {
     font-weight: 700;
     width: auto;
     color: #3d3d3d;
-    min-width: 170px;
+    min-width: 140px;
     height: 40px; }
     @media (max-width: 767px) {
       .form-group .select {
@@ -2492,6 +2493,7 @@ textarea {
     max-height: 45vh;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+    border: 2px solid #3d3d3d;
     display: none;
     position: absolute;
     text-align: right;
@@ -2542,7 +2544,7 @@ textarea {
   font-weight: 700;
   width: auto;
   color: #3d3d3d;
-  min-width: 170px;
+  min-width: 140px;
   height: 40px; }
   @media (max-width: 767px) {
     .attribute_list .select {
@@ -2593,6 +2595,7 @@ textarea {
   max-height: 45vh;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
+  border: 2px solid #3d3d3d;
   display: none;
   position: absolute;
   text-align: right;
@@ -2868,7 +2871,7 @@ header #headerpage-slider #headerslider .headerslider-container > div.slide-cont
           text-decoration: none;
           font-size: 10px;
           font-weight: 400; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
+      @media (min-width: 992px) {
         header #headerpage-slider #headerslider .headerslider-container > div.slide-container .headerslider-description button {
           margin: 10px 0;
           width: auto !important;
@@ -3147,16 +3150,36 @@ header #headerpage-slider #headerslider .headerslider-container > div.slide-cont
     font: 600 21px/25px "PT Sans Caption", sans-serif; }
   #center_column #page-content .standard-checkout {
     margin-left: 12vw; }
+  #center_column #page-content .tab-content .h2, #center_column #page-content .tab-content h2.page-heading {
+    margin: 15px 0; }
   #center_column #page-content #homefeatured {
     margin: 0 -15px; }
   #center_column #page-content .owl-stage-outer > .owl-stage > .owl-item > .item {
     width: 100%;
     height: 330px; }
+  #center_column #page-content .owl-controls {
+    position: relative;
+    top: -360px;
+    float: right; }
   @media (max-width: 767px) {
     #center_column {
       padding-top: 50px; }
       #center_column.isOpen {
         transform: translate3d(220px, 0, 0); } }
+
+.footer-container {
+  border-top: 3px solid #1ea3b0;
+  position: relative;
+  bottom: 0px;
+  padding-top: 10px;
+  text-align: center; }
+  .footer-container .footer-block .toggle-footer li a {
+    color: #3d3d3d;
+    font-size: 10px; }
+  .footer-container .footer-block .toggle-footer li + li:before {
+    padding: 10px 10px;
+    color: #3d3d3d;
+    content: "|\00a0"; }
 
 .nav nav {
   padding-top: 15px;

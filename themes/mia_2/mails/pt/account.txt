@@ -1,0 +1,19 @@
+Olá {firstname} {lastname},
+
+Obrigado por ter criado uma conta de cliente na nossa loja {shop_name}.
+
+Aqui estão os seus detalhes para "login":
+
+Endereço de e-mail: {email}
+Palavra-passe: {passwd}
+ 
+Agora pode fazer encomendas na nossa loja: {shop_url}
+
+Informações de Segurança Importantes:
+
+1. Mantenha sempre os seus dados de conta seguros.
+2. Não revele os seus dados de login a ninguém.
+3. Altere a sua Palavra-passe com regularidade.
+4. Se suspeitar que a sua conta está a ser usada de forma ilegal, por favor notifique-nos imediatamente.
+
+{shop_url} 

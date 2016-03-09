@@ -40,7 +40,8 @@
   	}
   }*/ }
   .sf-menu > li > a {
-    font: 600 11px "PT Sans", sans-serif;
+    font: 600 10px "PT Sans", sans-serif;
+    letter-spacing: 0.225em;
     text-transform: uppercase;
     color: #484848;
     display: inline-block;

@@ -1,0 +1,13 @@
+Olá {firstname} {lastname},
+ 
+Verificámos que durante a sua última visita em {shop_name}, não completou a encomenda que começou.
+
+O se carrinho de compras foi guardado, pode retomar a sua encomenda ao visitar a nossa loja:
+
+{shop_url}
+
+Como incentivo, podemos oferecer-lhe um desconto de {amount}% na sua próxima encomenda! Esta oferta é válida por {days} dias, por isso não perca mais tempo!
+ 
+Aqui está o seu vale de desconto: {voucher_num}
+
+Introduza este código no seu carrinho de compras para ter o seu desconto.

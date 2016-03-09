@@ -1,0 +1,11 @@
+Olá,
+
+O produto {product} está quase sem stock.
+O stock restante é atualmente menor do que a quantidade mínima especificada de {last_qty}.
+Stock disponível : {qty}
+
+É conveniente que vá à página de administração do produto e reabasteça o seu inventário.
+
+
+
+{shop_url} powered by PrestaShop™

@@ -1,0 +1,439 @@
+/*------- CSS PROPRIEDADES-----------
+	Text = #000
+	Text-hover = #1ea3b0
+	Text - Titulos = #3d3d3d
+	Azul = #1ea3b0
+
+*/
+/*	FONTS_IMPORT	 */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Sofia);
+/*font-family: 'Sofia', cursive;
+font-family: 'Droid Sans', sans-serif;
+*/
+body{
+	background: #fff;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 400;
+}
+body, input, p, span{
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6, title{
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 700;
+}
+ul, ol {
+list-style-type: none;
+}
+ul ul, ol ul {
+list-style-type: none;
+}
+a{
+	color:#1ea3b0;
+}
+a:hover{
+	color:#1ea3b0;
+	-webkit-box-shadow: inset 0 14px 11px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 11px 11px rgba(0, 0, 0, 0.05);
+}
+footer{
+  padding-top: 20px;
+}
+
+/*----------------------estretura--------------*/
+/*.show-grid [class^="col-"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}*/
+.container{
+	padding-top: 15px;
+}
+.center-col{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.logo, .fb-follow, .search-row{
+	padding-bottom:25px;
+}
+.no-padding-row{
+	  padding-left: 0px;
+	  padding-right: 0px;
+}
+.no-padding-left{
+	  padding-left: 0px;
+}
+.no-padding-right{
+	  padding-right: 0px;
+}
+
+.slider-top{
+	padding: 0 0 10px 0;
+	border-bottom: 3px solid #1ea3b0;
+}
+.slider-promo{
+	padding: 0 0 10px 0;
+}
+.footer-line{
+	padding: 0 0 10px 0;
+	border-top: 1.5px solid #1ea3b0;
+}
+.title-line{
+	padding: 15px 0 1px 0;
+	border-bottom: 3px solid #3d3d3d;
+}
+
+.cart-list > .col-lg-12 > .row{
+	padding-top: 10px;
+}
+.cart-list{
+	max-height: 200px;
+	overflow: auto;
+}
+#section-produtos{
+  padding-top: 10px;
+
+}
+/*----------------------Imagens--------------*/
+.logo-mia{
+	width: 130px;
+	height: 235px;
+}
+.icon-cart-lista , .icon-cart-finalizar{
+	width: 40px;
+	height: 38px;
+}
+.icon-user{
+	width: 20px;
+	height: 24px;
+}
+.payment-creditcard{
+background: url('../img/payment-icons.png') -3px -3px;
+  width:  32px; /* width and height of the sprite image you want to display */
+  height: 24px;
+  position: relative;
+}
+.payment-visa{
+background: url('../img/payment-icons.png') -34px -3px;
+  width:  32px; /* width and height of the sprite image you want to display */
+  height: 24px;
+  position: relative;
+}
+.payment-mastercard{
+background: url('../img/payment-icons.png') -65px -3px;
+  width:  32px; /* width and height of the sprite image you want to display */
+  height: 24px;
+  position: relative;
+}
+.payment-paypal{
+background: url('../img/payment-icons.png') -96px -3px;
+  width:  32px; /* width and height of the sprite image you want to display */
+  height: 24px;
+  position: relative;
+
+}
+.payments{
+	padding-top: 10px;
+	width: 100%;
+	text-align:center;
+}
+.arrows{
+display: inline-block;
+width: 10px;
+height: 9px;
+text-indent: -9999em;
+overflow: hidden;
+border: 0;
+background: url('../img/arrows.png') no-repeat 0 0;
+}
+.col-arrow{
+  height:32px;
+}
+/*.row-arrow{
+  height:50px;
+}*/
+.arrow-up{
+background-position: 0 -13px;
+position: relative;
+top: 0px;
+}
+.arrow-down{
+background-position: 0 0px;
+position: relative;
+top: -18px;
+
+}
+/*----------------------menus--------------*/
+
+
+.breadcrumb, .languages {
+  padding: 8px 15px;
+  margin-bottom: 0px;
+  list-style: none;
+  border-radius: 4px;
+  font-size: 10px;
+  background: none;
+  font-family: 'Droid Sans', sans-serif;
+ 	font-weight: 700;
+}
+
+.breadcrumb > li, .languages > li, .payments > li, .produto-links > li {
+  display: inline-block;
+}
+.breadcrumb a {
+color: #3d3d3d;
+text-decoration: none;
+}
+
+.breadcrumb>li:active {
+  color: #3d3d3d;
+  font-weight: 700;
+}
+.breadcrumb>li+li:before, .menu-top>li+li:before, .languages>li+li:before {
+padding: 0 8px;
+color: #3d3d3d;
+content: "|\00a0";
+}
+/*.breadcrumb */.pathcategorias>li+li:before {
+padding: 0 3px;
+color: #1ea3b0;
+content: ">\00a0";
+}
+.produto-links>li+li:before {
+padding: 0 2px;
+color: #3d3d3d;
+content: "|\00a0";
+}
+
+.menu-top{
+  font-size: 12px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  font-family: 'Droid Sans', sans-serif;
+	font-weight: 700;
+}
+.pathcategorias{
+  padding-left: 0px;
+}
+.languages{
+  padding-right: 0px;
+}
+.cat-produtos{
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 700;
+}
+.cat-produtos > ul > li > a, .cat-produtos > ul > li > ul > li > a,
+.languages>li>a, .produto-links>li>a
+{
+	color: #3d3d3d;
+	text-decoration: none;
+}
+.cat-produtos > ul > li > a:hover, .cat-produtos > ul > li > ul > li > a:hover{
+	color: #1ea3b0;
+	text-decoration: none;
+}
+.cat-produtos > ul > li > a:active, .cat-produtos > ul > li > a .active,
+.cat-produtos > ul > li > ul > li > a:active, .cat-produtos > ul > li > ul > li > a .active,
+.languages > li > a:active, .languages > li .active
+
+ {
+	color: #1ea3b0;
+	text-decoration: none;
+}
+.produto-links{
+  font-size: 65%;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; /* force text to uppercase */
+}
+.user-menu{
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 700;
+}
+.user-menu ul{
+	padding: 20px 0 0 0;
+}
+.receita-texto{
+	max-height: 200px;
+	overflow: auto;
+}
+.receita-texto > p{
+	font-size:11px;
+	font-weight: 700;
+}
+/*----------------------forms--------------*/
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 30px;
+  /*padding: 6px 12px;*/
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 2px solid #3d3d3d;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-control:focus {
+  border-color: #3d3d3d;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control[readonly]{
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.cart-item{
+	 font-size: 11px;
+	 font-weight: 700;
+	 color:#3d3d3d;
+}
+.number{
+   top: -10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #3d3d3d;
+  position: relative;
+  left: 2px
+}
+/*----------------------carousel--------------*/
+.Slider-Promo{
+	-webkit-box-shadow:  0 20px 20px rgba(0, 0, 0, 0.06);
+          box-shadow:  0 20px 21px rgba(0, 0, 0, 0.05);
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  z-index: 15;
+  width: 60%;
+  padding-right: 30px;
+  left: 70%;
+  text-align: right;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+
+.carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  background-color: #1ea3b0;
+}
+
+.carousel-caption {
+  position: absolute;
+  height: 100%;
+  right: 15%;
+  bottom: 0px;
+  left: 3%;
+  z-index: 10;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ffffff;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption > .title {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  top: 10px;
+  width: 70%;
+}
+.carousel-caption > .qote {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  font-family: 'Sofia', cursive;
+  font-size: 400%;
+  width: 70%;
+  bottom: 10px;
+  position: absolute;
+  line-height: 95%;
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+
+ /*------------------------------------------------------ Produtos -------------------------*/
+
+ .section-title > .row > h1 {
+  text-shadow: 0 1px 2px rgba(255,255,255, 0.9);
+  font-family: 'Sofia', cursive;
+  font-size: 280%;
+  text-align: left;
+  height: 40px;
+  color:#3d3d3d;
+}
+.produto >.txt-descricao{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.produto-descricao > .row > h4{
+
+  padding-bottom: 5px;
+  padding-left: 0px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; /* force text to uppercase */
+  color:#3d3d3d;
+}
+.produto-descricao > .row > p{
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+}
+.produto-descricao > .row > p >.add-cart{
+background: url('../img/plus_minor.png') 0px 1px;
+  width:  50px; /* width and height of the sprite image you want to display */
+  height: 32px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.produto-descricao > .row > p > .produt-preco{
+    font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color:#3d3d3d;
+  padding-bottom:5px; 
+  position: relative;
+}
+.produto-descricao > .row > .add-whislist{
+    font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color:#3d3d3d;
+  padding-bottom:5px; 
+  cursor: pointer;
+}
+.produto-descricao-img > img{
+  padding-top: 25%;
+}

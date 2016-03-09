@@ -4145,7 +4145,7 @@ textarea {
     font-weight: 700;
     width: auto;
     color: #3d3d3d;
-    min-width: 170px;
+    min-width: 140px;
     height: 40px; }
     @media (max-width: 767px) {
       .form-control .select {
@@ -4196,6 +4196,7 @@ textarea {
     max-height: 45vh;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+    border: 2px solid #3d3d3d;
     display: none;
     position: absolute;
     text-align: right;
@@ -4241,7 +4242,7 @@ textarea {
     font-weight: 700;
     width: auto;
     color: #3d3d3d;
-    min-width: 170px;
+    min-width: 140px;
     height: 40px; }
     @media (max-width: 767px) {
       .form-group .select {
@@ -4292,6 +4293,7 @@ textarea {
     max-height: 45vh;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+    border: 2px solid #3d3d3d;
     display: none;
     position: absolute;
     text-align: right;
@@ -4342,7 +4344,7 @@ textarea {
   font-weight: 700;
   width: auto;
   color: #3d3d3d;
-  min-width: 170px;
+  min-width: 140px;
   height: 40px; }
   @media (max-width: 767px) {
     .attribute_list .select {
@@ -4393,6 +4395,7 @@ textarea {
   max-height: 45vh;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
+  border: 2px solid #3d3d3d;
   display: none;
   position: absolute;
   text-align: right;

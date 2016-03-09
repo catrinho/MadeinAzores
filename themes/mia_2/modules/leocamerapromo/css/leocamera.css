@@ -1,0 +1,66 @@
+.Slider-Promo{
+    -webkit-box-shadow:  0 20px 20px rgba(0, 0, 0, 0.06);
+          box-shadow:  0 20px 21px rgba(0, 0, 0, 0.05);
+}
+.carouselpromo-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  z-index: 15;
+  width: 60%;
+  padding-right: 30px;
+  left: 70%;
+  text-align: right;
+  list-style: none;
+}
+
+.carouselpromo-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+
+.carouselpromo-indicators .active {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  background-color: #1ea3b0;
+}
+
+.carousel-caption-promo {
+  position: absolute;
+  height: 100%;
+  right: 15%;
+  bottom: 0px;
+  left: 3%;
+  z-index: 10;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ffffff;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption-promo > .title {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  top: 10px;
+  width: 70%;
+}
+.carousel-caption-promo > .qote > a{
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  font-family: 'Sofia', cursive;
+  font-size: 400%;
+  width: 70%;
+  bottom: 10px;
+  position: absolute;
+  line-height: 95%;
+  color: #fff;
+}
+.carousel-caption-promo .btn {
+  text-shadow: none;
+}

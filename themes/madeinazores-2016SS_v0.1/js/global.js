@@ -88,6 +88,30 @@ $(document).ready(function(){
 		if (e.offsetX >= 16 && e.offsetX <= 39 && e.offsetY >= 16 && e.offsetY <= 34)
 			$(this).fadeOut();
 	});
+
+$('#homefeatured,#blockbestsellers').owlCarousel({
+	    loop:false,
+	    margin:0,
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            //dot:true
+	        },
+	        600:{
+	            items:2,
+	            //nav:true
+	        },
+	        1000:{
+	            items:3,
+	            //dot:true,
+	        }
+	    }
+	});
+
+
+
+
 });
 
 
@@ -537,6 +561,8 @@ function StyleSelect(){
 	//$('div.select >div.select').remove();
 	});
 }
+
+
 
 
 

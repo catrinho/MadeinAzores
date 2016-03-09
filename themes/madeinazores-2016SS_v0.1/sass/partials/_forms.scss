@@ -19,7 +19,7 @@
     font-weight:700;
     width: auto;
     color: $select-color;
-    min-width: $select-width;
+    min-width: $select-width - 30px;
     height: $select-height;
 
     @media(max-width:$screen-xs-max){
@@ -78,6 +78,7 @@
     max-height: 45vh;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+         border: 2px solid $select-color;
 
     display: none; 
     position: absolute;

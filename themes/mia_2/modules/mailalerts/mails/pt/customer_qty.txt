@@ -1,0 +1,12 @@
+Olá,
+
+O Produto {product} está disponível.
+Este item está novamente em stock.
+
+Pode aceder à página do produto em: {product_link}
+
+Pode encomendá-lo imediatamente na nossa loja online.
+
+
+
+{shop_url} powered by PrestaShop™

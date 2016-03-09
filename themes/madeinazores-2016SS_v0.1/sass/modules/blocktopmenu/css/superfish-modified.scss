@@ -64,7 +64,8 @@
 	}*/
 
 	> a {
-		font: 600 11px $font-custom;
+		font: 600 10px $font-custom;
+		    letter-spacing: 0.225em;
 		text-transform: uppercase;
 		color: #484848;
 		display: inline-block;

@@ -129,7 +129,7 @@ header{
 							font-size:10px;
 							font-weight:400;
 						}
-						@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+						@media (min-width: $screen-md)  {
 							margin: 10px 0;
 							@include Button(2px,$white,$black,$black,7px 18px 7px 18px);
 							font-size:12px;
@@ -282,6 +282,9 @@ header{
 			@import "partials/shoppingCart-page";
 
 			//@import "partials/productList-grid";
+			.tab-content .h2{
+				margin: 15px 0;
+			}
 			#homefeatured{
 				margin:0 -15px;
 			}
@@ -289,7 +292,11 @@ header{
 					width: 100%;
 					height:330px;
 			}
-			
+			.owl-controls{
+			    position: relative;
+			    top: -360px;
+			    float: right;
+			}
 
 		}
 		@media (max-width: $screen-xs-max) {
@@ -300,7 +307,33 @@ header{
 		}
 }
 
+.footer-container{
+	border-top: 3px solid $lightblue;
+	position: relative;
+    bottom: 0px;
+    padding-top: 10px;
+    text-align: center;
 
+    .footer-block .toggle-footer {
+
+     li{
+    	@extend .top-menu;
+    	a{
+    		@extend .a;
+    		color: #3d3d3d;
+    		font-size: 10px
+    	}
+		
+    	//float: left;
+    	}
+    }
+
+  .footer-block .toggle-footer  li+li:before {
+	  padding: 10px 10px;
+	  color: #3d3d3d;
+	  content: "|\00a0";
+	}
+}
 
 //---MENU TOPO - NAVEGACAO
 @import "partials/top-navegation";
