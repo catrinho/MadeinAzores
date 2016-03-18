@@ -93,7 +93,6 @@ function bindStateInputAndUpdate()
 	updateState();
 	updateNeedIDNumber();
 	updateZipCode();
-
 	$(document).on('change', '#id_country', function(e)
 	{
 		updateState();
@@ -101,6 +100,8 @@ function bindStateInputAndUpdate()
 		updateZipCode();
 		if (typeof validate_field !== 'undefined')
 			validate_field('#postcode');
+
+
 	});
 
 	if ($('#id_country_invoice').length !== 0)
@@ -138,8 +139,9 @@ function updateState(suffix)
 		$('.id_state' + (typeof suffix !== 'undefined' ? '_' + suffix : '') + ':hidden').fadeIn('slow');
 		//$('#id_state, #id_state_invoice').uniform();
 	}
-	else
-		$('.id_state' + (typeof suffix !== 'undefined' ? '_' + suffix : '')).fadeOut('fast');
+	else{
+		$('.id_state' + (typeof suffix !== 'undefined' ? '_' + suffix : '')).fadeOut('fast');	
+	}
 }
 
 function updateNeedIDNumber(suffix)

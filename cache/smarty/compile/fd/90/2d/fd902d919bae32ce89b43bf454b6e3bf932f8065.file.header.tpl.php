@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-09 15:10:39
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-17 18:39:12
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:80016496156e03cef782234-06986278%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fd902d919bae32ce89b43bf454b6e3bf932f8065' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/header.tpl',
-      1 => 1457480560,
+      1 => 1458234784,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_56e03cefde9bf5_25708355',
   'variables' => 
   array (
     'language_code' => 0,
@@ -50,8 +52,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'HOOK_TOP' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56e03cefde9bf5_25708355',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56e03cefde9bf5_25708355')) {function content_56e03cefde9bf5_25708355($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.implode.php';
 ?>
@@ -134,7 +134,7 @@ $_smarty_tpl->tpl_vars['js_uri']->_loop = true;
 </span><?php }?></p>
 			</div>
 		<?php }?>
-
+	<?php if ($_smarty_tpl->tpl_vars['page_name']->value=='index') {?>	
 		<?php $_smarty_tpl->_capture_stack[0][] = array('displayBanner', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayBanner'),$_smarty_tpl);?>
 <?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
 if (!empty($_capture_buffer)) {
@@ -142,23 +142,16 @@ if (!empty($_capture_buffer)) {
  if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
  Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
 } else $_smarty_tpl->capture_error();?>
-
 		<?php if (Smarty::$_smarty_vars['capture']['displayBanner']) {?>
 		<header id="header">
 		<!-- banner -->	
-			<?php $_smarty_tpl->_capture_stack[0][] = array('displayNav', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayNav'),$_smarty_tpl);?>
-<?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
-if (!empty($_capture_buffer)) {
- if (isset($_capture_assign)) $_smarty_tpl->assign($_capture_assign, ob_get_contents());
- if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
- Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
-} else $_smarty_tpl->capture_error();?>
-						<?php if (Smarty::$_smarty_vars['capture']['displayNav']) {?>
-							 <div class="nav-cover " >
+						<div id="columns" class="container">
+						<div class="row">
+							 <!-- <div class="nav-cover " >
 								<div class="container">
 									<div class="row">
-										<nav class="col-xs-12">
-											<div id="burgerking">
+										<nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+											<div id="burgerking-upper">
 												<div class="burger white">
 										          <div class="burger-brick"></div>
 										          <div class="burger-brick middle"></div>
@@ -168,15 +161,17 @@ if (!empty($_capture_buffer)) {
 										</nav>
 
 									</div>
-								</div>
+								</div> -->
 							</div> 
-						<?php }?>
+						</div>
+						</div> 	
 							<?php echo Smarty::$_smarty_vars['capture']['displayBanner'];?>
 
 				
 				<span class="arrow"></span>
 		</header>				
-		<?php }?>						
+		<?php }?>
+	<?php }?>					
 		<div id="page">
 			<div class="columns-container">
 				<div id="columns" class="container">
@@ -230,19 +225,7 @@ if (!empty($_capture_buffer)) {
 											</div>
 										</div>
 									</div>
-									<div id="slider_row" class="row">
-									<?php $_smarty_tpl->_capture_stack[0][] = array('displayTopColumn', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayTopColumn'),$_smarty_tpl);?>
-<?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
-if (!empty($_capture_buffer)) {
- if (isset($_capture_assign)) $_smarty_tpl->assign($_capture_assign, ob_get_contents());
- if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
- Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
-} else $_smarty_tpl->capture_error();?>
-										<?php if (Smarty::$_smarty_vars['capture']['displayTopColumn']) {?>
-											<div id="top_column" class="center_column col-xs-12 col-sm-12"><?php echo Smarty::$_smarty_vars['capture']['displayTopColumn'];?>
-</div>
-										<?php }?>
-									</div>
+									
 									
 								<?php if ($_smarty_tpl->tpl_vars['page_name']->value!='index'&&$_smarty_tpl->tpl_vars['page_name']->value!='pagenotfound') {?>
 									<?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./breadcrumb.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>

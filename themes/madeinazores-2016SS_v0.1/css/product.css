@@ -1,3 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700|PT+Serif:400,400italic,700,700italic|PT+Serif+Caption:400,400italic|PT+Sans+Caption:400,700|PT+Sans+Narrow:400,700|PT+Mono);
+/*
+font-family: 'PT Sans', sans-serif;
+
+font-family: 'PT Serif', serif;
+
+font-family: 'PT Serif Caption', serif;
+
+font-family: 'PT Sans Caption', sans-serif;
+
+font-family: 'PT Mono', ;
+*/
 /* primary_block ***************************************************************************** */
 .primary_block {
   margin-bottom: 40px;
@@ -162,6 +174,14 @@
     @media (max-width: 480px) {
       .primary_block .page-product-box {
         padding-top: 20px; } }
+    .primary_block .page-product-box p {
+      font-family: "PT Sans Caption", sans-serif;
+      font-size: 1.2em;
+      letter-spacing: 0.125em;
+      line-height: 1.5em;
+      padding-top: 4px; }
+      .primary_block .page-product-box p:first-child {
+        padding-top: 0px; }
   @media (max-width: 480px) {
     .primary_block p#add_to_cart.buttons_upper_block {
       position: relative;

@@ -39,12 +39,14 @@
 								
 								
 									<a href="{$slide.url|escape:'html':'UTF-8'}" title="{$slide.legend|escape:'html':'UTF-8'}">
-										<div class="headerslider-description"><div class="container"><div class="row">{$slide.description}</div></div></div>
+										
+										<div class="header-info container">
+										<div class="row">
+										<div class="headerslider-description">{$slide.description}</div>
+										<p class="img-credits">{$slide.legend|escape:'htmlall':'UTF-8'}"</p>
+										</div>
+										</div>
 									</a>	
-								
-								
-								{*}<p class="img-credits">{$slide.legend|escape:'htmlall':'UTF-8'}"</p>{*}
-
 
 							{/if}
  						</div>

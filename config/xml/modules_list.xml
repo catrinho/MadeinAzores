@@ -182,6 +182,7 @@
 		<module name="shoppingfeedexport"/>
 		<module name="shoppingfluxexport"/>
 		<module name="simplifycommerce"/>
+		<module name="skebby"/>
 		<module name="socolissimo"/>
 		<module name="sofortbanking"/>
 		<module name="tntcarrier"/>

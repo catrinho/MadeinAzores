@@ -149,27 +149,29 @@
 </tab>
 <tab class_name="AdminCustomerThreads" display_type="slider_list">
 <module name="sendinblue" position="1"/>
-<module name="mailjet" position="2"/>
-<module name="sarbacanedesktop" position="3"/>
-<module name="expressmailing" position="4"/>
-<module name="fianetsceau" position="5"/>
-<module name="yotpo" position="6"/>
-<module name="remarkety" position="7"/>
-<module name="liveperson" position="8"/>
-<module name="veplatform" position="9"/>
-<module name="yousticeresolutionsystem" position="10"/>
-</tab>
-<tab class_name="AdminContacts" display_type="slider_list">
-<module name="sendinblue" position="1"/>
-<module name="mailjet" position="2"/>
-<module name="sarbacanedesktop" position="3"/>
-<module name="expressmailing" position="4"/>
-<module name="iadvize" position="5"/>
-<module name="liveperson" position="6"/>
-<module name="webcallback" position="7"/>
+<module name="skebby" position="2"/>
+<module name="mailjet" position="3"/>
+<module name="sarbacanedesktop" position="4"/>
+<module name="expressmailing" position="5"/>
+<module name="fianetsceau" position="6"/>
+<module name="yotpo" position="7"/>
 <module name="remarkety" position="8"/>
 <module name="liveperson" position="9"/>
 <module name="veplatform" position="10"/>
+<module name="yousticeresolutionsystem" position="11"/>
+</tab>
+<tab class_name="AdminContacts" display_type="slider_list">
+<module name="sendinblue" position="1"/>
+<module name="skebby" position="2"/>
+<module name="mailjet" position="3"/>
+<module name="sarbacanedesktop" position="4"/>
+<module name="expressmailing" position="5"/>
+<module name="iadvize" position="6"/>
+<module name="liveperson" position="7"/>
+<module name="webcallback" position="8"/>
+<module name="remarkety" position="9"/>
+<module name="liveperson" position="10"/>
+<module name="veplatform" position="11"/>
 </tab>
 <tab class_name="AdminCartRules" display_type="slider_list">
 <module name="nostotagging" position="1"/>
@@ -349,9 +351,8 @@
 <module name="gsitemap" position="8"/>
 </tab>
 <tab class_name="AdminCmsContent" display_type="slider_list">
-<module name="textmaster" position="1"/>
-<module name="wic_pushproductcms" position="2"/>
-<module name="protectedshops" position="3"/>
+<module name="wic_pushproductcms" position="1"/>
+<module name="protectedshops" position="2"/>
 </tab>
 <tab class_name="AdminImages" display_type="slider_list">
 <module name="gapps" position="1"/>

@@ -1,3 +1,12 @@
+.disappear {
+  animation: disappear 1s;
+  animation-fill-mode: forwards;
+}
+.appear {
+  animation: appear 1s;
+  animation-fill-mode: forwards;
+}
+
 //posittions
 .absolute{
   position:absolute;
@@ -66,7 +75,7 @@
 }
 
 .border-blue{
-	border-bottom: 3px solid $lightblue;
+	border-bottom: 2px solid $lightblue;
 }
 
 

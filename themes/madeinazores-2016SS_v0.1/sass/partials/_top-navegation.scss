@@ -30,6 +30,34 @@
 	}
 }	
 
+#top_row{
+	background-color:$white;
+	@media (max-width: $screen-xs-max) {
+		position:fixed;
+		z-index: 80;
+		top:0px;
+		padding:0 15px;
+		height: 50px;
+		transition: transform ease-in-out .3s;
+		&.isOpen{
+				transform: translate3d(220px,0,0);
+		}	
+	}	
+}
+.header-menu{
+	background-color:transparent!important;
+	nav{
+		background-color:transparent;	
+		border-bottom:2px solid $white;
+	}
+	#burgerking .burger .burger-brick{
+		background-color:$white;
+	}
+	.brand-mobile span{
+		color: $white;
+	}
+}
+
 
 // TopMenu - module css
 #block-top-menu{
@@ -92,6 +120,10 @@
 .header_user_info {
 	float:left;
 	position: relative;
+
+	@media (max-width: $screen-xs-max) {
+		padding-left:15px;
+	}	
 	a{
 		@extend .top-menu;
 		@extend .a;

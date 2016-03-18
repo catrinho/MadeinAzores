@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-09 15:10:39
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-13 22:26:38
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/headerslider/headerslider.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:48732011756e03cefe10008-03526482%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '001d319343113b151cfc9cd5a66e079172efc8d9' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/headerslider/headerslider.tpl',
-      1 => 1457401630,
+      1 => 1457907992,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_56e03cf0038c55_17351848',
   'variables' => 
   array (
     'page_name' => 0,
@@ -23,8 +25,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56e03cf0038c55_17351848',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56e03cf0038c55_17351848')) {function content_56e03cf0038c55_17351848($_smarty_tpl) {?>
 
@@ -56,13 +56,16 @@ $_smarty_tpl->tpl_vars['slide']->_loop = true;
 									<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['slide']->value['url'], ENT_QUOTES, 'UTF-8', true);?>
 " title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['slide']->value['legend'], ENT_QUOTES, 'UTF-8', true);?>
 ">
-										<div class="headerslider-description"><div class="container"><div class="row"><?php echo $_smarty_tpl->tpl_vars['slide']->value['description'];?>
-</div></div></div>
+										
+										<div class="header-info container">
+										<div class="row">
+										<div class="headerslider-description"><?php echo $_smarty_tpl->tpl_vars['slide']->value['description'];?>
+</div>
+										<p class="img-credits"><?php echo mb_convert_encoding(htmlspecialchars($_smarty_tpl->tpl_vars['slide']->value['legend'], ENT_QUOTES, 'UTF-8', true), "HTML-ENTITIES", 'UTF-8');?>
+"</p>
+										</div>
+										</div>
 									</a>	
-								
-								
-								
-
 
 							<?php }?>
  						</div>

@@ -13,10 +13,10 @@ include_once(_PS_MODULE_DIR_.'headerslider/HeaderSlide.php');
 class HeaderSlider extends Module
 {
 	protected $_html = '';
-	protected $default_width = 779;
+	protected $default_width = 1200;
 	protected $default_speed = 500;
-	protected $default_pause = 3000;
-	protected $default_loop = 1;
+	protected $default_pause = 9000;
+	protected $default_loop = 0;
 
 	public function __construct()
 	{
@@ -43,8 +43,9 @@ class HeaderSlider extends Module
 		/* Adds Module */
 		if (parent::install() &&
 			$this->registerHook('displayHeader') &&
-			//$this->registerHook('displayTopColumn') &&
+			$this->registerHook('displayTopColumn') &&
 			$this->registerHook('displayBanner') &&
+			$this->registerHook('displayLandingHeader') &&
 			$this->registerHook('actionShopDataDuplication')
 		)
 		{

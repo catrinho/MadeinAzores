@@ -45,19 +45,18 @@
 				<p>{l s='You cannot place a new order from your country.'}{if isset($geolocation_country) && $geolocation_country} <span class="bold">{$geolocation_country|escape:'html':'UTF-8'}</span>{/if}</p>
 			</div>
 		{/if}
-
+	{if $page_name =='index'}	
 		{capture name='displayBanner'}{hook h='displayBanner'}{/capture}
-
 		{if $smarty.capture.displayBanner}
 		<header id="header">
 		<!-- banner -->	
-			{capture name='displayNav'}{hook h='displayNav'}{/capture}
-						{if $smarty.capture.displayNav}
-							 <div class="nav-cover " >
+						<div id="columns" class="container">
+						<div class="row">
+							 <!-- <div class="nav-cover " >
 								<div class="container">
 									<div class="row">
-										<nav class="col-xs-12">
-											<div id="burgerking">
+										<nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+											<div id="burgerking-upper">
 												<div class="burger white">
 										          <div class="burger-brick"></div>
 										          <div class="burger-brick middle"></div>
@@ -67,14 +66,16 @@
 										</nav>
 
 									</div>
-								</div>
+								</div> -->
 							</div> 
-						{/if}
+						</div>
+						</div> 	
 							{$smarty.capture.displayBanner}
 				
 				<span class="arrow"></span>
 		</header>				
-		{/if}						
+		{/if}
+	{/if}					
 		<div id="page">
 			<div class="columns-container">
 				<div id="columns" class="container">
@@ -114,12 +115,7 @@
 											</div>
 										</div>
 									</div>
-									<div id="slider_row" class="row">
-									{capture name='displayTopColumn'}{hook h='displayTopColumn'}{/capture}
-										{if $smarty.capture.displayTopColumn}
-											<div id="top_column" class="center_column col-xs-12 col-sm-12">{$smarty.capture.displayTopColumn}</div>
-										{/if}
-									</div>
+									
 									
 								{if $page_name !='index' && $page_name !='pagenotfound'}
 									{include file="$tpl_dir./breadcrumb.tpl"}

@@ -40,7 +40,8 @@
   &:focus {
     background-color: shade($white, 2%);
     text-decoration: none;
-    //color: #fff;
+
+    color: #3D3D3D;
   }
 
   &:disabled {
@@ -57,8 +58,7 @@
     &:hover,
     &:focus {
     background-color: lighten($black, 5%);
-    color: #fff;
-  }
+    color: #3D3D3D;  }
 }
 
 
