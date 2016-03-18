@@ -2793,8 +2793,7 @@ header #headerpage-slider #headerslider .headerslider-container > div.slide-cont
     bottom: 0px;
     height: 40vh;
     margin-bottom: 50px;
-    width: 100%;
-    padding: 0 50px; }
+    width: 100%; }
     @media (max-width: 480px) {
       header #headerpage-slider #headerslider .headerslider-container > div.slide-container .header-info {
         padding: 0 20px;

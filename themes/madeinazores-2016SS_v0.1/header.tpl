@@ -52,7 +52,7 @@
 		<!-- banner -->	
 						<div id="columns" class="container">
 						<div class="row">
-							 <!-- <div class="nav-cover " >
+							 <div class="nav-cover " >
 								<div class="container">
 									<div class="row">
 										<nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -66,7 +66,7 @@
 										</nav>
 
 									</div>
-								</div> -->
+								</div>
 							</div> 
 						</div>
 						</div> 	

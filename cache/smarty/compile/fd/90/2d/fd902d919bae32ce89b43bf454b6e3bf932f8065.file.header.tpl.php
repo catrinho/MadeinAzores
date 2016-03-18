@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-17 18:39:12
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-18 20:16:56
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:80016496156e03cef782234-06986278%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fd902d919bae32ce89b43bf454b6e3bf932f8065' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/header.tpl',
-      1 => 1458234784,
+      1 => 1458332214,
       2 => 'file',
     ),
   ),
@@ -147,7 +147,7 @@ if (!empty($_capture_buffer)) {
 		<!-- banner -->	
 						<div id="columns" class="container">
 						<div class="row">
-							 <!-- <div class="nav-cover " >
+							 <div class="nav-cover " >
 								<div class="container">
 									<div class="row">
 										<nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -161,7 +161,7 @@ if (!empty($_capture_buffer)) {
 										</nav>
 
 									</div>
-								</div> -->
+								</div>
 							</div> 
 						</div>
 						</div> 	

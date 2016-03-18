@@ -36,7 +36,11 @@
 								<img src="{$link->getMediaLink("`$smarty.const._MODULE_DIR_`headerslider/images/`$slide.image|escape:'htmlall':'UTF-8'`")}"{if isset($slide.size) && $slide.size} {$slide.size}{else} width="100%" height="100%"{/if} alt="{$slide.legend|escape:'htmlall':'UTF-8'}" />
 							</a>
 							{if isset($slide.description) && trim($slide.description) != ''}
-								<div class="headerslider-description">{$slide.description}</div>
+								<div id="columns" class="container">
+									<div class="row">
+										<div class="headerslider-description">{$slide.description}</div>
+									</div>
+								</div>		
 							{/if}
 						</li>
 					{/if}

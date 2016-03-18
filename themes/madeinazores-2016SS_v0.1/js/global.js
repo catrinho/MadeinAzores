@@ -24,13 +24,13 @@ $(document).ready(function(){
 	    $('#left_column').toggleClass('isOpen')/*.toggleClass('not-moving')*/;
 	  });
 
-			 //  $('#burgerking-upper').on('click', function() {
-			 // 	//e.preventDefault;
-			 // 	$('html,body').animate({
-		  //       scrollTop: $("#top_row").offset().top
-		  //   }, 700);
+			 $('#burgerking-upper').on('click', function() {
+			 	//e.preventDefault;
+			 	$('html,body').animate({
+		        scrollTop: $("#center_column").offset().top
+		     }, 700);
 		  	
-			 // });
+			 });
 
 	// Categorias DropDown
 
@@ -129,7 +129,7 @@ function responsiveResize()
 		$('.nav').removeClass('col-xs-12').detach().prependTo('#center_column');
 		$('.header_user_info,.languages-block').detach().insertAfter('#block_top_menu');
 		// Deslocação do Header menu, do centro, para o slide menu
-		$('.header_user_info,.languages-block').detach().insertAfter('#header_logo');
+		//$('.header_user_info,.languages-block').detach().insertAfter('#header_logo');
 		//desloca a coluna da esquerda e coloca a dentro da div#page - left-column
 		$('#left_column').detach().insertBefore('#center_column');
 		// Deslocação do footer para o fundo do  #center-colum
@@ -240,6 +240,8 @@ $(function() {
     var pxFromTop = $(this).scrollTop();
     var scrollpos = $(window).scrollTop();
     var oneHeight = $("#header").outerHeight();
+    	oneHeight = oneHeight - 58;
+  
      if (Math.abs(lastScrollTop - pxFromTop) <= delta) {
       return;
     }

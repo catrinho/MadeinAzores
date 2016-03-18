@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-13 22:26:38
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-18 20:08:42
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/headerslider/headerslider.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:48732011756e03cefe10008-03526482%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '001d319343113b151cfc9cd5a66e079172efc8d9' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/headerslider/headerslider.tpl',
-      1 => 1457907992,
+      1 => 1458331716,
       2 => 'file',
     ),
   ),
@@ -57,8 +57,8 @@ $_smarty_tpl->tpl_vars['slide']->_loop = true;
 " title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['slide']->value['legend'], ENT_QUOTES, 'UTF-8', true);?>
 ">
 										
-										<div class="header-info container">
-										<div class="row">
+										<div class="container">
+										<div class="row header-info ">
 										<div class="headerslider-description"><?php echo $_smarty_tpl->tpl_vars['slide']->value['description'];?>
 </div>
 										<p class="img-credits"><?php echo mb_convert_encoding(htmlspecialchars($_smarty_tpl->tpl_vars['slide']->value['legend'], ENT_QUOTES, 'UTF-8', true), "HTML-ENTITIES", 'UTF-8');?>
