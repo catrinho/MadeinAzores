@@ -19,6 +19,9 @@ Product list Styles
 ********************************************************/
 
 ul.product_list {
+	@media (min-width: $screen-md-max) {
+		margin-top:50px;
+	}	
 	.product-name {
 		display: inline-block;
 		width: 100%;

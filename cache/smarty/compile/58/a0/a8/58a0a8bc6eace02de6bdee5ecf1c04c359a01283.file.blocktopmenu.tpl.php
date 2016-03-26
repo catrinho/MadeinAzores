@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-09 15:10:40
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-26 17:12:01
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blocktopmenu/blocktopmenu.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:206808110156e03cf02467a5-89727106%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:167584891656f6c2e1894529-18177532%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '58a0a8bc6eace02de6bdee5ecf1c04c359a01283' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blocktopmenu/blocktopmenu.tpl',
-      1 => 1456456694,
+      1 => 1458957555,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '206808110156e03cf02467a5-89727106',
+  'nocache_hash' => '167584891656f6c2e1894529-18177532',
   'function' => 
   array (
   ),
@@ -23,11 +23,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56e03cf02f9680_77587541',
+  'unifunc' => 'content_56f6c2e193a2b1_30811639',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56e03cf02f9680_77587541')) {function content_56e03cf02f9680_77587541($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['MENU']->value!='') {?>
+<?php if ($_valid && !is_callable('content_56f6c2e193a2b1_30811639')) {function content_56f6c2e193a2b1_30811639($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['MENU']->value!='') {?>
 	<!-- Menu -->
-	<div id="block_top_menu" class="unpad-left sf-contener col-lg-8 col-md-8 col-sm-6 col-xs-12">
+	<div id="block_top_menu" class="unpad-left sf-contener col-lg-8 col-md-8 col-sm-7 col-xs-12">
 		<div id="burgerking" class="visible-xs">
 			<div class="burger">
 	          <div class="burger-brick"></div>

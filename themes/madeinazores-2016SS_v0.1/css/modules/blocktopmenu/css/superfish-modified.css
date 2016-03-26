@@ -55,7 +55,7 @@
     color: #1EA3B0; }
 
 .sf-menu > li + li:before {
-  padding: 10px 10px;
+  padding: 10px 8px;
   color: #3d3d3d;
   content: "|\00a0"; }
 

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-09 15:10:38
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-26 17:11:56
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcms/blockcms.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:37432912956e03cee16a4d9-59720053%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:64325897356f6c2dcb82526-63680168%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '34f8cd1e2c482bd4f5194eb90fe44d34806f1b08' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcms/blockcms.tpl',
-      1 => 1457535748,
+      1 => 1459005991,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '37432912956e03cee16a4d9-59720053',
+  'nocache_hash' => '64325897356f6c2dcb82526-63680168',
   'function' => 
   array (
   ),
@@ -38,12 +38,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56e03cee699357_76441296',
+  'unifunc' => 'content_56f6c2dd188120_25132789',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56e03cee699357_76441296')) {function content_56e03cee699357_76441296($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56f6c2dd188120_25132789')) {function content_56f6c2dd188120_25132789($_smarty_tpl) {?>
 
 <?php if ($_smarty_tpl->tpl_vars['block']->value==1) {?>
-	<!-- Block CMS module -->
+	<!-- Block CMS module ahahha -->
 	<?php  $_smarty_tpl->tpl_vars['cms_title'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['cms_title']->_loop = false;
  $_smarty_tpl->tpl_vars['cms_key'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['cms_titles']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}

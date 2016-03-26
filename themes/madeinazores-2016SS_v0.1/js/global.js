@@ -91,6 +91,83 @@ $(document).ready(function(){
 				 	StyleSelect();
 				 }
 			});	
+
+
+	if (typeof quickView !== 'undefined' && quickView)
+		//quick_view();
+	//dropDown();
+
+	if (typeof page_name != 'undefined' && !in_array(page_name, ['index', 'product']))
+	{
+		//bindGrid();
+
+		$(document).on('change', '.selectProductSort', function(e){
+			if (typeof request != 'undefined' && request)
+				var requestSortProducts = request;
+			var splitData = $(this).val().split(':');
+			var url = '';
+			if (typeof requestSortProducts != 'undefined' && requestSortProducts)
+			{
+				url += requestSortProducts ;
+				if (typeof splitData[0] !== 'undefined' && splitData[0])
+				{
+					url += ( requestSortProducts.indexOf('?') < 0 ? '?' : '&') + 'orderby=' + splitData[0] + (splitData[1] ? '&orderway=' + splitData[1] : '');
+					if (typeof splitData[1] !== 'undefined' && splitData[1])
+						url += '&orderway=' + splitData[1];
+				}
+				document.location.href = url;
+			}
+		});
+
+		
+
+		$(document).on('change', 'select[name="currency_payment"]', function(){
+			setCurrency($(this).val());
+		});
+	}
+
+	if (typeof(FancyboxI18nClose) !== 'undefined' && typeof(FancyboxI18nNext) !== 'undefined' && typeof(FancyboxI18nPrev) !== 'undefined' && !!$.prototype.fancybox)
+		$.extend($.fancybox.defaults.tpl, {
+			closeBtn : '<a title="' + FancyboxI18nClose + '" class="fancybox-item fancybox-close" href="javascript:;"></a>',
+			next     : '<a title="' + FancyboxI18nNext + '" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
+			prev     : '<a title="' + FancyboxI18nPrev + '" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
+		});
+
+	$(document).on('change', 'select[name="manufacturer_list"], select[name="supplier_list"]', function(){
+		if (this.value != '')
+			location.href = this.value;
+	});
+
+	$(document).on('change', 'select[name="n"]', function(){
+			$(this.form).submit();
+	});
+	
+	$(document).on('click', '.back', function(e){
+		e.preventDefault();
+		history.back();
+	});	
+
+	
+	jQuery.curCSS = jQuery.css;
+	if (!!$.prototype.cluetip)
+		$('a.cluetip').cluetip({
+			local:true,
+			cursor: 'pointer',
+			dropShadow: false,
+			dropShadowSteps: 0,
+			showTitle: false,
+			tracking: true,
+			sticky: false,
+			mouseOutClose: true,
+			fx: {
+				open:       'fadeIn',
+				openSpeed:  'fast'
+			}
+		}).css('opacity', 0.8);
+
+	
+
+	
 }); //end doc ready
 
 
@@ -221,7 +298,7 @@ function StyleSelect(){
 		$styledSelect.text($(this).text()).removeClass('active');
 		$this.val($(this).attr('rel'));
 		$list.hide();
-	console.log($this.val());
+	//console.log($this.val());
 	});
 
 	$(document).click(function() {

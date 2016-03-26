@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-09 15:10:40
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-26 17:11:54
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcart/blockcart.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:113735515156e03cf05dca20-04131487%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:32020548356f6c2dac2da34-44877100%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '113735515156e03cf05dca20-04131487',
+  'nocache_hash' => '32020548356f6c2dac2da34-44877100',
   'function' => 
   array (
   ),
@@ -45,9 +45,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56e03cf1c15610_65398292',
+  'unifunc' => 'content_56f6c2dc4a0c28_71602430',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56e03cf1c15610_65398292')) {function content_56e03cf1c15610_65398292($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.counter.php';
+<?php if ($_valid && !is_callable('content_56f6c2dc4a0c28_71602430')) {function content_56f6c2dc4a0c28_71602430($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.counter.php';
 if (!is_callable('smarty_modifier_replace')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/modifier.replace.php';
 ?><!--MODULE Block cart -->
 

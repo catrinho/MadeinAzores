@@ -237,6 +237,9 @@ $(window).bind('hashchange', function(){
 $(document).on('mouseover', '#views_block li a', function(){
 	displayImage($(this));
 });
+
+$("a#single_image").fancybox();
+
 //add a link on the span 'view full size' and on the big image
 $(document).on('click', '#view_full_size, #image-block', function(e){
 	$('#views_block .shown').click();

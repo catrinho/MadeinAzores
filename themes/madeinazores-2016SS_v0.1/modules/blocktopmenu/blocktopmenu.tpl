@@ -1,6 +1,6 @@
 {if $MENU != ''}
 	<!-- Menu -->
-	<div id="block_top_menu" class="unpad-left sf-contener col-lg-8 col-md-8 col-sm-6 col-xs-12">
+	<div id="block_top_menu" class="unpad-left sf-contener col-lg-8 col-md-8 col-sm-7 col-xs-12">
 		<div id="burgerking" class="visible-xs">
 			<div class="burger">
 	          <div class="burger-brick"></div>

@@ -33,6 +33,12 @@ $(document).ready(function(){
 	});
 	$(document).on('click', '#cart-trigger', function(e){
 		e.preventDefault();
+		if($('#header')[0]){
+			$('html,body').animate({
+		        scrollTop: $("#center_column").offset().top
+		     }, 700);
+		}
+
 		ajaxCart.expand();
 		$('body').css('overflow','hidden');
 	});
@@ -134,7 +140,7 @@ var ajaxCart = {
 
 		//for every 'add' buttons...
 		$(document).off('click', '.ajax_add_to_cart_button').on('click', '.ajax_add_to_cart_button', function(e){
-			console.log('true');
+			//console.log('true');
 			e.preventDefault();
 			var idProduct =  parseInt($(this).data('id-product'));
 			var idProductAttribute =  parseInt($(this).data('id-product-attribute'));
@@ -154,7 +160,7 @@ var ajaxCart = {
 
 		//for 'delete' buttons in the cart block...
 		$(document).off('click', '.ajax_cart_block_remove_link').on('click', ' .ajax_cart_block_remove_link', function(e){
-			alert("remoce");
+			//alert("remoce");
 			e.preventDefault();
 			// Customized product management
 			var customizationId = 0;
@@ -329,7 +335,7 @@ var ajaxCart = {
 						type: 'inline',
 						autoScale: true,
 						minHeight: 30,
-						content: '<p class="fancybox-error">' + fieldRequired + '</p>'
+						content: '<p class="fancybox-error">AAA' + fieldRequired + '</p>'
 					}
 				], {
 					padding: 0
@@ -800,19 +806,20 @@ var ajaxCart = {
 				//IE6 bug fix
 				if (error != 'indexOf')
 					errors += $('<div />').html(jsonData.errors[error]).text() + "\n";
-			if (!!$.prototype.fancybox)
-				$.fancybox.open([
-					{
-						type: 'inline',
-						autoScale: true,
-						minHeight: 30,
-						content: '<p class="fancybox-error">' + errors + '</p>'
-					}
-				], {
-					padding: 0
-				});
-			else
-				alert(errors);
+			// if (!!$.prototype.fancybox)
+			// 	$.fancybox.open([
+			// 		{
+			// 			type: 'inline',
+			// 			autoScale: true,
+			// 			minHeight: 30,
+			// 			content: '<p class="fancybox-error">AAA' + errors + '</p>'
+			// 		}
+			// 	], {
+			// 		padding: 0
+			// 	});
+			// else
+			// 	alert(errors);
+			//console.log(jsonData.errors);
 		}
 		else
 		{

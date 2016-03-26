@@ -57,7 +57,7 @@ header{
 				width: 100%;
 				//padding: 0 50px;
 				@media (max-width: $screen-xs) {
-						padding: 0 20px;
+						padding: 0 50px;
 						height: 45vh;
 					}
    				.headerslider-description{
@@ -120,7 +120,7 @@ header{
 						//text-transform: uppercase;
 						margin-left:0px;
 						margin-top: 20px;
-						@media (max-width: $screen-xs) {
+						@media (max-width: $screen-xs-max) {
 							margin: 10px 0;
 							@include Button(2px,$white,$black,$black,7px 18px 7px 18px);
 							font-size:9px;

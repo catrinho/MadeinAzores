@@ -3853,7 +3853,7 @@ td.visible-print {
 
 .top-menu {
   font-family: "PT Sans Caption", sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.13em;
@@ -4223,7 +4223,7 @@ textarea {
     .form-control .select-options li {
       font-size: 10px;
       margin: 0;
-      padding: 10px 40px;
+      padding: 10px 30px 10px 0;
       text-indent: 15px;
       border-top: 1px solid #e6e6e6;
       -webkit-transition: all 0.15s ease-in;
@@ -4320,7 +4320,7 @@ textarea {
     .form-group .select-options li {
       font-size: 10px;
       margin: 0;
-      padding: 10px 40px;
+      padding: 10px 30px 10px 0;
       text-indent: 15px;
       border-top: 1px solid #e6e6e6;
       -webkit-transition: all 0.15s ease-in;
@@ -4422,7 +4422,7 @@ textarea {
   .attribute_list .select-options li {
     font-size: 10px;
     margin: 0;
-    padding: 10px 40px;
+    padding: 10px 30px 10px 0;
     text-indent: 15px;
     border-top: 1px solid #e6e6e6;
     -webkit-transition: all 0.15s ease-in;
@@ -4452,7 +4452,7 @@ textarea {
   .attribute_list .select {
     width: 100% !important;
     min-width: 80px !important;
-    max-width: 100px !important; } }
+    max-width: 140px !important; } }
 
 .btn, .btn-default,
 button, input[type="button"], input[type="reset"], input[type="submit"] {
