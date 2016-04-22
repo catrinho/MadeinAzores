@@ -1,10 +1,13 @@
 
+
 //global variables
 var responsiveflag = false;
 
 $(document).ready(function(){
+	$( "select" ).removeClass('form-control').wrap( "<span class='custom-dropdown'></span>" );
+	$("#center_column .nav .header_user_info").addClass('header_user_info-move');
+	$("#center_column .nav .languages-block").addClass('languages-block-move');
 
-	//highdpiInit();
 	responsiveResize();
 	$(window).resize(responsiveResize);
 	if (navigator.userAgent.match(/Android/i))
@@ -13,10 +16,13 @@ $(document).ready(function(){
 		viewport.setAttribute('content', 'initial-scale=1.0,maximum-scale=1.0,user-scalable=0,width=device-width,height=device-height');
 		window.scrollTo(0, 1);
 	}
-
+	
+	//highdpiInit();
 
 	// Menu Hamburger  - Mobile
-	  $('#burgerking').on('click', function() {
+
+	  $('.burger').on('click', function() {
+	  	
 	  	$('.burger').toggleClass('open');
 	  	
 	  	$('body').toggleClass('not-moving')/*.toggleClass('absolute')*/;
@@ -24,7 +30,7 @@ $(document).ready(function(){
 	    $('#left_column').toggleClass('isOpen')/*.toggleClass('not-moving')*/;
 	  });
 
-			 $('#burgerking-upper').on('click', function() {
+			 $('#burgerking-upper,.arrow').on('click', function() {
 			 	//e.preventDefault;
 			 	$('html,body').animate({
 		        scrollTop: $("#center_column").offset().top
@@ -147,7 +153,7 @@ $(document).ready(function(){
 		history.back();
 	});	
 
-	
+
 	jQuery.curCSS = jQuery.css;
 	if (!!$.prototype.cluetip)
 		$('a.cluetip').cluetip({
@@ -173,8 +179,12 @@ $(document).ready(function(){
 
 function responsiveResize()
 {
+	
 	compensante = scrollCompensate();
-	if (($(window).width()+scrollCompensate()) <= 767 && responsiveflag == false)
+	// console.log('scroll compensante -'+compensante);
+	// console.log('windo w ' + $(window).width());
+	//console.log('total' + $(window).width()+scrollCompensate());
+	if (($(window).width()+scrollCompensate()) <= 768 && responsiveflag == false)
 	{
 		// Ecrãs menores que 768px
 
@@ -184,7 +194,7 @@ function responsiveResize()
 		//Remove a coluna da esquerda e coloca a seguir à div#page - slide menu
 		$('#left_column').detach().insertAfter('#page');
 		// Deslocação do Header menu, do centro, para o slide menu
-		$('.header_user_info,.languages-block').detach().insertAfter('#header_logo');
+		$(".nav .header_user_info-move, .nav .languages-block-move").detach().insertAfter('#header_logo');
 		// Deslocação do footer para o fundo do slide menu
 		$('#block_various_links_footer').detach().insertAfter('#categories_block_left').removeClass('col-xs-12').removeClass('col-sm-12');
 		$('#block_various_links_footer>ul').removeClass('text-center').removeClass('align-center');
@@ -202,17 +212,18 @@ function responsiveResize()
 	else if (($(window).width()+scrollCompensate()) >= 768)
 	{
 		responsiveflag = false;
-		//deslocar a navegação do top do ecra movel para o top da #center_column
-		$('.nav').removeClass('col-xs-12').detach().prependTo('#center_column');
-		$('.header_user_info,.languages-block').detach().insertAfter('#block_top_menu');
-		// Deslocação do Header menu, do centro, para o slide menu
-		//$('.header_user_info,.languages-block').detach().insertAfter('#header_logo');
-		//desloca a coluna da esquerda e coloca a dentro da div#page - left-column
-		$('#left_column').detach().insertBefore('#center_column');
-		// Deslocação do footer para o fundo do  #center-colum
-		$('#block_various_links_footer').detach().append('#footer>.row').addClass('col-xs-12').addClass('col-sm-12');
-		$('#block_various_links_footer>ul').addClass('text-center').addClass('align-center');
-
+		//if(!$("body#index").hasClass()){
+			// //deslocar a navegação do top do ecra movel para o top da #center_column
+			 $('.nav').removeClass('col-xs-12').detach().prependTo('#center_column');
+			 $('.header_user_info-move,.languages-block-move').detach().insertAfter('.nav #block_top_menu');
+			// // Deslocação do Header menu, do centro, para o slide menu
+			//$('.header_user_info,.languages-block').detach().insertAfter('#header_logo');
+			// //desloca a coluna da esquerda e coloca a dentro da div#page - left-column
+			 $('#left_column').detach().insertBefore('#center_column');
+			// // Deslocação do footer para o fundo do  #center-colum
+			 $('#block_various_links_footer').detach().appendTo('footer>.row:first-child').addClass('col-xs-12').addClass('col-sm-12');
+			 $('#block_various_links_footer>ul').addClass('text-center').addClass('align-center');
+		//}
 		if (typeof bindUniform !=='undefined')
 			bindUniform();
 	}
@@ -222,16 +233,16 @@ function responsiveResize()
 
 function bindUniform()
 {
-	// if (!!$.prototype.uniform){
-	// 	$("form-control,input[type='radio'],input[type='checkbox']").not(".not_uniform,select").uniform();
-	// }
+	if (!!$.prototype.uniform){
+		$("form-control,input[type='radio'],input[type='checkbox']").not(".not_uniform,select").uniform();
+	}
 
-	$('select').each(function(){
-		//console.log('sel')
-		 if(!$(this).hasClass('select-hidden')){
-		 	StyleSelect();
-		 }
-	});
+	// $('select').each(function(){
+	// 	//console.log('sel')
+	// 	 if(!$(this).hasClass('select-hidden')){
+	// 	 	StyleSelect();
+	// 	 }
+	//});
 }
 
 function scrollCompensate()

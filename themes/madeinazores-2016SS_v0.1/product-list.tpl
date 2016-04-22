@@ -46,7 +46,7 @@
 						</div>
 					{/if}
 					<p class="product-desc" itemprop="description">
-						{$product.description_short|strip_tags:'UTF-8'|truncate:80:'...'}
+						{$product.description_short|strip_tags:'UTF-8'|truncate:150:'...'}
 					</p>
 					
 					<div class="product-buttons stay-on-bottom">

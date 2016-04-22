@@ -88,6 +88,9 @@ font-family: 'PT Mono', ;
     .primary_block .pb-left-column #image-block img {
       background: #fbfbfb;
       width: 85%; }
+      @media (max-width: 767px) {
+        .primary_block .pb-left-column #image-block img {
+          width: 100%; } }
   .primary_block .pb-right-tmpo {
     float: left;
     padding-left: 15px; }
@@ -176,9 +179,9 @@ font-family: 'PT Mono', ;
         padding-top: 20px; } }
     .primary_block .page-product-box p {
       font-family: "PT Sans Caption", sans-serif;
-      font-size: 1.2em;
-      letter-spacing: 0.125em;
-      line-height: 1.5em;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      line-height: 18px;
       padding-top: 4px; }
       .primary_block .page-product-box p:first-child {
         padding-top: 0px; }

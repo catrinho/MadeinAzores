@@ -612,7 +612,10 @@ function updateDisplay()
 
 	// If we have combinations, update price section: amounts, currency, discount amounts,...
 	if (productHasAttributes)
+	{
 		updatePrice();
+	}
+
 }
 
 function updatePrice()
@@ -729,6 +732,7 @@ function updatePrice()
 	}
 
 	var unit_impact = +combination.unit_impact;
+	console.log(unit_impact);
 	if (productUnitPriceRatio > 0 || unit_impact)
 	{
 		if (unit_impact)

@@ -269,8 +269,11 @@
 					<!-- ADD TO CART BUTTON -->
 					<div class="addCart_upper"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
 							<p id="add_to_cart" class="buttons_upper_block no-print">
-								<button type="submit" name="Submit" class="AddCartB-2 exclusive  ajax_add_to_cart_button">
+								<button type="submit" name="Submit" class="hidden-xs AddCartB-2 exclusive  ajax_add_to_cart_button">
 									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}</span><i>+</i>
+								</button>
+								<button type="submit" name="Submit" class="visible-xs AddCartB-2 exclusive  ajax_add_to_cart_button">
+									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Buy it'}{/if}</span><i>+</i>
 								</button>
 							</p>
 					</div>
@@ -433,8 +436,11 @@
 					<!-- ADD TO CART BUTTON -->
 					<div class="addCart_upper"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
 							<p id="add_to_cart" class="buttons_upper_block no-print">
-								<button type="submit" name="Submit" class="AddCartB-2 exclusive ajax_add_to_cart_button">
+								<button type="submit" name="Submit" class="hidden-xs AddCartB-2 exclusive  ajax_add_to_cart_button">
 									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}</span><i>+</i>
+								</button>
+								<button type="submit" name="Submit" class="visible-xs AddCartB-2 exclusive  ajax_add_to_cart_button">
+									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Buy it'}{/if}</span><i>+</i>
 								</button>
 							</p>
 					</div>

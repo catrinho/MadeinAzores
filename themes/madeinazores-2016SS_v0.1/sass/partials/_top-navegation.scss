@@ -29,6 +29,33 @@
 		background-color:transparent !important;
 	}
 }	
+.upper-nav{
+	position:absolute;
+	width:100%;
+
+	.nav-upper{
+		position:relative;
+	}
+	//#block-top-menu{
+		.sf-menu > li > a,
+		.sf-menu > li+li:before,
+		#languages-block-top #first-languages >li>a>span,
+		#languages-block-top #first-languages >li.selected>span,
+		#languages-block-top #first-languages >li+li:before,
+		.header_user_info a
+		 {
+		  color: $white ;
+		  
+		}
+	#shopping_cart #cart-trigger .cd-img-replace{
+	 .cart-icon{
+		background:transparent url("../img/icon_svg/cart_white.svg") 0 0 no-repeat;
+	  }
+	  .ajax_cart_no_product	{
+	  	color: $white;
+	  }
+	}
+}
 
 #top_row{
 	background-color:$white;
@@ -44,38 +71,45 @@
 		}	
 	}	
 }
-.header-menu{
-	background-color:transparent!important;
-	nav{
-		background-color:transparent;	
-		border-bottom:2px solid $white;
-	}
-	#burgerking .burger .burger-brick{
-		background-color:$white;
-	}
-	.brand-mobile span{
-		color: $white;
-	}
-}
 
 
 // TopMenu - module css
-#block-top-menu{
-	
-}
+
 
 #shopping_cart{
 	float:right;
 	position:relative;
 	@extend .top-menu;
-	@extend .a;
-	#cart-trigger{
-		/*.cd-img-replace { //replace text with a background-image 
+	
+	div#cart-trigger{
+		
+		position: relative;
+		top: -9px;
+
+		.cd-img-replace { //replace text with a background-image 
+			//@extend .a;
 			display: inline-block;
 			overflow: hidden;
-			text-indent: 100%;
-			white-space: nowrap;
-		}*/
+			color: $black;
+			text-decoration: none;
+			// text-indent: 100%;
+			// white-space: nowrap;
+			//position:absolute;
+			.cart-icon{
+				position:relative;
+				top:3px;
+				display: inline-block;
+				overflow: hidden;
+				margin:0;
+				width:23px;
+				height:23px;
+				z-index:1;
+				background:#fff url("../img/icon_svg/cart_black.svg") 0 0 no-repeat;
+			}
+
+
+		}
+
 	}	
 	@media (max-width: $screen-xs-max) {
 		position: absolute;
@@ -149,4 +183,32 @@
 			line-height: 28px;
 		}	
 	}
+}
+
+.header-menu{
+	background-color:transparent!important;
+	nav{
+		background-color:transparent;	
+		border-bottom:2px solid $white;
+	}
+
+	#burgerking {
+		z-index: 300;
+		.burger{
+			 .burger-brick{
+				background-color:$white;
+			}
+		}		
+	}
+	.brand-mobile span{
+		color: $white;
+	}
+
+	#shopping_cart #cart-trigger .cd-img-replace .cart-icon{
+						background:transparent url("../img/icon_svg/cart_white.svg") 0 0 no-repeat;	
+				}
+	#shopping_cart #cart-trigger .cd-img-replace .ajax_cart_no_product	{
+				  	color: $white;
+				  }
+	
 }

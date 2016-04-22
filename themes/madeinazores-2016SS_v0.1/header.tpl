@@ -16,7 +16,7 @@
 		{/if}
 		<meta name="generator" content="PrestaShop" />
 		<meta name="robots" content="{if isset($nobots)}no{/if}index,{if isset($nofollow) && $nofollow}no{/if}follow" />
-		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0 user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}" />
 		<link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}" />
@@ -47,31 +47,39 @@
 		{/if}
 	{if $page_name =='index'}	
 		{capture name='displayBanner'}{hook h='displayBanner'}{/capture}
+		{capture name='displayNav'}{hook h='displayNav'}{/capture}
+								
 		{if $smarty.capture.displayBanner}
 		<header id="header">
 		<!-- banner -->	
+		<div class ="upper-nav">
 						<div id="columns" class="container">
-						<div class="row">
-							 <div class="nav-cover " >
-								<div class="container">
-									<div class="row">
-										<nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<div id="burgerking-upper">
-												<div class="burger white">
-										          <div class="burger-brick"></div>
-										          <div class="burger-brick middle"></div>
-										          <div class="burger-brick"></div>
-										        </div>
-										    </div>  
-										</nav>
+							<div class="row">
+								 <div class="nav-cover nav-upper hidden-xs" >
+									<div class="container">
+										<div class="row">
+											<nav>
+												<div id="burgerking-upper" class="column col-xs-12 col-sm-3 col-md-3 col-lg-3">
+													<div class="burger white">
+											          <div class="burger-brick"></div>
+											          <div class="burger-brick middle"></div>
+											          <div class="burger-brick"></div>
+											        </div>
+											    </div> 
+											    {if $smarty.capture.displayNav}
+											    <div class="upper-menu col-sm-9 col-md-9 col-lg-9">
+											    	{$smarty.capture.displayNav}
+											    </div>
+											    {/if}
+											</nav>
 
+										</div>
 									</div>
-								</div>
-							</div> 
-						</div>
-						
+								</div> 
+							</div>
 						</div> 	
-							{$smarty.capture.displayBanner}
+		</div>				
+						{$smarty.capture.displayBanner}	
 				
 				<span class="arrow"></span>
 		</header>				

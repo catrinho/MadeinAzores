@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-26 17:19:33
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-31 10:02:29
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/product.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:9118144856f6c2ddd51cc4-27045661%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '91781ba8e16e6dec91509317ca889160015fcf71' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/product.tpl',
-      1 => 1459012758,
+      1 => 1459377491,
       2 => 'file',
     ),
   ),
@@ -161,7 +161,7 @@ if (!is_callable('smarty_modifier_date_format')) include '/Users/ruirocha/Sites/
 <?php }?>"/>
 							</a>
 						<?php } else { ?>
-						<a id="single_image" class="fancybox" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['product']->value->link_rewrite,$_smarty_tpl->tpl_vars['cover']->value['id_image'],'large_default'), ENT_QUOTES, 'UTF-8', true);?>
+						<a id="single_image" class="fancybox" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['product']->value->link_rewrite,$_smarty_tpl->tpl_vars['cover']->value['id_image'],'thickbox_default'), ENT_QUOTES, 'UTF-8', true);?>
 ">
 							<img id="bigpic" itemprop="image" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['product']->value->link_rewrite,$_smarty_tpl->tpl_vars['cover']->value['id_image'],'large_default'), ENT_QUOTES, 'UTF-8', true);?>
 " title="<?php if (!empty($_smarty_tpl->tpl_vars['cover']->value['legend'])) {?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cover']->value['legend'], ENT_QUOTES, 'UTF-8', true);?>
@@ -357,9 +357,14 @@ $_smarty_tpl->tpl_vars['group_attribute']->_loop = true;
 					<!-- ADD TO CART BUTTON -->
 					<div class="addCart_upper"<?php if ((!$_smarty_tpl->tpl_vars['allow_oosp']->value&&$_smarty_tpl->tpl_vars['product']->value->quantity<=0)||!$_smarty_tpl->tpl_vars['product']->value->available_for_order||(isset($_smarty_tpl->tpl_vars['restricted_country_mode']->value)&&$_smarty_tpl->tpl_vars['restricted_country_mode']->value)||$_smarty_tpl->tpl_vars['PS_CATALOG_MODE']->value) {?> class="unvisible"<?php }?>>
 							<p id="add_to_cart" class="buttons_upper_block no-print">
-								<button type="submit" name="Submit" class="AddCartB-2 exclusive  ajax_add_to_cart_button">
+								<button type="submit" name="Submit" class="hidden-xs AddCartB-2 exclusive  ajax_add_to_cart_button">
 									<span><?php if ($_smarty_tpl->tpl_vars['content_only']->value&&(isset($_smarty_tpl->tpl_vars['product']->value->customization_required)&&$_smarty_tpl->tpl_vars['product']->value->customization_required)) {?><?php echo smartyTranslate(array('s'=>'Customize'),$_smarty_tpl);?>
 <?php } else { ?><?php echo smartyTranslate(array('s'=>'Add to cart'),$_smarty_tpl);?>
+<?php }?></span><i>+</i>
+								</button>
+								<button type="submit" name="Submit" class="visible-xs AddCartB-2 exclusive  ajax_add_to_cart_button">
+									<span><?php if ($_smarty_tpl->tpl_vars['content_only']->value&&(isset($_smarty_tpl->tpl_vars['product']->value->customization_required)&&$_smarty_tpl->tpl_vars['product']->value->customization_required)) {?><?php echo smartyTranslate(array('s'=>'Customize'),$_smarty_tpl);?>
+<?php } else { ?><?php echo smartyTranslate(array('s'=>'Buy it'),$_smarty_tpl);?>
 <?php }?></span><i>+</i>
 								</button>
 							</p>
@@ -557,9 +562,14 @@ $_smarty_tpl->tpl_vars['group_attribute']->_loop = true;
 					<!-- ADD TO CART BUTTON -->
 					<div class="addCart_upper"<?php if ((!$_smarty_tpl->tpl_vars['allow_oosp']->value&&$_smarty_tpl->tpl_vars['product']->value->quantity<=0)||!$_smarty_tpl->tpl_vars['product']->value->available_for_order||(isset($_smarty_tpl->tpl_vars['restricted_country_mode']->value)&&$_smarty_tpl->tpl_vars['restricted_country_mode']->value)||$_smarty_tpl->tpl_vars['PS_CATALOG_MODE']->value) {?> class="unvisible"<?php }?>>
 							<p id="add_to_cart" class="buttons_upper_block no-print">
-								<button type="submit" name="Submit" class="AddCartB-2 exclusive ajax_add_to_cart_button">
+								<button type="submit" name="Submit" class="hidden-xs AddCartB-2 exclusive  ajax_add_to_cart_button">
 									<span><?php if ($_smarty_tpl->tpl_vars['content_only']->value&&(isset($_smarty_tpl->tpl_vars['product']->value->customization_required)&&$_smarty_tpl->tpl_vars['product']->value->customization_required)) {?><?php echo smartyTranslate(array('s'=>'Customize'),$_smarty_tpl);?>
 <?php } else { ?><?php echo smartyTranslate(array('s'=>'Add to cart'),$_smarty_tpl);?>
+<?php }?></span><i>+</i>
+								</button>
+								<button type="submit" name="Submit" class="visible-xs AddCartB-2 exclusive  ajax_add_to_cart_button">
+									<span><?php if ($_smarty_tpl->tpl_vars['content_only']->value&&(isset($_smarty_tpl->tpl_vars['product']->value->customization_required)&&$_smarty_tpl->tpl_vars['product']->value->customization_required)) {?><?php echo smartyTranslate(array('s'=>'Customize'),$_smarty_tpl);?>
+<?php } else { ?><?php echo smartyTranslate(array('s'=>'Buy it'),$_smarty_tpl);?>
 <?php }?></span><i>+</i>
 								</button>
 							</p>

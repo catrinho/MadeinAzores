@@ -171,7 +171,7 @@ var ajaxCart = {
 
 			if (customizableProductDiv && $(customizableProductDiv).length)
 			{
-				console.log('UPS'+$(this).data('id'));
+				//console.log('UPS'+$(this).data('id'));
 				var ids = customizableProductDiv.data('id').split('_');
 				if (typeof(ids[1]) != 'undefined')
 				{
@@ -857,7 +857,7 @@ var ajaxCart = {
 
 		$('.ajax_cart_tax_cost').text(jsonData.taxCost);
 		$('.cart_block_wrapping_cost').text(jsonData.wrappingCost);
-		$('.ajax_block_cart_total').text(jsonData.total);
+		$('.ajax_block_cart_total>span').text(jsonData.total);
 		$('.ajax_block_products_total').text(jsonData.productTotal);
 		$('.ajax_total_price_wt').text(jsonData.total_price_wt);
 

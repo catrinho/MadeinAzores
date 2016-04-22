@@ -1,62 +1,6 @@
 
 
-
-
-
 	
-	if (typeof quickView !== 'undefined' && quickView)
-		//quick_view();
-	//dropDown();
-
-	if (typeof page_name != 'undefined' && !in_array(page_name, ['index', 'product']))
-	{
-		//bindGrid();
-
-		$(document).on('change', '.selectProductSort', function(e){
-			if (typeof request != 'undefined' && request)
-				var requestSortProducts = request;
-			var splitData = $(this).val().split(':');
-			var url = '';
-			if (typeof requestSortProducts != 'undefined' && requestSortProducts)
-			{
-				url += requestSortProducts ;
-				if (typeof splitData[0] !== 'undefined' && splitData[0])
-				{
-					url += ( requestSortProducts.indexOf('?') < 0 ? '?' : '&') + 'orderby=' + splitData[0] + (splitData[1] ? '&orderway=' + splitData[1] : '');
-					if (typeof splitData[1] !== 'undefined' && splitData[1])
-						url += '&orderway=' + splitData[1];
-				}
-				document.location.href = url;
-			}
-		});
-
-		
-
-		$(document).on('change', 'select[name="currency_payment"]', function(){
-			setCurrency($(this).val());
-		});
-	}
-
-	
-
-	
-
-	jQuery.curCSS = jQuery.css;
-	if (!!$.prototype.cluetip)
-		$('a.cluetip').cluetip({
-			local:true,
-			cursor: 'pointer',
-			dropShadow: false,
-			dropShadowSteps: 0,
-			showTitle: false,
-			tracking: true,
-			sticky: false,
-			mouseOutClose: true,
-			fx: {
-				open:       'fadeIn',
-				openSpeed:  'fast'
-			}
-		}).css('opacity', 0.8);
 
 	
 

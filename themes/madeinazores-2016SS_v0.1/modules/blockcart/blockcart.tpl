@@ -2,7 +2,8 @@
 
 <div id="shopping_cart">
 	<div id="cart-trigger">
-	<a class="cd-img-replace" href="#0">Cart
+	<a class="cd-img-replace" href="#0">{*l s='Cart' mod='blockcart'*}
+		<span class="cart-icon"></span>
 		<!-- Quantidade de Produtos no Carrinho -->
 		<span class="ajax_cart_quantity{if $cart_qties == 0} unvisible{/if}">{$cart_qties}</span>
 		<!-- Carrinho Vazio = 0 ->empty -->

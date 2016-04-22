@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-26 17:11:56
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-31 09:28:40
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blocksearch/blocksearch.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:128023916956f6c2dc50c0e4-08397221%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '83ec4601850532c968f494b2326e89fc6d6b48a4' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blocksearch/blocksearch.tpl',
-      1 => 1455557230,
+      1 => 1459410340,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_56f6c2dc56c5c2_04266670',
   'variables' => 
   array (
     'link' => 0,
     'search_query' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56f6c2dc56c5c2_04266670',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56f6c2dc56c5c2_04266670')) {function content_56f6c2dc56c5c2_04266670($_smarty_tpl) {?>
 
@@ -36,7 +36,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<input type="hidden" name="orderby" value="position" />
 			<input type="hidden" name="controller" value="search" />
 			<input type="hidden" name="orderway" value="desc" />
-			<input class="search_query form-control" placeholder="Search" type="text" id="search_query_block" name="search_query" value="<?php echo stripslashes(mb_convert_encoding(htmlspecialchars($_smarty_tpl->tpl_vars['search_query']->value, ENT_QUOTES, 'UTF-8', true), "HTML-ENTITIES", 'UTF-8'));?>
+			<input class="search_query form-control" placeholder="<?php echo smartyTranslate(array('s'=>'Search products:','mod'=>'blocksearch'),$_smarty_tpl);?>
+" type="text" id="search_query_block" name="search_query" value="<?php echo stripslashes(mb_convert_encoding(htmlspecialchars($_smarty_tpl->tpl_vars['search_query']->value, ENT_QUOTES, 'UTF-8', true), "HTML-ENTITIES", 'UTF-8'));?>
 " />
 			<button type="submit" id="search_button" class="btn btn-default button button-small"><span><i class="icon-search"></i></span></button>
 		</p>

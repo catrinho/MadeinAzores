@@ -101,7 +101,7 @@ h6 {
   font-size: 1em; }
 
 .h1, h1.page-heading, .page-heading {
-  font-size: 2.48832em;
+  font-size: 2.0736em;
   font-family: "PT Sans", sans-serif;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -196,11 +196,18 @@ h1.page-heading, .page-heading {
   margin-top: 20px;
   margin-bottom: 25px;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    h1.page-heading, .page-heading {
+      margin-top: 15px;
+      margin-bottom: 20px; } }
 
 h2.page-heading {
   margin-top: 20px;
   margin-bottom: 25px;
   overflow: hidden; }
+  @media (min-width: 767px) {
+    h2.page-heading {
+      margin-top: 15px; } }
 
 h2.page-subheading {
   margin-top: 20px;
@@ -248,6 +255,10 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap;
   text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .btn, .btn-default,
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+      margin: 40px 20px; } }
   .btn:hover, .btn:focus, .btn-default:hover, .btn-default:focus,
   button:hover,
   button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {

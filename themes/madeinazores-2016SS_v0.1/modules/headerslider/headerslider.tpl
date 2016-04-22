@@ -41,9 +41,9 @@
 									<a href="{$slide.url|escape:'html':'UTF-8'}" title="{$slide.legend|escape:'html':'UTF-8'}">
 										
 										<div class="container">
-										<div class="row header-info ">
-										<div class="headerslider-description">{$slide.description}</div>
-										<p class="img-credits">{$slide.legend|escape:'htmlall':'UTF-8'}"</p>
+										<div class="header-info ">
+											<div class="headerslider-description">{$slide.description}</div>
+											<p class="img-credits">{$slide.legend|escape:'htmlall':'UTF-8'}"</p>
 										</div>
 										</div>
 									</a>	

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-26 17:11:56
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-27 23:10:45
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcategories/category-tree-branch.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2084344256f6c2dc6d7f18-38366112%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd5525fbd9e1d54c5121ea6d5d67512168d7a7ae4' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcategories/category-tree-branch.tpl',
-      1 => 1456625268,
+      1 => 1459116643,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_56f6c2dc85a5e2_13967100',
   'variables' => 
   array (
     'node' => 0,
@@ -22,11 +24,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'child' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56f6c2dc85a5e2_13967100',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56f6c2dc85a5e2_13967100')) {function content_56f6c2dc85a5e2_13967100($_smarty_tpl) {?>
-<li <?php if (count($_smarty_tpl->tpl_vars['node']->value['children'])>0) {?>class="subMenu"<?php }?>>
+<li <?php if (count($_smarty_tpl->tpl_vars['node']->value['children'])>0) {?>class="subMenu
+			<?php  $_smarty_tpl->tpl_vars['child'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['child']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['node']->value['children']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['child']->key => $_smarty_tpl->tpl_vars['child']->value) {
+$_smarty_tpl->tpl_vars['child']->_loop = true;
+?>
+				<?php if (isset($_smarty_tpl->tpl_vars['currentCategoryId']->value)&&$_smarty_tpl->tpl_vars['child']->value['id']==$_smarty_tpl->tpl_vars['currentCategoryId']->value) {?> open
+				<?php }?>	
+			<?php } ?>"
+<?php }?>>
 	<a 
 
 	<?php if (count($_smarty_tpl->tpl_vars['node']->value['children'])>0) {?>

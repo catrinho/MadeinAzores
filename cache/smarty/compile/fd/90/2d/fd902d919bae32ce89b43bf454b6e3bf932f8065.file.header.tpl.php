@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-26 17:12:01
+<?php /* Smarty version Smarty-3.1.19, created on 2016-04-03 21:04:48
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:29603191756f6c2e10f0430-93786226%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fd902d919bae32ce89b43bf454b6e3bf932f8065' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/header.tpl',
-      1 => 1459010635,
+      1 => 1459710808,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_56f6c2e17cb777_19851471',
   'variables' => 
   array (
     'language_code' => 0,
@@ -50,8 +52,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'HOOK_TOP' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56f6c2e17cb777_19851471',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56f6c2e17cb777_19851471')) {function content_56f6c2e17cb777_19851471($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.implode.php';
 ?>
@@ -80,7 +80,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<?php }?>
 		<meta name="generator" content="PrestaShop" />
 		<meta name="robots" content="<?php if (isset($_smarty_tpl->tpl_vars['nobots']->value)) {?>no<?php }?>index,<?php if (isset($_smarty_tpl->tpl_vars['nofollow']->value)&&$_smarty_tpl->tpl_vars['nofollow']->value) {?>no<?php }?>follow" />
-		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0 user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo $_smarty_tpl->tpl_vars['favicon_url']->value;?>
 ?<?php echo $_smarty_tpl->tpl_vars['img_update_time']->value;?>
@@ -142,32 +142,47 @@ if (!empty($_capture_buffer)) {
  if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
  Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
 } else $_smarty_tpl->capture_error();?>
+		<?php $_smarty_tpl->_capture_stack[0][] = array('displayNav', null, null); ob_start(); ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayNav'),$_smarty_tpl);?>
+<?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
+if (!empty($_capture_buffer)) {
+ if (isset($_capture_assign)) $_smarty_tpl->assign($_capture_assign, ob_get_contents());
+ if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
+ Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
+} else $_smarty_tpl->capture_error();?>
+								
 		<?php if (Smarty::$_smarty_vars['capture']['displayBanner']) {?>
 		<header id="header">
 		<!-- banner -->	
+		<div class ="upper-nav">
 						<div id="columns" class="container">
-						<div class="row">
-							 <div class="nav-cover " >
-								<div class="container">
-									<div class="row">
-										<nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-											<div id="burgerking-upper">
-												<div class="burger white">
-										          <div class="burger-brick"></div>
-										          <div class="burger-brick middle"></div>
-										          <div class="burger-brick"></div>
-										        </div>
-										    </div>  
-										</nav>
+							<div class="row">
+								 <div class="nav-cover nav-upper hidden-xs" >
+									<div class="container">
+										<div class="row">
+											<nav>
+												<div id="burgerking-upper" class="column col-xs-12 col-sm-3 col-md-3 col-lg-3">
+													<div class="burger white">
+											          <div class="burger-brick"></div>
+											          <div class="burger-brick middle"></div>
+											          <div class="burger-brick"></div>
+											        </div>
+											    </div> 
+											    <?php if (Smarty::$_smarty_vars['capture']['displayNav']) {?>
+											    <div class="upper-menu col-sm-9 col-md-9 col-lg-9">
+											    	<?php echo Smarty::$_smarty_vars['capture']['displayNav'];?>
 
+											    </div>
+											    <?php }?>
+											</nav>
+
+										</div>
 									</div>
-								</div>
-							</div> 
-						</div>
-						
+								</div> 
+							</div>
 						</div> 	
-							<?php echo Smarty::$_smarty_vars['capture']['displayBanner'];?>
-
+		</div>				
+						<?php echo Smarty::$_smarty_vars['capture']['displayBanner'];?>
+	
 				
 				<span class="arrow"></span>
 		</header>				

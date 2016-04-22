@@ -128,7 +128,10 @@ $(document).ready(function()
 	if (!url_found)
 	{
 		if (typeof productHasAttributes !== 'undefined' && productHasAttributes)
+		{
+			console.log(productHasAttributes);
 			findCombination();
+		}
 		else
 			refreshProductImages(0);
 	}
@@ -480,6 +483,7 @@ function updateDisplay()
 {
 	var productPriceDisplay = productPrice;
 	var productPriceWithoutReductionDisplay = productPriceWithoutReduction;
+	console.log(productPriceDisplay);
 
 	if (!selectedCombination['unavailable'] && quantityAvailable > 0 && productAvailableForOrder == 1)
 	{
@@ -621,8 +625,10 @@ function updateDisplay()
 		$('#product_reference:visible').hide('slow');
 
 	// If we have combinations, update price section: amounts, currency, discount amounts,...
+	console.log(productHasAttributes+' pois');
 	if (productHasAttributes)
 		updatePrice();
+
 }
 
 function updatePrice()
@@ -762,20 +768,24 @@ function updatePrice()
 	$('.price-ecotax').hide();
 	$('.unit-price').hide();
 
+
 	if (priceWithDiscountsDisplay > 0)
 	{
 		$('#our_price_display').text(formatCurrency(priceWithDiscountsDisplay, currencyFormat, currencySign, currencyBlank)).trigger('change');
+		console.log($('#our_price_display').text());
 	}
 	else
 	{
 		$('#our_price_display').text(formatCurrency(0, currencyFormat, currencySign, currencyBlank)).trigger('change');
+		console.log('é iss');
 	}
 
 	// If the calculated price (after all discounts) is different than the base price
 	// we show the old price striked through
 
 	if (priceWithDiscountsDisplay.toFixed(2) != basePriceDisplay.toFixed(2))
-	{
+	{	
+
 		$('#old_price_display span.price').text(formatCurrency(basePriceDisplay, currencyFormat, currencySign, currencyBlank));
 		$('#old_price, #old_price_display, #old_price_display_taxes').removeClass('hidden').show();
 

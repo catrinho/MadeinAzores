@@ -161,6 +161,9 @@ select[multiple] {
   padding: $base-spacing / 3;
   transition: border-color $base-duration $base-timing;
   width: 100%;
+  @media (max-width:$screen-xs-max){
+    font-size: 16px;
+  }
 
   &:hover {
     border-color: shade($base-border-color, 20%);
@@ -260,12 +263,85 @@ textarea {
   border:$base-border;
   height: 40px;
 
-  @include Form-Select;
+  //@include Form-Select;
 }
 .form-group{
     padding: 10px 0px;
 
-    @include Form-Select;
+    //@include Form-Select;
+}
+
+/* Custom dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* demo only */
+}
+
+.custom-dropdown select {
+  background-color: #fff;
+  color: #3d3d3d;
+  font-size: inherit;
+  @media (max-width:$screen-xs-max){
+    font-size: 14px;
+  }
+  font-weight: 700;
+  padding: .5em;
+  padding-right: 2.5em; 
+  border: 0;
+  margin: 0;
+  border-radius: 0px;
+  border:2px solid #3d3d3d;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+  min-width: 140px;
+  height: 40px;
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .25em;
+  line-height: 1;
+  right: 1.42em;
+  top: 50%;
+  margin-top: -.5em;
+  @media (max-width:$screen-xs-max){
+    font-size: 12px;
+  }
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width:3em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown select[disabled] {
+  color: rgba(0,0,0,.3);
+}
+
+.custom-dropdown select[disabled]::after {
+  color: rgba(0,0,0,.1);
+}
+
+.custom-dropdown::before {
+  background-color: rgba(255,255,255,.1);
+}
+
+.custom-dropdown::after {
+  color: #3d3d3d;
 }
 .check-buttons{
    margin: 35px 0;
@@ -276,31 +352,38 @@ textarea {
     position:relative;
     top:15px;
   }  
+  @media (max-width:$screen-xs-max){
+    position:relative;
+    top:0px;
+  }
 
-  @include Form-Select;
+  //@include Form-Select;
 
-  .select {
-      @media(max-width:$screen-xs){
-           width:45% !important;
-           min-width:45% !important; 
-           max-width: 120px!important;
-      }
-      @media(min-width:$screen-xs) and (max-width:$screen-xs-max){
-           width:40% !important;
-           min-width:30% !important; 
-           max-width: 120px!important;
-      }
-      @media(min-width:$screen-sm) and (max-width:$screen-sm-max){
-           width:100% !important;
-           min-width:80px !important; 
-           max-width: 120px!important;
-      }
-      @media(min-width:$screen-md){
-           width:100% !important;
-           min-width:80px !important; 
-           max-width: 140px!important;
-      }
-  }  
+  // .select {
+  //     @media(max-width:$screen-xs){
+  //          width:45% !important;
+  //          min-width:45% !important; 
+  //          max-width: 120px!important;
+  //     }
+  //     @media(min-width:$screen-xs) and (max-width:$screen-xs-max){
+  //          width:40% !important;
+  //          min-width:30% !important; 
+  //          max-width: 120px!important;
+  //     }
+  //     @media(min-width:$screen-sm) and (max-width:$screen-sm-max){
+  //          width:100% !important;
+  //          min-width:80px !important; 
+  //          max-width: 120px!important;
+  //     }
+  //     @media(min-width:$screen-md){
+  //          width:100% !important;
+  //          min-width:80px !important; 
+  //          max-width: 140px!important;
+  //     }
+  // }  
+
 }
+
+
 
 

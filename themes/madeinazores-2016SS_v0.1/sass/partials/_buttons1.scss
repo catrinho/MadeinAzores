@@ -16,6 +16,9 @@
 .btn, .btn-default,
 #{$all-buttons} {
     margin: 40px;
+    @media (max-width:$screen-xs-max){
+      margin: 40px 20px;
+    }  
    @include Button(2px,$black,$black,$white,10px 30px 10px 30px);
   // appearance: none;
   // background-color: $action-color;

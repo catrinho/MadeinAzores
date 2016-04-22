@@ -1,5 +1,10 @@
 
-<li {if $node.children|@count > 0}class="subMenu"{/if}>
+<li {if $node.children|@count > 0}class="subMenu
+			{foreach from=$node.children item=child}
+				{if isset($currentCategoryId) && $child.id == $currentCategoryId} open
+				{/if}	
+			{/foreach}"
+{/if}>
 	<a 
 
 	{if $node.children|@count > 0}

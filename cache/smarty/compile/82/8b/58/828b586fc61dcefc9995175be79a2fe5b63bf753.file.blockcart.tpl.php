@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-03-26 17:11:54
+<?php /* Smarty version Smarty-3.1.19, created on 2016-03-31 09:48:02
          compiled from "/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcart/blockcart.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:32020548356f6c2dac2da34-44877100%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '828b586fc61dcefc9995175be79a2fe5b63bf753' => 
     array (
       0 => '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/themes/madeinazores-2016SS_v0.1/modules/blockcart/blockcart.tpl',
-      1 => 1457050560,
+      1 => 1459414038,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_56f6c2dc4a0c28_71602430',
   'variables' => 
   array (
     'cart_qties' => 0,
@@ -44,8 +46,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ajax_allowed' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56f6c2dc4a0c28_71602430',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56f6c2dc4a0c28_71602430')) {function content_56f6c2dc4a0c28_71602430($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/function.counter.php';
 if (!is_callable('smarty_modifier_replace')) include '/Users/ruirocha/Sites/PROJECTOS/MADE_IN_AZORES/NOVO-TEMA-2016/prestashop/tools/smarty/plugins/modifier.replace.php';
@@ -53,7 +53,8 @@ if (!is_callable('smarty_modifier_replace')) include '/Users/ruirocha/Sites/PROJ
 
 <div id="shopping_cart">
 	<div id="cart-trigger">
-	<a class="cd-img-replace" href="#0">Cart
+	<a class="cd-img-replace" href="#0">
+		<span class="cart-icon"></span>
 		<!-- Quantidade de Produtos no Carrinho -->
 		<span class="ajax_cart_quantity<?php if ($_smarty_tpl->tpl_vars['cart_qties']->value==0) {?> unvisible<?php }?>"><?php echo $_smarty_tpl->tpl_vars['cart_qties']->value;?>
 </span>

@@ -3,7 +3,7 @@
 // CART on TOP
 #drop-cart{
 	display:none;
-	position: absolute; //fixed;
+	position: fixed; //absolute
 	top: 50px;
 	max-height: 70vh;
 	width: 45vw;
@@ -69,6 +69,8 @@
 	}
 
 	.cart-box{
+		border-top:$base-border;
+		border-bottom: $base-border;
 		.products{
 			margin: 0 1em;
 			max-height: 40vh;
@@ -180,8 +182,8 @@
 		width: 92.5%;
 		//margin-right: 
 		@extend .bold;
-		border-top:$base-border;
-		text-align: center;
+		text-align: right;
+		//border-top:$base-border;
 
 		>p{
 			float: right;
@@ -219,9 +221,11 @@
 		font-weight: $font-bold; 
 		font-size: 20px;
 		text-align: center;
+		padding:50px 0;
 	}	
 
 	@media (max-width: $screen-xs-max) {
+			position: fixed;
 			width: 100vw;
 			max-height:80vh;
 			right: 0;
@@ -357,7 +361,7 @@
 	}
 }	 
 .layer_cart_overlay {
-	background-color: $black;
+	background-color: $white;
 	display: none;
 	height: 100%;
 	left: 0;
@@ -365,7 +369,7 @@
 	top: 0;
 	width: 100%;
 	z-index: 50;
-	@include opacity(.30);
+	@include opacity(.75);
 		@media (max-width: $screen-xs-max) {
 			&.isOpen{
 				transform: translate3d(220px,0,0);
